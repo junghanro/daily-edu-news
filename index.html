@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘의 교육 뉴스 | Rohan Edu</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #f5f3ee;
+    --paper: #ffffff;
+    --ink: #14213d;
+    --sub: #5f6b7d;
+    --line: #e4e0d6;
+    --navy: #14213d;
+    --hl: #ffd23f;
+    --c-exam: #d64545;
+    --c-ai: #2f6fed;
+    --c-eng: #12905f;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 16px; line-height: 1.7;
+    word-break: keep-all;          /* 단어 중간에서 끊지 않음 */
+    overflow-wrap: break-word;
+  }
+  /* 의미 덩어리(청크)는 한 줄로 묶고, 덩어리 사이에서만 줄바꿈 */
+  .k { display: inline-block; }
+  h1, h2, h3, .sum li { text-wrap: balance; }
+
+  .sample-banner {
+    background: var(--hl); color: var(--navy); text-align: center;
+    font-size: 13px; font-weight: 700; padding: 7px 12px;
+  }
+
+  /* ── 상단 ── */
+  .masthead { background: var(--navy); color: #fff; padding: 26px 0 30px; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 18px; }
+  .brand { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
+  .logo {
+    font-size: 17px; font-weight: 800; letter-spacing: .3px;
+    background: var(--hl); color: var(--navy);
+    padding: 2px 10px; border-radius: 6px;
+  }
+  .slogan { font-size: 12.5px; color: #b9c2d6; }
+  .date { margin: 22px 0 4px; font-size: 14px; color: #b9c2d6; }
+  h1 {
+    margin: 0; font-size: 30px; line-height: 1.3; font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  h1 em { font-style: normal; }
+
+  /* ── 핵심 3가지 ── */
+  .top3 {
+    margin: -18px 0 0; background: var(--paper);
+    border-radius: 16px; padding: 18px 18px 8px;
+    border-top: 5px solid var(--hl);
+    box-shadow: 0 8px 22px rgba(20,33,61,.12);
+  }
+  .top3 h2 { margin: 0 0 6px; font-size: 17px; }
+  .top3 ol { list-style: none; margin: 0; padding: 0; counter-reset: n; }
+  .top3 li {
+    counter-increment: n; display: flex; gap: 12px; align-items: flex-start;
+    padding: 12px 0; border-top: 1px solid var(--line);
+    font-size: 16px; font-weight: 600; line-height: 1.55;
+  }
+  .top3 li:first-child { border-top: 0; }
+  .top3 li::before {
+    content: counter(n); flex: none; width: 26px; height: 26px; margin-top: 1px;
+    border-radius: 50%; background: var(--navy); color: var(--hl);
+    font-size: 14px; font-weight: 800; text-align: center; line-height: 26px;
+  }
+
+  /* ── 주제 섹션 ── */
+  section { margin-top: 34px; --c: var(--navy); }
+  section.exam { --c: var(--c-exam); }
+  section.ai   { --c: var(--c-ai); }
+  section.eng  { --c: var(--c-eng); }
+  section > h2 {
+    display: flex; align-items: center; gap: 10px;
+    margin: 0 0 14px; font-size: 21px;
+  }
+  section > h2::before {
+    content: ""; width: 6px; height: 24px; border-radius: 3px; background: var(--c);
+  }
+
+  .card {
+    background: var(--paper); border: 1px solid var(--line);
+    border-left: 5px solid var(--c);
+    border-radius: 12px; padding: 16px 16px 14px; margin-bottom: 14px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.45; font-weight: 800; }
+  .meta { font-size: 12.5px; color: var(--sub); margin-bottom: 10px; }
+  .meta b { color: var(--c); }
+  .sum { margin: 0 0 14px; padding: 0; list-style: none; }
+  .sum li {
+    position: relative; padding-left: 16px; margin: 5px 0;
+    font-size: 15.5px; color: #2a3550;
+  }
+  .sum li::before {
+    content: ""; position: absolute; left: 0; top: .72em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--c);
+  }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--navy); color: #fff;
+    font-weight: 700; font-size: 15px; padding: 12px; border-radius: 10px;
+  }
+  .btn::after { content: " →"; color: var(--hl); }
+  .btn:active { background: #0d1830; }
+
+  footer {
+    margin-top: 40px; padding: 22px 0 34px; text-align: center;
+    font-size: 13px; color: var(--sub); border-top: 1px solid var(--line);
+  }
+  footer strong { color: var(--navy); }
+  footer .contact { margin: 0 0 8px; }
+  footer .contact a { color: var(--navy); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--hl); }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo">Rohan Edu</span>
+      <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
+    </div>
+    <p class="date">2026년 10월 1일 목요일</p>
+    <h1>오늘의 <em>교육 뉴스</em></h1>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="top3">
+    <h2>오늘의 핵심 3가지</h2>
+    <ol>
+      <li><span><span class="k">9월 모평 영어 1등급 급등,</span> <span class="k">"수능최저 영어만</span> <span class="k">믿다간 낭패"</span></span></li>
+      <li><span><span class="k">'사탐런' 막판 변수,</span> <span class="k">수시·정시 따라</span> <span class="k">전략 갈려</span></span></li>
+      <li><span><span class="k">서울시교육청,</span> <span class="k">프랑스와 AI·직업교육</span> <span class="k">협력 확대</span></span></li>
+    </ol>
+  </div>
+
+  <section class="exam">
+    <h2>입시·수능</h2>
+
+    <div class="card">
+      <h3><span class="k">'사탐런' 막판 변수,</span> <span class="k">수시냐 정시냐에</span> <span class="k">따라 전략 갈린다</span></h3>
+      <div class="meta"><b>뉴스1</b> · 2026.09.30</div>
+      <ul class="sum">
+        <li><span class="k">9월 모평 탐구 응시자의</span> <span class="k">68.7%가</span> <span class="k">사회탐구를 선택했습니다.</span></li>
+        <li><span class="k">수시 수능최저가 중요하면</span> <span class="k">탐구 한 과목에 집중하고,</span> <span class="k">정시라면 두 과목 균형이 필수입니다.</span></li>
+        <li><span class="k">전문가들은 새 교재보다</span> <span class="k">최근 기출과 오답 정리에</span> <span class="k">집중하라고 조언합니다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.news1.kr/society/education/6305564" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">수능 D-50,</span> <span class="k">졸업생 지원자</span> <span class="k">큰 폭 증가</span></h3>
+      <div class="meta"><b>부산MBC</b> · 2026.09.30</div>
+      <ul class="sum">
+        <li><span class="k">올해 부산 수능 응시생 중</span> <span class="k">졸업생(재수생 등) 비율이</span> <span class="k">15% 이상 늘었습니다.</span></li>
+        <li><span class="k">1·2등급의 60%를</span> <span class="k">재수생이 차지해</span> <span class="k">재학생 부담이 커졌습니다.</span></li>
+        <li><span class="k">지역의사제 전형 등</span> <span class="k">새 변수가 많아</span> <span class="k">세밀한 전략이 필요합니다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20260930210240246" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="ai">
+    <h2>AI 교육</h2>
+
+    <div class="card">
+      <h3><span class="k">서울-프랑스,</span> <span class="k">AI·직업교육까지</span> <span class="k">협력 넓힌다</span></h3>
+      <div class="meta"><b>연합뉴스</b> · 2026.10.01</div>
+      <ul class="sum">
+        <li><span class="k">서울시교육청이 프랑스</span> <span class="k">일드프랑스교육청과</span> <span class="k">교육협력 협약을 체결합니다.</span></li>
+        <li><span class="k">디지털·AI 교육과</span> <span class="k">직업교육 분야로</span> <span class="k">협력 범위를 넓힙니다.</span></li>
+        <li><span class="k">유럽 13개국 한국어교사 연수에서도</span> <span class="k">AI·에듀테크 활용법을</span> <span class="k">함께 나눌 계획입니다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261001060153151" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="eng">
+    <h2>영어교육</h2>
+
+    <div class="card">
+      <h3><span class="k">9월 모평 영어 '물평',</span> <span class="k">수능최저</span> <span class="k">영어만 믿으면 위험</span></h3>
+      <div class="meta"><b>뉴스1</b> · 2026.09.30</div>
+      <ul class="sum">
+        <li><span class="k">9월 모의평가 영어 1등급이</span> <span class="k">15.54%로,</span> <span class="k">6월의 4.13%보다 크게 올랐습니다.</span></li>
+        <li><span class="k">전문가들은 실제 수능이</span> <span class="k">이만큼 쉽지는</span> <span class="k">않을 것이라 경고합니다.</span></li>
+        <li><span class="k">수능최저를 노린다면</span> <span class="k">영어만 믿지 말고</span> <span class="k">국어·탐구도 챙기라고 조언합니다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.news1.kr/society/education/6305001" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">日 대학생들,</span> <span class="k">대구경북 영어마을로</span> <span class="k">'역유학' 러시</span></h3>
+      <div class="meta"><b>매일신문</b> · 2026.09.30</div>
+      <ul class="sum">
+        <li><span class="k">일본 대학생들이 방학마다</span> <span class="k">대구경북영어마을을 찾아</span> <span class="k">영어 연수를 받습니다.</span></li>
+        <li><span class="k">2017년부터 누적 참가자가</span> <span class="k">609명에 이르고,</span> <span class="k">일부 대학은 학점으로도 인정합니다.</span></li>
+        <li><span class="k">토론·역할극 중심 수업에</span> <span class="k">"영어로 말하는 게</span> <span class="k">재미있어졌다"는 반응입니다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.imaeil.com/page/view/2026093015475271640" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="contact">Contact · <a href="mailto:junghanro0121@gmail.com">junghanro0121@gmail.com</a></p>
+    © <strong>Rohan Edu</strong>
+  </footer>
+</div>
+</body>
+</html>
