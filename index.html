@@ -28,7 +28,7 @@
     word-break: keep-all;          /* 단어 중간에서 끊지 않음 */
     overflow-wrap: break-word;
   }
-  /* 의미 덩어리(청크)는 한 줄로 묶고, 덩어리 사이에서만 줄바꿈 */
+  /* 줄바꿈은 띄어쓰기에서만. 숫자+다음 단어는 nbsp로 묶어 둠 (text-wrap: balance 사용 안 함) */
   .k { display: inline; }
 
   /* ── 상단 ── */
@@ -153,8 +153,8 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 10월 6일 화요일</p>
-      <span class="dday">수능 D-44</span>
+      <p class="date">2026년 10월 7일 수요일</p>
+      <span class="dday">수능 D-43</span>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -165,79 +165,52 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">수시 접수 장애 책임 두고</span> <span class="k">국감 쟁점으로 부상</span></span></li>
-      <li><span><span class="k">서울 영어유치원</span> <span class="k">월 교습비 149만원</span> <span class="k">4년 새 17% 상승</span></span></li>
-      <li><span><span class="k">앤트로픽, AI 엔지니어</span> <span class="k">1만 명 양성에</span> <span class="k">1억 달러 투자</span></span></li>
+      <li><span><span class="k">교육위 국감 시작,</span> <span class="k">수시 먹통·서·논술형 수능</span> <span class="k">쟁점으로</span></span></li>
+      <li><span><span class="k">수능 설계자 "도로 학력고사화,</span> <span class="k">폐지해야"</span></span></li>
+      <li><span><span class="k">AI 교과서 지위가 바뀌자</span> <span class="k">출판사들 손해배상 소송</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
-    <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
+    <li><a class="exam" href="#exam"><i></i>입시·수능 <span>2</span></a></li>
     <li><a class="eng" href="#eng"><i></i>영어교육 <span>1</span></a></li>
+    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>2</span></a></li>
     <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>1</span></a></li>
   </ul>
 
   <section class="exam" id="exam">
-    <h2>입시·수능 <small>4건</small></h2>
+    <h2>입시·수능 <small>2건</small></h2>
 
     <div class="card">
-      <h3><span class="k">국감 앞두고</span> <span class="k">'수시 먹통'·</span> <span class="k">'서·논술형 수능' 쟁점</span></h3>
-      <div class="meta"><b>EBS</b> · 2026.10.05</div>
-      <p class="lead"><span class="k">수시 원서접수 장애 책임과</span> <span class="k">서·논술형 수능 도입 논란이</span> <span class="k">국정감사 쟁점으로 떠올랐습니다</span></p>
+      <h3><span class="k">교육위 국감 돌입…</span> <span class="k">문항거래·채용차별·</span> <span class="k">사학비리 쟁점 부상</span></h3>
+      <div class="meta"><b>뉴시스</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">국회 교육위원회 국정감사가 시작돼</span> <span class="k">수시 접수 장애, 수능 문항 거래,</span> <span class="k">채용 차별 등 교육 현안이 쟁점으로 떠올랐습니다</span></p>
       <div class="facts">
-        <span class="chip"><b>약 4천억 원</b> 지역거점국립대 지원</span>
-        <span class="chip"><b>3곳</b> 우선 지원 대학</span>
+        <span class="chip"><b>67개&nbsp;기관</b> 국감 대상</span>
+        <span class="chip"><b>10월&nbsp;23일</b>까지 진행</span>
       </div>
       <ul class="sum">
-        <li><span class="k">9월 11일 수시 원서접수 마감 10분 전</span> <span class="k">유웨이 어플라이 서버에 전산 장애가 생겼고,</span> <span class="k">재접수 기회를 준 것을 두고</span> <span class="k">형평성 논란이 일고 있습니다.</span></li>
-        <li><span class="k">유웨이 어플라이 성윤석 대표가</span> <span class="k">국감 증인으로 채택됐습니다.</span></li>
-        <li><span class="k">차정인 국가교육위원장은 AI 시대에 맞춰</span> <span class="k">서·논술형 수능이 필요하다고 주장했지만,</span> <span class="k">평가 공정성과 사교육 확대 우려도 함께 제기됐습니다.</span></li>
+        <li><span class="k">국감은 67개 기관을 대상으로</span> <span class="k">10월&nbsp;23일까지 이어집니다.</span></li>
+        <li><span class="k">문항 거래 의혹을 받는 영어 강사와</span> <span class="k">학사 비리 혐의를 받는 인사 등이</span> <span class="k">증인으로 나옵니다.</span></li>
+        <li><span class="k">서·논술형 수능 개편과</span> <span class="k">교사 보호 방안도 주요 질의 대상으로 예상됩니다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261005190341212" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261007060259531" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">'효율적' vs '기계적'…</span> <span class="k">AI 논술 채점 논쟁</span></h3>
-      <div class="meta"><b>부산일보</b> · 2026.10.05</div>
-      <p class="lead"><span class="k">AI 논술 채점은 평가 객관성을 높인다는 찬성과</span> <span class="k">사고력 교육을 해친다는 반대가 맞서고 있습니다</span></p>
+      <h3><span class="k">수능 설계자의 한탄…</span> <span class="k">"도로 학력고사화,</span> <span class="k">폐지해야"</span></h3>
+      <div class="meta"><b>KBS</b> · 2026.10.06</div>
+      <p class="lead"><span class="k">1993년 도입된 수능이 대학 반영 비중이 커지면서</span> <span class="k">학력고사처럼 변했다는 지적이 나왔습니다</span></p>
       <div class="facts">
-        <span class="chip"><b>287명</b> 교사 연수 대상</span>
-        <span class="chip"><b>2032학년도</b> 수능 서·논술형 검토</span>
+        <span class="chip"><b>1993년</b> 수능 도입</span>
+        <span class="chip"><b>10월&nbsp;말</b> 교육발전계획 초안 공개 예정</span>
       </div>
       <ul class="sum">
-        <li><span class="k">부산시교육청은 AI 서·논술형 평가 시스템을</span> <span class="k">2027년부터 도입해</span> <span class="k">2027년까지 단계적으로 넓힐 예정입니다.</span></li>
-        <li><span class="k">찬성 측은 교사 업무를 줄이고</span> <span class="k">평가의 객관성을 높일 수 있다고 봅니다.</span></li>
-        <li><span class="k">부산교사노조는 창의력·사고력 교육이</span> <span class="k">기계적 글쓰기 훈련으로 바뀌고</span> <span class="k">사교육을 부추길 수 있다고 우려합니다.</span></li>
+        <li><span class="k">한국교육과정평가원 초대 원장 박도순 씨는</span> <span class="k">수능이 암기 탈피라는 원래 취지에서 멀어졌다고 말했습니다.</span></li>
+        <li><span class="k">킬러문항 문제 등을 우려하며,</span> <span class="k">학력고사처럼 변했다면 차라리 폐지하는 편이 낫다고 주장했습니다.</span></li>
+        <li><span class="k">10년짜리 국가교육발전계획 초안이 10월 말 나올 예정이며,</span> <span class="k">대학 입시 자율성 확대와 수능 의존 축소 방안이 제시되고 있습니다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261005181223404" target="_blank" rel="noopener">원문 보기</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="k">대구 IB 고교,</span> <span class="k">대입 성과 '성공적'…</span> <span class="k">교육 패러다임 바꿀까</span></h3>
-      <div class="meta"><b>대구MBC</b> · 2026.10.05</div>
-      <p class="lead"><span class="k">대구의 IB(국제바칼로레아) 고교 졸업생들이</span> <span class="k">연세대·고려대 등 상위권 대학에</span> <span class="k">합격하며 주목받고 있습니다</span></p>
-      <div class="facts">
-        <span class="chip"><b>428명</b> IB 과정 재학생</span>
-        <span class="chip"><b>5곳</b> 대구 IB 고교 (일반고 68곳 중)</span>
-      </div>
-      <ul class="sum">
-        <li><span class="k">대구는 2018년 전국 처음으로</span> <span class="k">IB 과정을 도입했고,</span> <span class="k">IB 과정을 운영하는 고교가 5곳 있습니다.</span></li>
-        <li><span class="k">IB 졸업생들은 학생부종합전형을 중심으로</span> <span class="k">연세대·고려대·서울대와</span> <span class="k">토론토대·멜버른대 등 해외 대학에 합격했습니다.</span></li>
-        <li><span class="k">수능 중심 입시와 맞지 않는다는 초기 우려가 있었지만,</span> <span class="k">비판적 사고력을 키우는 교육이 성과를 냈다는 평가가 나옵니다.</span></li>
-      </ul>
-      <a class="btn" href="http://v.daum.net/v/20261005204914477" target="_blank" rel="noopener">원문 보기</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="k">같은 세특,</span> <span class="k">대학마다 평가가 다른 이유</span></h3>
-      <div class="meta"><b>에듀진</b> · 2026.10.02</div>
-      <p class="lead"><span class="k">연세대·고려대·한양대는</span> <span class="k">같은 세부능력 및 특기사항(세특)을</span> <span class="k">서로 다른 기준으로 평가합니다</span></p>
-      <ul class="sum">
-        <li><span class="k">연세대는 개념을 얼마나 깊이 파고들었는지,</span> <span class="k">생각을 얼마나 확장했는지를 봅니다.</span></li>
-        <li><span class="k">고려대는 여러 과목에서 일관된 학업 태도와</span> <span class="k">협업 프로젝트 경험을 균형 있게 봅니다.</span></li>
-        <li><span class="k">한양대는 배운 개념을 실제 문제 해결에</span> <span class="k">어떻게 적용했는지를 평가합니다.</span></li>
-      </ul>
-      <a class="btn" href="https://www.edujin.co.kr/news/articleView.html?idxno=54277" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261006214256540" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
@@ -245,19 +218,55 @@
     <h2>영어교육 <small>1건</small></h2>
 
     <div class="card">
-      <h3><span class="k">서울 영어유치원</span> <span class="k">월 교습비 149만원,</span> <span class="k">4년 새 17% 상승</span></h3>
-      <div class="meta"><b>세계일보</b> · 2026.10.05</div>
-      <p class="lead"><span class="k">서울 영어유치원의 월평균 교습비가</span> <span class="k">2025년 149만원으로,</span> <span class="k">2021년보다 17% 올랐습니다</span></p>
+      <h3><span class="k">강원 직업계고 학생 9명,</span> <span class="k">싱가포르서</span> <span class="k">8주 현장학습</span></h3>
+      <div class="meta"><b>프레시안</b> · 2026.10.06</div>
+      <p class="lead"><span class="k">강원 직업계고 학생들이</span> <span class="k">영어 교육과 직무 실습을 함께 받는</span> <span class="k">싱가포르 현장학습에 참여했습니다</span></p>
       <div class="facts">
-        <span class="chip"><b>820곳</b> 전국 영어유치원 (2025년)</span>
-        <span class="chip"><b>70%↑</b> 서울·경기 원생 비중</span>
+        <span class="chip"><b>9명</b> 참가 학생</span>
+        <span class="chip"><b>4주</b> 영어 교육</span>
+        <span class="chip"><b>4주</b> 직무 실습</span>
       </div>
       <ul class="sum">
-        <li><span class="k">교습비가 가장 비싼 지역은 세종(월 156만3천원)이고,</span> <span class="k">전남은 2021년 70만원에서</span> <span class="k">2025년 142만3천원으로 두 배 넘게 뛰었습니다.</span></li>
-        <li><span class="k">전국 영어유치원은 2021년보다 100곳 넘게 늘었고,</span> <span class="k">원생의 70% 이상이 서울과 경기에 몰려 있습니다.</span></li>
-        <li><span class="k">더불어민주당 김준혁 의원은</span> <span class="k">공교육과 보육 인프라를 늘려</span> <span class="k">격차 없는 유아 교육을 국가가 책임져야 한다고 말했습니다.</span></li>
+        <li><span class="k">강원특별자치도교육청이 마련한 2026년 글로벌 현장학습으로,</span> <span class="k">4개교 학생 9명이 10월&nbsp;4일 출발했습니다.</span></li>
+        <li><span class="k">싱가포르 MDIS에서 영어 교육 4주와</span> <span class="k">직무 교육 4주를 받으며, 11월&nbsp;27일에 과정이 끝납니다.</span></li>
+        <li><span class="k">과정이 끝난 뒤에는 지역 기업과 면접을 보고,</span> <span class="k">교육청이 취업까지 계속 지원할 예정입니다.</span></li>
       </ul>
-      <a class="btn" href="https://segye.com/newsView/20261005509001" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261006191856988" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="ai" id="ai">
+    <h2>AI 교육 <small>2건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">AI 교과서 지위 바뀌자,</span> <span class="k">출판사들 손해배상 소송</span></h3>
+      <div class="meta"><b>헤럴드경제</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">정부 정책으로 AI 교과서의 법적 지위가 교과서에서 교육자료로 바뀌자,</span> <span class="k">출판사들이 손실을 이유로 소송에 나섰습니다</span></p>
+      <div class="facts">
+        <span class="chip"><b>3곳</b> 소송 출판사 (동아출판·YBM·비상교육)</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">출판사들은 정부의 초기 방침을 믿고 투자했다가</span> <span class="k">손실을 봤다고 주장합니다.</span></li>
+        <li><span class="k">같은 날 열린 교육위 국감에서는</span> <span class="k">수시 원서접수 장애를 낸 유웨이 어플라이 대표가</span> <span class="k">질의 대상에 올랐습니다.</span></li>
+        <li><span class="k">국감에서는 학교 현안과 함께</span> <span class="k">교육 현장의 관리 책임도 따질 예정입니다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261007064716188" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">'연필은 이렇게 잡아요'…</span> <span class="k">AI 시대, 손글씨에</span> <span class="k">'끙끙'대는 아이들</span></h3>
+      <div class="meta"><b>서울경제</b> · 2026.10.06</div>
+      <p class="lead"><span class="k">디지털 학습이 늘면서</span> <span class="k">손글씨 교정 학원을 찾는 문의가 크게 늘었습니다</span></p>
+      <div class="facts">
+        <span class="chip"><b>하루 1~2건</b> 문의 (2025년에는 주 1~2건)</span>
+        <span class="chip"><b>70% 이상</b> 초등학생</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">서울 대치동의 한 교정 학원은</span> <span class="k">2026년에 하루 1~2건씩 문의가 들어온다고 합니다.</span></li>
+        <li><span class="k">학원 수강생의 70% 이상이 초등학생입니다.</span></li>
+        <li><span class="k">디지털 학습 확대로 손글씨 연습이 줄고</span> <span class="k">서술형 평가가 늘 것이라는 전망이 맞물렸다고 전문가들은 설명합니다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261006070223402" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
@@ -265,19 +274,15 @@
     <h2>최신 AI 소식 <small>1건</small></h2>
 
     <div class="card">
-      <h3><span class="k">앤트로픽,</span> <span class="k">AI 엔지니어 1만 명 양성에</span> <span class="k">1억 달러 투자</span></h3>
-      <div class="meta"><b>CNBC</b> · 2026.10.02</div>
-      <p class="lead"><span class="k">기업의 AI 도입을 맡을 엔지니어를 키우는</span> <span class="k">'Claude Frontier Academy'에</span> <span class="k">1억 달러를 투자합니다</span></p>
-      <div class="facts">
-        <span class="chip"><b>1억 달러</b> 투자액</span>
-        <span class="chip"><b>1만 명</b> 양성 목표 (2027년 말까지)</span>
-      </div>
+      <h3><span class="k">로봇을 가르치는 기술,</span> <span class="k">사람이 직접 조종해</span> <span class="k">학습 데이터 만든다</span></h3>
+      <div class="meta"><b>KBS</b> · 2026.10.06</div>
+      <p class="lead"><span class="k">부산 기업 필즈는 사람이 로봇을 원격으로 조종해</span> <span class="k">로봇 학습용 행동 데이터를 만들고,</span> <span class="k">AI 코치가 조종자를 돕습니다</span></p>
       <ul class="sum">
-        <li><span class="k">파트너 기업의 'frontier deployed engineer'</span> <span class="k">1만 명을 2027년 말까지 양성하는 것이 목표입니다.</span></li>
-        <li><span class="k">초기 참여 그룹에는 액센추어·모건스탠리·노보 노디스크 등</span> <span class="k">엔지니어가 포함됐습니다.</span></li>
-        <li><span class="k">모의 기업 도입 실습과 평가를 거쳐</span> <span class="k">합격자는 실무 레지던시에 들어가고,</span> <span class="k">첫 자격 취득자는 2027년 초로 예상됩니다.</span></li>
+        <li><span class="k">사람이 로봇을 직접 조종하는 방식으로</span> <span class="k">다양한 작업 동작 데이터를 모읍니다.</span></li>
+        <li><span class="k">AI 코치가 가상 환경에서 목표 위치와 다음 동작을</span> <span class="k">실시간으로 안내해 조종자가 어려움을 덜도록 돕습니다.</span></li>
+        <li><span class="k">발달장애인, 고령자, 젊은 디지털 엔지니어 등이 참여해</span> <span class="k">로봇이 다양한 움직임을 배우게 한다는 점이 특징입니다.</span></li>
       </ul>
-      <a class="btn" href="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261006202615129" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
