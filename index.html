@@ -16,6 +16,8 @@
     --hl: #ffd23f;
     --c-exam: #d64545;
     --c-eng: #12905f;
+    --c-subj: #e07b00;
+    --c-hist: #0e7490;
     --c-ai: #2f6fed;
     --c-new: #7c4dff;
   }
@@ -25,13 +27,11 @@
     margin: 0; background: var(--bg); color: var(--ink);
     font-family: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     font-size: 16px; line-height: 1.7;
-    word-break: keep-all;          /* 단어 중간에서 끊지 않음 */
+    word-break: keep-all;
     overflow-wrap: break-word;
   }
-  /* 줄바꿈은 띄어쓰기에서만. 숫자+다음 단어는 nbsp로 묶어 둠 (text-wrap: balance 사용 안 함) */
   .k { display: inline; }
 
-  /* ── 상단 ── */
   .masthead { background: var(--navy); color: #fff; padding: 26px 0 34px; }
   .wrap { max-width: 640px; margin: 0 auto; padding: 0 18px; }
   .brand { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
@@ -50,7 +50,6 @@
   h1 { margin: 0; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px; }
   h1 em { font-style: normal; }
 
-  /* ── 핵심 3가지 ── */
   .top3 {
     margin: -18px 0 0; background: var(--paper);
     border-radius: 16px; padding: 18px 18px 8px;
@@ -71,7 +70,6 @@
     font-size: 14px; font-weight: 800; text-align: center; line-height: 26px;
   }
 
-  /* ── 한눈에 보기(바로가기) ── */
   .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
   .jump a {
     display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
@@ -81,13 +79,14 @@
   .jump a i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
   .jump a span { color: var(--sub); font-weight: 600; }
 
-  /* ── 주제 섹션 ── */
   section { margin-top: 34px; --c: var(--navy); scroll-margin-top: 12px; }
   section.exam { --c: var(--c-exam); }
   section.eng  { --c: var(--c-eng); }
+  section.subj { --c: var(--c-subj); }
   section.ai   { --c: var(--c-ai); }
   section.new  { --c: var(--c-new); }
   .jump a.exam { --c: var(--c-exam); } .jump a.eng { --c: var(--c-eng); }
+  .jump a.subj { --c: var(--c-subj); }
   .jump a.ai { --c: var(--c-ai); }     .jump a.new { --c: var(--c-new); }
   section > h2 {
     display: flex; align-items: center; gap: 10px;
@@ -106,6 +105,10 @@
   .card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.45; font-weight: 800; }
   .meta { font-size: 12.5px; color: var(--sub); margin-bottom: 10px; }
   .meta b { color: var(--c); }
+  .tag {
+    display: inline-block; margin-left: 2px; padding: 0 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--c) 12%, white); color: var(--c); font-weight: 700;
+  }
   .lead {
     margin: 0 0 10px; padding: 8px 12px; border-radius: 8px;
     background: color-mix(in srgb, var(--c) 9%, white);
@@ -135,6 +138,19 @@
   .btn::after { content: " →"; color: var(--hl); }
   .btn:active { background: #0d1830; }
 
+  section.hist { --c: var(--c-hist); }
+  .hcard { display: flex; gap: 14px; align-items: flex-start; background: #f2f8fa; }
+  .hcard .year {
+    flex: none; min-width: 74px; text-align: center; padding-top: 2px;
+    font-size: 30px; font-weight: 800; line-height: 1.1; color: var(--c); letter-spacing: -1px;
+  }
+  .hcard .year span { font-size: 13px; font-weight: 700; margin-left: 1px; }
+  .hcard .hbody { min-width: 0; }
+  .hcard .meta { margin-bottom: 4px; }
+  .hcard h3 { font-size: 17px; margin-bottom: 4px; }
+  .hdesc { margin: 0 0 8px; font-size: 15px; color: #2a3550; }
+  .hlink { font-size: 14px; font-weight: 700; color: var(--c); text-decoration: none; border-bottom: 1px solid var(--c); }
+
   footer {
     margin-top: 40px; padding: 22px 0 34px; text-align: center;
     font-size: 13px; color: var(--sub); border-top: 1px solid var(--line);
@@ -153,8 +169,8 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 10월 7일 수요일</p>
-      <span class="dday">수능 D-43</span>
+      <p class="date">2026년 10월 8일 목요일</p>
+      <span class="dday">수능 D-42</span>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -165,124 +181,309 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">교육위 국감 시작,</span> <span class="k">수시 먹통·서·논술형 수능</span> <span class="k">쟁점으로</span></span></li>
-      <li><span><span class="k">수능 설계자 "도로 학력고사화,</span> <span class="k">폐지해야"</span></span></li>
-      <li><span><span class="k">AI 교과서 지위가 바뀌자</span> <span class="k">출판사들 손해배상 소송</span></span></li>
+      <li><span><span class="k">AI 안경 부정행위 적발 시</span> <span class="k">2년간 수능 응시 금지</span> <span class="k">추진</span></span></li>
+      <li><span><span class="k">교사 96.6% "학생 문해력</span> <span class="k">5년 새 떨어졌다"</span></span></li>
+      <li><span><span class="k">MS, "PC는 이제</span> <span class="k">AI가 일하는 공간"</span> <span class="k">새 윈도11 공개</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
-    <li><a class="exam" href="#exam"><i></i>입시·수능 <span>2</span></a></li>
-    <li><a class="eng" href="#eng"><i></i>영어교육 <span>1</span></a></li>
-    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>2</span></a></li>
-    <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>1</span></a></li>
+    <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
+    <li><a class="eng" href="#eng"><i></i>영어교육 <span>3</span></a></li>
+    <li><a class="subj" href="#subj"><i></i>교과 소식 <span>4</span></a></li>
+    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>3</span></a></li>
+    <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>3</span></a></li>
   </ul>
 
   <section class="exam" id="exam">
-    <h2>입시·수능 <small>2건</small></h2>
+    <h2>입시·수능 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">교육위 국감 돌입…</span> <span class="k">문항거래·채용차별·</span> <span class="k">사학비리 쟁점 부상</span></h3>
-      <div class="meta"><b>뉴시스</b> · 2026.10.07</div>
-      <p class="lead"><span class="k">국회 교육위원회 국정감사가 시작돼</span> <span class="k">수시 접수 장애, 수능 문항 거래,</span> <span class="k">채용 차별 등 교육 현안이 쟁점으로 떠올랐습니다</span></p>
+      <h3><span class="k">AI 안경 적발 땐</span> <span class="k">2년간 수능 응시 금지…</span> <span class="k">수시 접수는 국가가</span> <span class="k">직접 관리 검토</span></h3>
+      <div class="meta"><b>서울신문</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">교육부가 AI 안경을 이용한</span> <span class="k">수능 부정행위를 적발하면</span> <span class="k">2년간 응시 자격을 박탈하는</span> <span class="k">대책을 추진합니다.</span></p>
       <div class="facts">
-        <span class="chip"><b>67개&nbsp;기관</b> 국감 대상</span>
-        <span class="chip"><b>10월&nbsp;23일</b>까지 진행</span>
+        <span class="chip"><b>2년</b> 응시자격 박탈</span>
+        <span class="chip"><b>2곳+</b> 거점국립대 추가</span>
       </div>
       <ul class="sum">
-        <li><span class="k">국감은 67개 기관을 대상으로</span> <span class="k">10월&nbsp;23일까지 이어집니다.</span></li>
-        <li><span class="k">문항 거래 의혹을 받는 영어 강사와</span> <span class="k">학사 비리 혐의를 받는 인사 등이</span> <span class="k">증인으로 나옵니다.</span></li>
-        <li><span class="k">서·논술형 수능 개편과</span> <span class="k">교사 보호 방안도 주요 질의 대상으로 예상됩니다.</span></li>
+        <li><span class="k">최교진 교육부 장관은</span> <span class="k">10월 7일 국회 교육위원회</span> <span class="k">국정감사에서, AI 스마트 안경을</span> <span class="k">이용한 수능 부정행위가 적발되면</span> <span class="k">이듬해까지 2년간 응시 자격을</span> <span class="k">박탈하겠다고 밝혔다.</span></li>
+        <li><span class="k">적발용 표준 매뉴얼과</span> <span class="k">시청각 교육자료를 만들어</span> <span class="k">학교에 안내할 계획이지만,</span> <span class="k">수능장에 전파 탐지기를 도입하기는</span> <span class="k">어려울 전망이다.</span></li>
+        <li><span class="k">9월에 발생한 대입 수시모집</span> <span class="k">원서접수 시스템 장애와 관련해서는</span> <span class="k">민간 업체에만 맡기지 않고</span> <span class="k">국가가 직접 관리하는 방안도</span> <span class="k">검토하기로 했다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261007060259531" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261008050237745" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">수능 설계자의 한탄…</span> <span class="k">"도로 학력고사화,</span> <span class="k">폐지해야"</span></h3>
-      <div class="meta"><b>KBS</b> · 2026.10.06</div>
-      <p class="lead"><span class="k">1993년 도입된 수능이 대학 반영 비중이 커지면서</span> <span class="k">학력고사처럼 변했다는 지적이 나왔습니다</span></p>
+      <h3><span class="k">수험생 1/3이 'N수생'…</span> <span class="k">재수 한 해 사교육비</span> <span class="k">수천만 원</span></h3>
+      <div class="meta"><b>KBS</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">올해 수능에 응시하는 N수생이</span> <span class="k">19만여 명으로, 23년 만에</span> <span class="k">가장 많은 수준입니다.</span></p>
       <div class="facts">
-        <span class="chip"><b>1993년</b> 수능 도입</span>
-        <span class="chip"><b>10월&nbsp;말</b> 교육발전계획 초안 공개 예정</span>
+        <span class="chip"><b>19만여명</b> N수생</span>
+        <span class="chip"><b>3조원+</b> 연간 사교육비</span>
+        <span class="chip"><b>10명 중 7명</b> 재도전해도 불합격</span>
       </div>
       <ul class="sum">
-        <li><span class="k">한국교육과정평가원 초대 원장 박도순 씨는</span> <span class="k">수능이 암기 탈피라는 원래 취지에서 멀어졌다고 말했습니다.</span></li>
-        <li><span class="k">킬러문항 문제 등을 우려하며,</span> <span class="k">학력고사처럼 변했다면 차라리 폐지하는 편이 낫다고 주장했습니다.</span></li>
-        <li><span class="k">10년짜리 국가교육발전계획 초안이 10월 말 나올 예정이며,</span> <span class="k">대학 입시 자율성 확대와 수능 의존 축소 방안이 제시되고 있습니다.</span></li>
+        <li><span class="k">올해 수능 응시생 중 N수생이</span> <span class="k">전체의 3분의 1이 넘는</span> <span class="k">19만여&nbsp;명으로, 23년 만에</span> <span class="k">가장 많은 수준으로 늘었다.</span></li>
+        <li><span class="k">N수에 드는 전체 사교육비는</span> <span class="k">한 해 3조&nbsp;원이 넘는 것으로</span> <span class="k">추산되며, 한 학부모는 한 해</span> <span class="k">학원비로 3,900만&nbsp;원을 썼다고 말했다.</span></li>
+        <li><span class="k">N수를 해도 원하는 대학에</span> <span class="k">가지 못한 학생이 열 명 중</span> <span class="k">일곱 명에 이르지만, 고3과 N수생의</span> <span class="k">성적 격차가 커 재도전은</span> <span class="k">계속 늘고 있다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261006214256540" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261008065915144" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">수능 영어 1등급은</span> <span class="k">문해력 싸움…</span> <span class="k">"끝까지 어휘 놓지 말아야"</span></h3>
+      <div class="meta"><b>여성동아</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">9월 모의평가 영어는 쉬워졌지만,</span> <span class="k">수능 영어 1등급의 핵심은</span> <span class="k">여전히 문해력이라는 진단입니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>3.11%</b> 작년 수능 1등급 비율</span>
+        <span class="chip"><b>4.13%</b> 6월 모평 1등급 비율</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">대치동 영어학원 김치삼 원장은</span> <span class="k">작년 수능 영어 1등급 비율이</span> <span class="k">3.11%에 그칠 만큼 어려웠고,</span> <span class="k">6월 모의평가도 4.13%로</span> <span class="k">비슷하게 어려웠다고 설명했다.</span></li>
+        <li><span class="k">9월 모의평가는 체감 난도가</span> <span class="k">쉬워졌지만, 소재는 쉽게 주면서</span> <span class="k">논리 구조는 까다롭게 짜</span> <span class="k">문해력과 논리력을 측정하려는</span> <span class="k">기존 방향은 그대로라고 분석했다.</span></li>
+        <li><span class="k">막판 대비로는 AI·기후·환경</span> <span class="k">관련 어휘를 정리하고, 쉬워 보이는</span> <span class="k">지문도 끝까지 읽어 뒤에서</span> <span class="k">논리가 반전되는 경우에 대비하라고</span> <span class="k">조언했다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008070259285" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">대입개편 시안 발표 늦추나…</span> <span class="k">서·논술형 수능</span> <span class="k">속도조절</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">국가교육위원회가 대입제도</span> <span class="k">개편안 발표 시기를 늦추는 방안을</span> <span class="k">검토하고 있습니다.</span></p>
+      <ul class="sum">
+        <li><span class="k">차정인 국가교육위원회 위원장은</span> <span class="k">10월 7일 국회 교육위원회</span> <span class="k">국정감사에서, 10월 발표 예정이던</span> <span class="k">국가교육발전계획 시안에 대해</span> <span class="k">공론화가 더 필요하다며</span> <span class="k">발표를 늦추는 방안을 논의하고</span> <span class="k">있다고 밝혔다.</span></li>
+        <li><span class="k">서술·논술형 수능 도입과</span> <span class="k">수능 절대평가 등 대입제도</span> <span class="k">개편 내용을 두고 국민참여위원과</span> <span class="k">국가교육위원들 사이에서도</span> <span class="k">반대 의견이 나와, 속도를</span> <span class="k">조절하겠다는 입장을 분명히 했다.</span></li>
+        <li><span class="k">초등학교 저학년의 오후 3시 하교</span> <span class="k">방안을 둘러싼 교원들의 반대에</span> <span class="k">대해서도 "중요하게 생각한다"고</span> <span class="k">답했다.</span></li>
+      </ul>
+      <a class="btn" href="https://hangyo.com/news/article.html?no=109590" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
   <section class="eng" id="eng">
-    <h2>영어교육 <small>1건</small></h2>
+    <h2>영어교육 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">강원 직업계고 학생 9명,</span> <span class="k">싱가포르서</span> <span class="k">8주 현장학습</span></h3>
-      <div class="meta"><b>프레시안</b> · 2026.10.06</div>
-      <p class="lead"><span class="k">강원 직업계고 학생들이</span> <span class="k">영어 교육과 직무 실습을 함께 받는</span> <span class="k">싱가포르 현장학습에 참여했습니다</span></p>
+      <h3><span class="k">대구경북영어마을서</span> <span class="k">영어로 먹고, 말하고,</span> <span class="k">문제 해결…</span> <span class="k">대전 초등교사 13명</span> <span class="k">실전 역량 키워</span></h3>
+      <div class="meta"><b>프레시안</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">대전 초등교사들이 2박 3일간</span> <span class="k">영어만 쓰는 몰입형 연수를 받으며</span> <span class="k">실전 영어 역량을 높였습니다.</span></p>
       <div class="facts">
-        <span class="chip"><b>9명</b> 참가 학생</span>
-        <span class="chip"><b>4주</b> 영어 교육</span>
-        <span class="chip"><b>4주</b> 직무 실습</span>
+        <span class="chip"><b>13명</b> 참여 교사</span>
+        <span class="chip"><b>2박3일·17시간</b> 연수 과정</span>
       </div>
       <ul class="sum">
-        <li><span class="k">강원특별자치도교육청이 마련한 2026년 글로벌 현장학습으로,</span> <span class="k">4개교 학생 9명이 10월&nbsp;4일 출발했습니다.</span></li>
-        <li><span class="k">싱가포르 MDIS에서 영어 교육 4주와</span> <span class="k">직무 교육 4주를 받으며, 11월&nbsp;27일에 과정이 끝납니다.</span></li>
-        <li><span class="k">과정이 끝난 뒤에는 지역 기업과 면접을 보고,</span> <span class="k">교육청이 취업까지 계속 지원할 예정입니다.</span></li>
+        <li><span class="k">대전교육연수원 영어교사 심화연수에</span> <span class="k">참여한 초등교사 13명이</span> <span class="k">대구경북영어마을에 입소해</span> <span class="k">'몰입형 영어의사소통역량강화'</span> <span class="k">연수를 받았다.</span></li>
+        <li><span class="k">연수생 3명과 원어민 교사 1명이</span> <span class="k">한 팀을 이뤄 수업은 물론</span> <span class="k">식사와 일상 활동까지 영어로만</span> <span class="k">소통하는 'English-Only' 환경으로</span> <span class="k">운영됐다.</span></li>
+        <li><span class="k">공항·호텔·병원 등 실제 상황을</span> <span class="k">역할극으로 체험하고, 배운 내용을</span> <span class="k">학교 수업에 적용해보는</span> <span class="k">교과 연계 미니 수업도 진행했다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261006191856988" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261007145156600" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">안산시, '다문화도시' 특성 살려</span> <span class="k">영어 교과수업 국제학교</span> <span class="k">세운다</span></h3>
+      <div class="meta"><b>경인일보</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">안산시가 다문화 환경을 살려</span> <span class="k">교과 수업을 영어로 진행하는</span> <span class="k">국제학교를 추진합니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>2028년 9월</b> 개교 목표</span>
+        <span class="chip"><b>360명</b> 학생 규모</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">안산시는 대부도에 경기도 최초의</span> <span class="k">공립형 대안학교인 경기안산국제학교를</span> <span class="k">세워 2028년 9월 개교를</span> <span class="k">목표로 추진한다.</span></li>
+        <li><span class="k">중·고교생 360명 규모로,</span> <span class="k">교과 수업을 영어로 진행하고</span> <span class="k">이중언어교육과 글로벌리더교육 등으로</span> <span class="k">국제적 소통 능력을 키운다는</span> <span class="k">구상이다.</span></li>
+        <li><span class="k">외국인·다문화 학생 비율이 높은</span> <span class="k">지역 특성을 살려, 국제학교</span> <span class="k">입학 과정에서도 다문화 학생</span> <span class="k">비율을 높게 검토하고 있다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261007134927789" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">지역으로 번진</span> <span class="k">'유아 영어학원'…</span> <span class="k">비용도 껑충</span></h3>
+      <div class="meta"><b>EBS뉴스</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">유아 대상 영어학원이 서울을 넘어</span> <span class="k">경기 지역까지 빠르게 늘고,</span> <span class="k">학원비도 크게 올랐습니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>718→820곳</b> 4년간 증가</span>
+        <span class="chip"><b>156.3만원</b> 세종 월평균 교습비</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">전국 유아 대상 영어학원은</span> <span class="k">2021년 718곳에서 지난해 820곳으로</span> <span class="k">늘었는데, 늘어난 곳의 대부분이</span> <span class="k">경기 지역에 몰렸다.</span></li>
+        <li><span class="k">지난해 전국 유아 영어학원의</span> <span class="k">약 64%가 서울·경기에 몰려 있고,</span> <span class="k">다니는 원생의 68.8%도</span> <span class="k">수도권에 쏠려 있다.</span></li>
+        <li><span class="k">월평균 교습비는 세종이 156만&nbsp;3천원으로</span> <span class="k">가장 높았고, 전남은 70만원에서</span> <span class="k">142만&nbsp;3천원으로 4년 새 두 배 넘게</span> <span class="k">뛰었다.</span></li>
+      </ul>
+      <a class="btn" href="https://news.ebs.co.kr/ebsnews/menu1/newsAllView/60776886/H?eduNewsYn=N&amp;newsFldDetlCd=CORNER_22" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="subj" id="subj">
+    <h2>교과 소식 <small>4건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">"세로로 서 있는데</span> <span class="k">왜 가로등인가요?"…</span> <span class="k">초·중·고 문해력 쇼크</span></h3>
+      <div class="meta"><b>중앙일보</b> · 2026.10.08 · <span class="tag">초·중·고 · 국어</span></div>
+      <p class="lead"><span class="k">전국 교사 1,356명 중 96.6%가</span> <span class="k">"학생 문해력이 5년 새</span> <span class="k">저하됐다"고 답했습니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>96.6%</b> "문해력 저하" 응답</span>
+        <span class="chip"><b>80.2%</b> "핵심 파악 능력 부족"</span>
+        <span class="chip"><b>63.5%</b> "한자 병기, 도움 안 돼"</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">교사노동조합연맹이 전국 초·중·고</span> <span class="k">교사 1,356명을 설문한 결과,</span> <span class="k">96.6%가 5년 새 학생</span> <span class="k">문해력이 저하됐다고 답했다.</span></li>
+        <li><span class="k">교사 80.2%는 학생들이 교과서</span> <span class="k">설명문 등에서 핵심 내용을</span> <span class="k">파악하는 능력이 크게 부족하다고</span> <span class="k">우려했다.</span></li>
+        <li><span class="k">해법으로 떠오른 교과서 한자 병기에</span> <span class="k">대해서는 63.5%가 도움이 되지 않는다고</span> <span class="k">답해, 기초 문해력 지원 프로그램</span> <span class="k">확충 등이 더 필요하다는 의견이 많았다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008050216701" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">수학 표준점수 전국 최하위…</span> <span class="k">강원, '강한 학력'으로</span> <span class="k">체질 개선 나선다</span></h3>
+      <div class="meta"><b>강원도민일보</b> · 2026.10.08 · <span class="tag">초·중 · 수학</span></div>
+      <p class="lead"><span class="k">강원도교육청이 학력 저하에 대응해</span> <span class="k">문해력·수리력 중심의</span> <span class="k">학력 정책을 본격화합니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>92.1점</b> 강원 수능 수학 표준점수</span>
+        <span class="chip"><b>9.21%</b> 중등 수학 학습지원대상 비율</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">강원 학생의 수능 수학 표준점수는</span> <span class="k">2024~2026학년도 평균 91~92점대로</span> <span class="k">17개 시도 중 가장 낮아,</span> <span class="k">도교육청이 학력 정책을 전면</span> <span class="k">대전환한다.</span></li>
+        <li><span class="k">2027년부터 초등 4학년~중3을 대상으로</span> <span class="k">문해력·사고력·문제해결력을 진단하는</span> <span class="k">'강원학생역량평가'를 새로 실시한다.</span></li>
+        <li><span class="k">정규 수학 수업에 협력강사를</span> <span class="k">배치하는 1수업 2교사제를</span> <span class="k">시범 운영하고, 2027년부터</span> <span class="k">'수포자 없는 학교 프로젝트'를</span> <span class="k">추진한다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008000613678" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">경북교육청,</span> <span class="k">10월 한 달</span> <span class="k">'한글책임교육' 운영</span></h3>
+      <div class="meta"><b>프레시안</b> · 2026.10.08 · <span class="tag">초등 · 국어</span></div>
+      <p class="lead"><span class="k">경북 초등학교들이 한글날을 계기로</span> <span class="k">기초 문해력을 키우는 교육을</span> <span class="k">한 달간 진행합니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>1,800권</b> 한글 보충교재 배부</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">경북교육청이 제580돌 한글날을 맞아</span> <span class="k">10월 한 달간 도내 초등학교에서</span> <span class="k">'한글날 연계 한글책임교육'을</span> <span class="k">운영한다.</span></li>
+        <li><span class="k">한글 퀴즈, 우리말 겨루기,</span> <span class="k">독서·글쓰기 등 학년군별 활동과</span> <span class="k">함께, 한글 해득이 어려운 학생에게는</span> <span class="k">맞춤형 교육을 제공한다.</span></li>
+        <li><span class="k">한글 해득 보충교재 '찬찬한글'</span> <span class="k">1,800권을 도내 초등학교에 배부하고,</span> <span class="k">가정과 연계한 문해력 교육도</span> <span class="k">함께 추진한다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008044243487" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">우리말글로 스스로 서는</span> <span class="k">울산학생 키운다</span></h3>
+      <div class="meta"><b>경상일보</b> · 2026.10.08 · <span class="tag">중·고 · 국어</span></div>
+      <p class="lead"><span class="k">울산시교육청이 한글날 100주년을 맞아</span> <span class="k">울산형 공교육 모형 '외솔교육'을</span> <span class="k">본격 추진합니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>21개교</b> '외솔 바로 알기' 동아리</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">울산시교육청이 외솔 최현배 선생의</span> <span class="k">한글 사랑 정신을 계승해, 중고교</span> <span class="k">교육과정과 연계한 외솔기념관</span> <span class="k">참관 학습 등 '외솔교육'을 추진한다.</span></li>
+        <li><span class="k">외솔 최현배 선생과 한글학,</span> <span class="k">훈민정음 해례본을 다루는 교원</span> <span class="k">정규 직무연수를 전국 최초로</span> <span class="k">개설한다.</span></li>
+        <li><span class="k">올해 중·고교 21개교에서</span> <span class="k">'외솔 바로 알기 학생 동아리'가</span> <span class="k">운영 중이며, '말모이 교사단'은</span> <span class="k">교과 융합 독서 수업을 개발해</span> <span class="k">적용하고 있다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008011137401" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
   <section class="ai" id="ai">
-    <h2>AI 교육 <small>2건</small></h2>
+    <h2>AI 교육 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">AI 교과서 지위 바뀌자,</span> <span class="k">출판사들 손해배상 소송</span></h3>
-      <div class="meta"><b>헤럴드경제</b> · 2026.10.07</div>
-      <p class="lead"><span class="k">정부 정책으로 AI 교과서의 법적 지위가 교과서에서 교육자료로 바뀌자,</span> <span class="k">출판사들이 손실을 이유로 소송에 나섰습니다</span></p>
+      <h3><span class="k">부산 초·중·고에</span> <span class="k">생성형 AI 보급…</span> <span class="k">사회정서교육 3배로 늘려</span></h3>
+      <div class="meta"><b>국제신문</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">부산시교육청이 취임 100일을 맞아</span> <span class="k">생성형 AI를 전체 학교로</span> <span class="k">확대 보급하는 계획을 발표했습니다.</span></p>
       <div class="facts">
-        <span class="chip"><b>3곳</b> 소송 출판사 (동아출판·YBM·비상교육)</span>
+        <span class="chip"><b>1조3886억원</b> 공약 예산 규모</span>
+        <span class="chip"><b>3배</b> 사회정서교육 확대(6→17차시)</span>
       </div>
       <ul class="sum">
-        <li><span class="k">출판사들은 정부의 초기 방침을 믿고 투자했다가</span> <span class="k">손실을 봤다고 주장합니다.</span></li>
-        <li><span class="k">같은 날 열린 교육위 국감에서는</span> <span class="k">수시 원서접수 장애를 낸 유웨이 어플라이 대표가</span> <span class="k">질의 대상에 올랐습니다.</span></li>
-        <li><span class="k">국감에서는 학교 현안과 함께</span> <span class="k">교육 현장의 관리 책임도 따질 예정입니다.</span></li>
+        <li><span class="k">김석준 부산시교육감이 취임 100일을</span> <span class="k">맞아 5대 영역 15개 과제,</span> <span class="k">총 1조3886억&nbsp;원 규모의</span> <span class="k">공약실천 로드맵을 확정했다.</span></li>
+        <li><span class="k">교수·학습용 생성형 AI 서비스를</span> <span class="k">초·중·고 전체 학교로 확대 보급하고,</span> <span class="k">디지털 리터러시와 AI 윤리교육도</span> <span class="k">강화한다.</span></li>
+        <li><span class="k">AI 서·논술형 평가 지원시스템을</span> <span class="k">2027년 시범 도입해 2028년 상용화하고,</span> <span class="k">사회정서교육은 6차시에서 17차시</span> <span class="k">이상으로 늘린다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261007064716188" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261007195116235" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">'연필은 이렇게 잡아요'…</span> <span class="k">AI 시대, 손글씨에</span> <span class="k">'끙끙'대는 아이들</span></h3>
-      <div class="meta"><b>서울경제</b> · 2026.10.06</div>
-      <p class="lead"><span class="k">디지털 학습이 늘면서</span> <span class="k">손글씨 교정 학원을 찾는 문의가 크게 늘었습니다</span></p>
+      <h3><span class="k">KERIS·초록우산,</span> <span class="k">AI·디지털 교육격차</span> <span class="k">해소 협력</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">한국교육학술정보원과 초록우산이</span> <span class="k">AI·디지털 교육으로 국내외</span> <span class="k">교육격차를 줄이기로 했습니다.</span></p>
+      <ul class="sum">
+        <li><span class="k">KERIS와 초록우산이 서울 중구에서</span> <span class="k">아동·청소년 교육권 증진 및</span> <span class="k">디지털 기반 교육혁신을 위한</span> <span class="k">업무협약을 체결했다.</span></li>
+        <li><span class="k">교육개발협력 공동사업 발굴, 디지털</span> <span class="k">기반 교육모델 개발, 교육 관계자와</span> <span class="k">아동·청소년 대상 교육·연수 등에</span> <span class="k">협력한다.</span></li>
+        <li><span class="k">초록우산은 올해 아시아 비영리단체</span> <span class="k">최초로 글로벌교육파트너십(GPE)의</span> <span class="k">그랜트 에이전트 자격을 취득해,</span> <span class="k">국제교육개발협력도 함께 넓힐 계획이다.</span></li>
+      </ul>
+      <a class="btn" href="https://hangyo.com/news/article.html?no=109592" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">스마트폰 끄고</span> <span class="k">AI 윤리 토론…</span> <span class="k">학생 80명 '폰프리 캠프'</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.10.07</div>
+      <p class="lead"><span class="k">초·중학생 80여 명이 스마트폰을 내려놓고</span> <span class="k">AI 시대의 윤리 문제를</span> <span class="k">토론했습니다.</span></p>
       <div class="facts">
-        <span class="chip"><b>하루 1~2건</b> 문의 (2025년에는 주 1~2건)</span>
-        <span class="chip"><b>70% 이상</b> 초등학생</span>
+        <span class="chip"><b>80여명</b> 참가 학생</span>
       </div>
       <ul class="sum">
-        <li><span class="k">서울 대치동의 한 교정 학원은</span> <span class="k">2026년에 하루 1~2건씩 문의가 들어온다고 합니다.</span></li>
-        <li><span class="k">학원 수강생의 70% 이상이 초등학생입니다.</span></li>
-        <li><span class="k">디지털 학습 확대로 손글씨 연습이 줄고</span> <span class="k">서술형 평가가 늘 것이라는 전망이 맞물렸다고 전문가들은 설명합니다.</span></li>
+        <li><span class="k">서울교대 신경윤리·가치AI융합교육연구소와</span> <span class="k">구리남양주교육지원청이 초등 4~6학년과</span> <span class="k">중학교 1~3학년 80여 명을 대상으로</span> <span class="k">'폰프리 AI 윤리 캠프'를 열었다.</span></li>
+        <li><span class="k">참가 학생들은 '폰프리 서약'을 하고</span> <span class="k">스마트폰을 직접 제출한 뒤,</span> <span class="k">종이책을 읽고 손으로 기록하며</span> <span class="k">친구들과 생각을 나눴다.</span></li>
+        <li><span class="k">딥페이크와 추천 알고리즘, 저작권,</span> <span class="k">자율주행 등 실제 AI 윤리 쟁점을</span> <span class="k">놓고 토론과 역할극을 통해</span> <span class="k">비판적 사고력을 키웠다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261006070223402" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://hangyo.com/news/article.html?no=109585" target="_blank" rel="noopener">원문 보기</a>
     </div>
   </section>
 
   <section class="new" id="new">
-    <h2>최신 AI 소식 <small>1건</small></h2>
+    <h2>최신 AI 소식 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">로봇을 가르치는 기술,</span> <span class="k">사람이 직접 조종해</span> <span class="k">학습 데이터 만든다</span></h3>
-      <div class="meta"><b>KBS</b> · 2026.10.06</div>
-      <p class="lead"><span class="k">부산 기업 필즈는 사람이 로봇을 원격으로 조종해</span> <span class="k">로봇 학습용 행동 데이터를 만들고,</span> <span class="k">AI 코치가 조종자를 돕습니다</span></p>
+      <h3><span class="k">"PC는 이제 AI가</span> <span class="k">일하는 공간"…</span> <span class="k">MS, 새 윈도11·서피스 공개</span></h3>
+      <div class="meta"><b>조선일보</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">마이크로소프트가 AI 에이전트가</span> <span class="k">24시간 일하는 'AI PC' 전략과</span> <span class="k">신제품을 공개했습니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>128GB</b> 새 노트북 최대 메모리</span>
+        <span class="chip"><b>2599달러</b> 시작 가격</span>
+      </div>
       <ul class="sum">
-        <li><span class="k">사람이 로봇을 직접 조종하는 방식으로</span> <span class="k">다양한 작업 동작 데이터를 모읍니다.</span></li>
-        <li><span class="k">AI 코치가 가상 환경에서 목표 위치와 다음 동작을</span> <span class="k">실시간으로 안내해 조종자가 어려움을 덜도록 돕습니다.</span></li>
-        <li><span class="k">발달장애인, 고령자, 젊은 디지털 엔지니어 등이 참여해</span> <span class="k">로봇이 다양한 움직임을 배우게 한다는 점이 특징입니다.</span></li>
+        <li><span class="k">MS는 10월 7일(현지 시각)</span> <span class="k">차세대 윈도11과 새 서피스 하드웨어,</span> <span class="k">코파일럿 신규 기능을 한꺼번에</span> <span class="k">공개했다.</span></li>
+        <li><span class="k">AI 에이전트가 사용자를 대신해</span> <span class="k">24시간 파일 정리나 문제 해결 등을</span> <span class="k">수행하고, 민감한 작업은 PC에서,</span> <span class="k">큰 작업은 클라우드에서 처리한다.</span></li>
+        <li><span class="k">최대 128GB 메모리를 지원하는</span> <span class="k">'서피스 랩톱 울트라'는 1200억 개가</span> <span class="k">넘는 매개변수의 AI 모델도</span> <span class="k">PC에서 직접 돌릴 수 있다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261006202615129" target="_blank" rel="noopener">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261008073914757" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">챗GPT, 이용자 규모 앞서고…</span> <span class="k">제미나이, 성장률 앞섰다</span></h3>
+      <div class="meta"><b>전자신문</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">챗GPT가 이용자 수는 더 많지만,</span> <span class="k">구글 제미나이의 성장 속도가</span> <span class="k">훨씬 빨랐습니다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>6억6400만명</b> 챗GPT 모바일 이용자</span>
+        <span class="chip"><b>321%</b> 제미나이 이용자 증가율</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">뱅크오브아메리카가 9월 기준으로</span> <span class="k">조사한 결과, 챗GPT의 모바일</span> <span class="k">일일 활성 이용자는 6억6400만&nbsp;명으로</span> <span class="k">전년 대비 69% 늘었다.</span></li>
+        <li><span class="k">제미나이의 모바일 일일 활성 이용자는</span> <span class="k">1억5100만&nbsp;명으로, 이용자 규모는</span> <span class="k">챗GPT의 약 4.4분의 1이지만</span> <span class="k">증가율은 321%로 훨씬 높았다.</span></li>
+        <li><span class="k">메타 AI는 전년 대비 646%,</span> <span class="k">새로 나온 메타 '뮤즈'는 출시 이후</span> <span class="k">앱스토어 1위에 올랐다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008072955621" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">구글·유니티,</span> <span class="k">코딩 없이 '말로 만드는</span> <span class="k">게임' 플랫폼 공개</span></h3>
+      <div class="meta"><b>EBN산업경제</b> · 2026.10.08</div>
+      <p class="lead"><span class="k">문장만 입력하면 AI가 비디오게임을</span> <span class="k">만들어주는 플랫폼이</span> <span class="k">나왔습니다.</span></p>
+      <ul class="sum">
+        <li><span class="k">구글과 유니티소프트웨어가 10월 7일</span> <span class="k">(현지 시각) 새 게임 제작 플랫폼</span> <span class="k">'플레이그라운드'를 발표했다.</span></li>
+        <li><span class="k">프로그래밍 지식 없이 자연어로</span> <span class="k">원하는 게임을 설명하면 AI가</span> <span class="k">게임을 만들고 세부 내용을</span> <span class="k">수정할 수 있다. 서비스는 18세</span> <span class="k">이상 이용자 대상이다.</span></li>
+        <li><span class="k">연내 전문 개발 기능을 갖춘</span> <span class="k">'유니티 스파크'를 연동해,</span> <span class="k">복잡한 3D 그래픽까지 자연어 명령으로</span> <span class="k">구현할 수 있게 할 계획이다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261008063817897" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="hist" id="hist">
+    <h2>역사 속 오늘 <small>10월 8일</small></h2>
+    <div class="card hcard">
+      <div class="year">1895<span>년</span></div>
+      <div class="hbody">
+        <div class="meta"><span class="tag">한국사</span> · 10월 8일에 있었던 일</div>
+        <h3>명성황후가 시해된 '을미사변'</h3>
+        <p class="hdesc">1895년 10월 8일 새벽, 일본은 경복궁에 자객을 보내 명성황후(민 왕후)를 시해했습니다. 이 사건이 을미사변입니다. 이를 계기로 고종은 러시아 공사관으로 거처를 옮기는 아관파천을 단행했고, 전국 각지에서 의병 운동이 거세게 일어났습니다.</p>
+        <a class="hlink" href="https://ko.wikipedia.org/wiki/10%EC%9B%94_8%EC%9D%BC" target="_blank" rel="noopener">자세히 보기 →</a>
+      </div>
     </div>
   </section>
 
