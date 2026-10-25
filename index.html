@@ -85,10 +85,11 @@
   /* ── 주제 섹션 ── */
   section { margin-top: 34px; --c: var(--navy); scroll-margin-top: 12px; }
   section.exam { --c: var(--c-exam); }
+  section.eng  { --c: var(--c-eng); }
   section.subj { --c: var(--c-subj); }
   section.ai   { --c: var(--c-ai); }
   section.new  { --c: var(--c-new); }
-  .jump a.exam { --c: var(--c-exam); }
+  .jump a.exam { --c: var(--c-exam); } .jump a.eng { --c: var(--c-eng); }
   .jump a.subj { --c: var(--c-subj); }
   .jump a.ai { --c: var(--c-ai); }     .jump a.new { --c: var(--c-new); }
   section > h2 {
@@ -173,8 +174,8 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 10월 24일 토요일</p>
-      <span class="dday">수능 D-26</span>
+      <p class="date">2026년 10월 26일 월요일</p>
+      <span class="dday">수능 D-24</span>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -185,16 +186,17 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">스마트안경 부정행위</span> <span class="k">잇따라 적발,</span> <span class="k">수능 시험 감독</span> <span class="k">고민 커진다</span></span></li>
-      <li><span><span class="k">건국대 중간고사서</span> <span class="k">AI 부정행위 적발,</span> <span class="k">600여&nbsp;명 재시험</span></span></li>
-      <li><span><span class="k">앤트로픽,</span> <span class="k">먼저 움직이는</span> <span class="k">AI 비서</span> <span class="k">'클로드 듀엣' 공개</span></span></li>
+      <li><span><span class="k">수시 학생부 경쟁률 하락,</span> <span class="k">"2028학년도 대입</span> <span class="k">개편 영향"</span></span></li>
+      <li><span><span class="k">의대 수시 등록포기</span> <span class="k">1,728명,</span> <span class="k">모집 인원과 비슷</span></span></li>
+      <li><span><span class="k">AI가 찾아낸 PHP&nbsp;보안 결함에</span> <span class="k">전&nbsp;세계 서버 비상</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
     <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
+    <li><a class="eng" href="#eng"><i></i>영어교육 <span>2</span></a></li>
     <li><a class="subj" href="#subj"><i></i>교과 소식 <span>3</span></a></li>
-    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>3</span></a></li>
+    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>4</span></a></li>
     <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>4</span></a></li>
   </ul>
 
@@ -202,247 +204,293 @@
     <h2>입시·수능 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">네이버, 대학·학과부터</span> <span class="k">수능까지</span> <span class="k">교육 검색</span> <span class="k">새로 단장</span></h3>
-      <div class="meta"><b>CBS노컷뉴스</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">네이버가 대학 입학처</span> <span class="k">공식 자료를 바탕으로</span> <span class="k">모집요강과 경쟁률 등을</span> <span class="k">한 곳에서 보여주도록</span> <span class="k">교육 검색을 개편했다.</span></p>
+      <h3><span class="k">수시 학생부 전형 경쟁률 하락…</span> <span class="k">"2028학년도 대입 개편 영향"</span></h3>
+      <div class="meta"><b>동아일보</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">2028학년도 대입 개편을 앞두고</span> <span class="k">수험생들이 안정 지원에 나서며</span> <span class="k">수시 경쟁률이 떨어졌다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>8.53→7.04대1</b> 학생부교과</span>
+        <span class="chip"><b>14.9→14.3대1</b> 학생부종합</span>
+        <span class="chip"><b>85%</b> "개편 영향" 응답(재학생)</span>
+      </div>
       <ul class="sum">
-        <li><span class="k">네이버가 대학·학과</span> <span class="k">정보와 입시 핵심 정보를</span> <span class="k">한 화면에서 볼 수 있도록</span> <span class="k">교육 검색을 새로 단장했다.</span></li>
-        <li><span class="k">한국교육과정평가원·교육부·</span> <span class="k">대학 입학처 등</span> <span class="k">공식 자료를 바탕으로</span> <span class="k">모집요강, 원서접수 일정,</span> <span class="k">경쟁률 등을 정리해 보여준다.</span></li>
-        <li><span class="k">11월에는 수능 시간표와</span> <span class="k">준비물 안내에 이어,</span> <span class="k">시험이 끝나면 과목별</span> <span class="k">예상 등급컷도 볼 수 있게</span> <span class="k">개편할 예정이다.</span></li>
+        <li><span class="k">서울 주요 15개 대학의</span> <span class="k">학생부교과·학생부종합 전형 경쟁률이</span> <span class="k">2025년 같은 전형보다 낮아졌다.</span></li>
+        <li><span class="k">진학사가 지원자 3,706명을 설문한 결과</span> <span class="k">재학생 85%, 졸업생 70.4%가</span> <span class="k">대입 개편이 지원 전략에 영향을 줬다고 답했다.</span></li>
+        <li><span class="k">전문가는 정시모집에서도</span> <span class="k">합격 가능성이 높은 대학 위주의</span> <span class="k">안정 지원이 이어질 것으로 봤다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261023154800828" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261026043521594" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">교육부, 국립 의대</span> <span class="k">신설 대학</span> <span class="k">11월 초까지 확정</span></h3>
-      <div class="meta"><b>중앙일보</b> · 2026.10.24</div>
-      <p class="lead"><span class="k">최교진 교육부 장관이</span> <span class="k">지역 국립 의대 신설</span> <span class="k">대상 대학을</span> <span class="k">11월 초까지 발표하겠다고</span> <span class="k">밝혔다.</span></p>
+      <h3><span class="k">의대 수시 붙고도 '퇴짜' 1,728명…</span> <span class="k">추가합격이 정원보다 많아</span></h3>
+      <div class="meta"><b>데일리안</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">2026학년도 대입에서 의대 수시 등록포기자가</span> <span class="k">모집 인원에 가까울 만큼 많았다.</span></p>
       <div class="facts">
-        <span class="chip"><b>40억원</b> 기본조사·설계비</span>
-        <span class="chip"><b>100명</b> 정원 확대 검토</span>
+        <span class="chip"><b>1,728명</b> 등록포기</span>
+        <span class="chip"><b>1,812명</b> 수시 모집</span>
+        <span class="chip"><b>112.9%</b> 교과전형 충원율</span>
       </div>
       <ul class="sum">
-        <li><span class="k">최교진 교육부 장관은</span> <span class="k">10월 23일 국회 교육위원회</span> <span class="k">종합국정감사에서</span> <span class="k">지역 의대 신설 검토가</span> <span class="k">거의 끝났다며</span> <span class="k">11월 초까지 발표하겠다고</span> <span class="k">말했다.</span></li>
-        <li><span class="k">교육부가 신설 지역과</span> <span class="k">대학을 확정하기 전에</span> <span class="k">기본조사·설계비 40억원을</span> <span class="k">예산안에 먼저 편성해</span> <span class="k">둔 상태라는 지적이 나왔다.</span></li>
-        <li><span class="k">광주·경북에서 각각</span> <span class="k">추천한 대학이</span> <span class="k">정원 50명 규모를 신청했는데,</span> <span class="k">100명으로 늘릴지도</span> <span class="k">논의 대상에 올랐다.</span></li>
+        <li><span class="k">종로학원이 전국 39개 의대 자료를 분석한 결과</span> <span class="k">수시 등록포기자가 1,728명으로</span> <span class="k">모집 인원 1,812명에 가까웠다.</span></li>
+        <li><span class="k">학생부교과전형은 충원율 112.9%,</span> <span class="k">학생부종합전형은 77.2%로</span> <span class="k">전형별 차이가 컸다.</span></li>
+        <li><span class="k">2027학년도에는 지역의사제 도입으로</span> <span class="k">중복 합격과 추가합격이</span> <span class="k">더 늘어날 것으로 전망된다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261024002032601" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025160622442" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">수시 접수 장애</span> <span class="k">재발 막는다,</span> <span class="k">수험번호 방식부터</span> <span class="k">바꾼다</span></h3>
-      <div class="meta"><b>EBS뉴스</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">교육부가 수시 원서접수</span> <span class="k">장애 원인을 밝히고,</span> <span class="k">정시부터 경쟁률을</span> <span class="k">유추할 수 없는</span> <span class="k">새 수험번호 방식을</span> <span class="k">도입하겠다고 밝혔다.</span></p>
+      <h3><span class="k">수능 앞둔 수험생,</span> <span class="k">수면·불안·소화 관리로</span> <span class="k">생체리듬 맞춰야</span></h3>
+      <div class="meta"><b>이데일리</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">수능 전 수면·불안·소화 문제는</span> <span class="k">평소 습관을 유지하며</span> <span class="k">관리하는 게 중요하다.</span></p>
       <div class="facts">
-        <span class="chip"><b>9.7~9.11</b> 접수 기간</span>
-        <span class="chip"><b>12월까지</b> 개선안 마련</span>
+        <span class="chip"><b>4초·6초</b> 호흡법(10회)</span>
       </div>
       <ul class="sum">
-        <li><span class="k">교육부는 10월 23일</span> <span class="k">국정감사에서,</span> <span class="k">수시 원서접수 장애가</span> <span class="k">대행사의 서버 교체 과정에서</span> <span class="k">사전 검증이 부족했기</span> <span class="k">때문이라는 조사 결과를</span> <span class="k">발표했다.</span></li>
-        <li><span class="k">정시 모집부터는</span> <span class="k">마감 전에 경쟁률이</span> <span class="k">새어나가지 않도록</span> <span class="k">공개 시점을 바꾸고,</span> <span class="k">경쟁률을 유추할 수 없는</span> <span class="k">새로운 수험번호 방식을</span> <span class="k">도입하기로 했다.</span></li>
-        <li><span class="k">원서 접수를 공적으로</span> <span class="k">관리하는 체계로 바꾸는</span> <span class="k">방안도 12월까지</span> <span class="k">구체적인 개선 대책과</span> <span class="k">함께 마련하겠다고 밝혔다.</span></li>
+        <li><span class="k">취침을 늦춰 공부 시간을 늘리면</span> <span class="k">수면 부족이 쌓여 집중력이 떨어질 수 있어,</span> <span class="k">기상·식사 시간을 수능 시간표에 맞춰 연습하는 게 좋다.</span></li>
+        <li><span class="k">시험 압박으로 두근거림이나 메스꺼움이 느껴지면</span> <span class="k">억지로 없애려 하지 말고</span> <span class="k">호흡으로 몸의 반응을 가라앉히는 연습이 도움이 된다.</span></li>
+        <li><span class="k">스트레스로 더부룩함이나 복통이 생길 수 있어</span> <span class="k">식단을 갑자기 바꾸지 말고</span> <span class="k">평소 먹던 음식을 규칙적으로 먹는 게 좋다.</span></li>
       </ul>
-      <a class="btn" href="https://news.ebs.co.kr/ebsnews/menu1/newsAllView/60782634/H?eduNewsYn=N&amp;newsFldDetlCd=" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261026070432005" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">스마트안경 부정행위</span> <span class="k">잇따라 적발,</span> <span class="k">수능 시험 감독</span> <span class="k">고민 커진다</span></h3>
-      <div class="meta"><b>경향신문</b> · 2026.10.24</div>
-      <p class="lead"><span class="k">서울시립대와 연세대</span> <span class="k">입시에서 AI 스마트안경을</span> <span class="k">이용한 부정행위가</span> <span class="k">잇따라 적발돼</span> <span class="k">수능을 앞둔 시험 감독</span> <span class="k">걱정이 커지고 있다.</span></p>
+      <h3><span class="k">국정감사, 수시 원서접수</span> <span class="k">장애 개선책</span> <span class="k">12월까지 마련</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.10.24</div>
+      <p class="lead"><span class="k">9월 수시 원서접수 시스템 장애의 원인이</span> <span class="k">서버 호환성 문제로 확인돼</span> <span class="k">개선책이 추진된다.</span></p>
       <div class="facts">
-        <span class="chip"><b>5건</b> 국가자격시험 적발</span>
-        <span class="chip"><b>3년</b> 응시 제한</span>
+        <span class="chip"><b>7.93→13.43대1</b> 마감 연장 사례</span>
+        <span class="chip"><b>12월까지</b> 개선책 마련</span>
       </div>
       <ul class="sum">
-        <li><span class="k">10월 3일 서울시립대,</span> <span class="k">10일 연세대 입시에서</span> <span class="k">초소형 카메라가 달린</span> <span class="k">스마트안경으로 문제를 찍어</span> <span class="k">AI가 알려주는 정답을</span> <span class="k">보는 부정행위가 드러났다.</span></li>
-        <li><span class="k">국가자격시험에서도</span> <span class="k">올해 스마트안경 부정행위가</span> <span class="k">5건 적발됐고,</span> <span class="k">일반 안경과 구분하기 어려워</span> <span class="k">감독관이 식별하기</span> <span class="k">힘들다는 지적이 나온다.</span></li>
-        <li><span class="k">교육부는 수능 감독관에게</span> <span class="k">스마트안경이 의심되면</span> <span class="k">안경을 벗어 책상에</span> <span class="k">두게 하라는 대처 요령을</span> <span class="k">전국 학교에 내려보냈다.</span></li>
+        <li><span class="k">국회 교육위원회 종합국정감사에서</span> <span class="k">9월 11일 발생한</span> <span class="k">대학 수시 원서접수 시스템 장애의</span> <span class="k">특별조사 결과가 공개됐다.</span></li>
+        <li><span class="k">서버 운영체제 교체 과정의 소프트웨어 호환성 문제와</span> <span class="k">미흡한 사전 검증이</span> <span class="k">원인으로 나타났다.</span></li>
+        <li><span class="k">교육부는 12월까지 개선책을 마련하고</span> <span class="k">정시 모집 전 운영장비 표준화와</span> <span class="k">과부하 시험 등을 정비할 계획이다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261024060240438" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=109782" target="_blank" rel="noopener">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="eng" id="eng">
+    <h2>영어교육 <small>2건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">영어로 대화하고 세계 문화 체험…</span> <span class="k">대구 첫 글로벌 교육축제</span></h3>
+      <div class="meta"><b>동아일보</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">대구에서 외국어 수업 성과를</span> <span class="k">체험·발표·공연으로 나누는</span> <span class="k">첫 글로벌 교육축제가 열렸다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>62팀</b> 글로벌 동아리 참여</span>
+        <span class="chip"><b>4주</b> 축제 기간</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">대구교육 글로벌축제는 따로 열던 교육 행사를 하나로 묶어</span> <span class="k">10월 24일 'WOW 페스티벌'로 시작됐다.</span></li>
+        <li><span class="k">글로벌 동아리와 원어민 창의성 캠프 참가 학생들이</span> <span class="k">외국어 퀴즈, 연극, 세계 음식·의상 체험을 선보였다.</span></li>
+        <li><span class="k">10월 31일 공식 개막식에 이어</span> <span class="k">11월에는 중등 글로벌교육 페스티벌에서</span> <span class="k">외국어 탐구 성과를 나눈다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261026043725640" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
+    <div class="card">
+      <h3><span class="k">'원어민과 함께한 환경문제 체험'…</span> <span class="k">김포 은여울초,</span> <span class="k">원어민 초청 환경 특강</span></h3>
+      <div class="meta"><b>경기일보</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">은여울초 5·6학년이</span> <span class="k">원어민 강사와 영어로 대화하며</span> <span class="k">환경 문제를 탐구했다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>10월 16·21일</b> 이틀 운영</span>
+        <span class="chip"><b>5·6학년</b> 대상</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">국제교류 동아리 '은여울브릿지'와 연계해</span> <span class="k">미국 플로리다 출신 강사를 초청해</span> <span class="k">특강을 열었다.</span></li>
+        <li><span class="k">6학년은 과학 '물질의 연소' 단원과 연계해</span> <span class="k">지렁이 분변토로 비료 만들기 등</span> <span class="k">환경 실습을 했다.</span></li>
+        <li><span class="k">5학년은 원어민과 영어로 대화하는 활동을 했고,</span> <span class="k">특강 뒤에는 참여 학생 전원이</span> <span class="k">강사와 1대1로 대화하는 시간을 가졌다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261025183650457" target="_blank" rel="noopener">원문 보기</a>
+    </div>
   </section>
 
   <section class="subj" id="subj">
     <h2>교과 소식 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">부산, 예비 고1 위한</span> <span class="k">고교학점제 워크북</span> <span class="k">만들어 배포</span></h3>
-      <div class="meta"><b>뉴스1</b> · 2026.10.23 · <span class="tag">중등 · 고교학점제</span></div>
-      <p class="lead"><span class="k">부산시교육청이 중학교 3학년</span> <span class="k">전체 학생에게</span> <span class="k">고교학점제를 미리 이해할</span> <span class="k">수 있는 워크북을</span> <span class="k">배포한다.</span></p>
+      <h3><span class="k">[PISA 2025로 본 한국교육]</span> <span class="k">교사 지원 늘었지만</span> <span class="k">인력 부족 여전</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.10.25 · <span class="tag">초중고 전체 · 읽기교육</span></div>
+      <p class="lead"><span class="k">한국 학생의 읽기 점수는 낮아졌지만</span> <span class="k">교사의 학습 지원 체감도는</span> <span class="k">OECD 평균을 크게 웃돌았다.</span></p>
       <div class="facts">
-        <span class="chip"><b>2개 장</b> 구성</span>
+        <span class="chip"><b>501점</b> 읽기(3년전보다 -14점)</span>
+        <span class="chip"><b>56%</b> 교원부족 수업지장 체감</span>
       </div>
       <ul class="sum">
-        <li><span class="k">부산시교육청이</span> <span class="k">'2027 예비 고등학생을</span> <span class="k">위한 고교학점제 워크북'을</span> <span class="k">만들어 관내 중학교 3학년</span> <span class="k">학생 전체에게 나눠준다.</span></li>
-        <li><span class="k">워크북은 '고교학점제'와</span> <span class="k">'진로 디자인' 두 장으로</span> <span class="k">구성돼, 고교학점제의</span> <span class="k">주요 내용과 고등학교 생활</span> <span class="k">준비 정보를 담았다.</span></li>
-        <li><span class="k">진로 디자인 활동을 통해</span> <span class="k">자기 적성에 맞는 계열을</span> <span class="k">살펴보고, 진학할 고등학교에서</span> <span class="k">들을 선택 과목까지</span> <span class="k">미리 설계해볼 수 있다.</span></li>
+        <li><span class="k">OECD PISA 2025에서 한국 학생 읽기 점수는 501점으로</span> <span class="k">3년 전보다 14점 낮아졌고,</span> <span class="k">수학·과학은 여전히 최상위권이다.</span></li>
+        <li><span class="k">학생이 체감하는 교사의 개별 지원은 87%로</span> <span class="k">OECD 평균(69%)보다 높았고,</span> <span class="k">2015년보다도 크게 올랐다.</span></li>
+        <li><span class="k">다만 교원 부족으로 수업에 지장이 있다는</span> <span class="k">학교에 다니는 학생이 56%(OECD 39%)에 달해,</span> <span class="k">인력과 지원체계 보강이 과제로 남았다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261023092936113" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=109790" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">울산, 10월 24일부터</span> <span class="k">'독서 인문 주간' 운영</span></h3>
-      <div class="meta"><b>연합뉴스</b> · 2026.10.23 · <span class="tag">초중고 · 국어·독서</span></div>
-      <p class="lead"><span class="k">울산시교육청이</span> <span class="k">10월 24일부터 30일까지</span> <span class="k">학생 낭송대회와</span> <span class="k">인문학 특강 등을 여는</span> <span class="k">독서 인문 주간을 운영한다.</span></p>
+      <h3><span class="k">정답·점수 중심 평가 벗어나</span> <span class="k">학생 성장 이끄는 교실</span></h3>
+      <div class="meta"><b>대전일보</b> · 2026.10.25 · <span class="tag">중등 · 교육과정·평가</span></div>
+      <p class="lead"><span class="k">대전 송촌중은 2022 개정 교육과정을 바탕으로</span> <span class="k">서·논술형 평가를 늘리며</span> <span class="k">성취기준 도달을 확인한다.</span></p>
       <div class="facts">
-        <span class="chip"><b>24개 팀</b> 낭송·낭독 본선</span>
-        <span class="chip"><b>25종</b> 학생 저자책 전시</span>
+        <span class="chip"><b>12명</b> 학습공동체 참여 교사</span>
+        <span class="chip"><b>매월 1회</b> 교과협의회</span>
       </div>
       <ul class="sum">
-        <li><span class="k">울산시교육청은</span> <span class="k">10월 24일부터 30일까지</span> <span class="k">'책과 놀고, 듣고, 말하다'를</span> <span class="k">주제로 2026 독서 인문</span> <span class="k">주간을 운영한다.</span></li>
-        <li><span class="k">9월 예선을 치른</span> <span class="k">109개 팀 가운데</span> <span class="k">본선에 오른 24개 팀이</span> <span class="k">28~29일 낭송·낭독</span> <span class="k">실력을 겨루고,</span> <span class="k">학생이 직접 쓴 저자책</span> <span class="k">25종도 전시된다.</span></li>
-        <li><span class="k">27일에는 '세종 시대와 한글',</span> <span class="k">30일에는 '영어 그림책으로</span> <span class="k">세상 보기'를 주제로 한</span> <span class="k">인문학 특강도 마련됐다.</span></li>
+        <li><span class="k">송촌중 교사들은 점수 구간으로 등급만 매기지 않고,</span> <span class="k">학생이 성취기준에 도달했는지 확인해</span> <span class="k">성장을 돕는 평가를 추구한다.</span></li>
+        <li><span class="k">교과를 넘나드는 학습공동체 '송촌CLASS GPT'가</span> <span class="k">서·논술형 문항 설계와</span> <span class="k">채점기준표를 함께 연구한다.</span></li>
+        <li><span class="k">수업 중 결론만 확인하지 않고</span> <span class="k">학생에게 사고 과정을 설명하게 하는 활동과</span> <span class="k">형성평가·피드백 비중이 늘었다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261023111426160" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025172310041" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">선배가 기획하고</span> <span class="k">후배가 체험하는</span> <span class="k">과학축제 열렸다</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.10.23 · <span class="tag">초등 · 과학·진로</span></div>
-      <p class="lead"><span class="k">경기 용인 서농초가</span> <span class="k">선배들이 직접 기획하고</span> <span class="k">운영하는 방식으로 바꾼</span> <span class="k">창의진로과학축제를 열었다.</span></p>
-      <div class="facts">
-        <span class="chip"><b>90여 개</b> 체험 부스</span>
-      </div>
+      <h3><span class="k">부산시교육청,</span> <span class="k">중3 대상 고교학점제</span> <span class="k">워크북 배포</span></h3>
+      <div class="meta"><b>프레시안</b> · 2026.10.24 · <span class="tag">중등 · 고교학점제</span></div>
+      <p class="lead"><span class="k">중학교 3학년의 고교 진학과 진로 설계를 돕는</span> <span class="k">워크북이 관내 전체 중학교에</span> <span class="k">배포된다.</span></p>
       <ul class="sum">
-        <li><span class="k">경기 용인 서농초는</span> <span class="k">10월 21일부터 23일까지</span> <span class="k">'RAS 창의진로과학축제'를</span> <span class="k">열었다.</span></li>
-        <li><span class="k">그동안 학생들이</span> <span class="k">체험만 하던 축제를</span> <span class="k">이번에는 선배들이 직접</span> <span class="k">기획하고 운영하며</span> <span class="k">후배들이 체험하는 방식으로</span> <span class="k">바꿨다.</span></li>
-        <li><span class="k">학생들이 준비 기간 동안</span> <span class="k">90여 개 부스를 기획했고,</span> <span class="k">학부모 교육공동체도</span> <span class="k">3개 부스를 함께 준비해</span> <span class="k">힘을 보탰다.</span></li>
+        <li><span class="k">부산시교육청이 '2027 예비 고등학생을 위한</span> <span class="k">고교학점제 워크북'을 만들어</span> <span class="k">10월 23일 배포를 발표했다.</span></li>
+        <li><span class="k">워크북은 고교학점제 안내와 진로 디자인</span> <span class="k">두 장으로 구성돼</span> <span class="k">계열 탐색과 선택 과목 설계를 돕는다.</span></li>
+        <li><span class="k">교육청은 '학교로 찾아가는</span> <span class="k">학교급 전환기 진로연계교육'의 교재로</span> <span class="k">이 워크북을 활용할 계획이다.</span></li>
       </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=109777" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261024154325920" target="_blank" rel="noopener">원문 보기</a>
     </div>
-
   </section>
 
   <section class="ai" id="ai">
-    <h2>AI 교육 <small>3건</small></h2>
+    <h2>AI 교육 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">AI로 체험하는</span> <span class="k">미래 직업,</span> <span class="k">청소년 진로박람회</span> <span class="k">열렸다</span></h3>
-      <div class="meta"><b>EBS뉴스</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">경기 평택에서</span> <span class="k">AI 기술을 직접 다뤄보며</span> <span class="k">다양한 직업을 체험하는</span> <span class="k">청소년 진로박람회가 열렸다.</span></p>
+      <h3><span class="k">"대학 강의, 복습용 녹음 허용돼야"</span> <span class="k">vs "교수 저작권" 논쟁</span></h3>
+      <div class="meta"><b>뉴시스</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">AI로 강의를 요약해 복습하는 학생과</span> <span class="k">저작권을 우려하는 교수 사이에</span> <span class="k">기준 마련 요구가 커진다.</span></p>
       <div class="facts">
-        <span class="chip"><b>5천여 명</b> 참여</span>
-        <span class="chip"><b>82개</b> 체험 부스</span>
+        <span class="chip"><b>저작권법 제30조</b> 개인 복제 허용 조항</span>
       </div>
       <ul class="sum">
-        <li><span class="k">평택시와 EBS가 함께</span> <span class="k">마련한 AI 주제</span> <span class="k">청소년 진로박람회가</span> <span class="k">10월 23일 열렸다.</span></li>
-        <li><span class="k">학생들은 AI 챗봇 만들기부터</span> <span class="k">드론·로봇 조종까지</span> <span class="k">82개 체험 부스에서</span> <span class="k">AI 기술과 다양한 직업을</span> <span class="k">직접 경험했다.</span></li>
-        <li><span class="k">학생·학부모·교사 등</span> <span class="k">5천여 명이 참여했으며,</span> <span class="k">체험형 진로교육이</span> <span class="k">지역으로 확산될지</span> <span class="k">주목된다.</span></li>
+        <li><span class="k">학생들은 녹음 파일을 AI로 요약해 복습하거나,</span> <span class="k">장애·질병으로 수업을 듣기 어려운 경우</span> <span class="k">보조 수단으로 쓴다고 말한다.</span></li>
+        <li><span class="k">교수들은 강의가 동의 없이 복제·유통되면</span> <span class="k">저작권을 침해할 수 있다고 우려하며,</span> <span class="k">저작권법은 강연도 저작물로 본다.</span></li>
+        <li><span class="k">강의계획서에 녹음 허용 범위를 구분해 명시하거나,</span> <span class="k">대학이 공식 강의 다시보기 서비스를 확대하는 방안이</span> <span class="k">대안으로 거론된다.</span></li>
       </ul>
-      <a class="btn" href="https://news.ebs.co.kr/ebsnews/menu1/newsAllView/60782633/H?eduNewsYn=N&amp;newsFldDetlCd=" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261026070129912" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">전국 사학 교장들</span> <span class="k">"AI 시대 미래학교</span> <span class="k">문법 새로 짜야"</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">전국 사립 초·중·고 교장</span> <span class="k">440여 명이 모여</span> <span class="k">AI 대전환 시대</span> <span class="k">학교 교육의 방향을</span> <span class="k">논의했다.</span></p>
+      <h3><span class="k">AI가 학생 시선·자세까지 분석해</span> <span class="k">수업을 돕는다</span></h3>
+      <div class="meta"><b>IT조선</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">멀티모달 AI가 학생의 학습 참여도를 분석해</span> <span class="k">교사의 수업 운영을 지원하는 서비스가</span> <span class="k">확산하고 있다.</span></p>
       <div class="facts">
-        <span class="chip"><b>440여 명</b> 참석</span>
+        <span class="chip"><b>1,200개+</b> 국내 활용 교육기관</span>
+        <span class="chip"><b>50만명+</b> 누적 사용자</span>
       </div>
       <ul class="sum">
-        <li><span class="k">대한사립학교장회가</span> <span class="k">10월 21일부터 23일까지</span> <span class="k">경북 경주에서</span> <span class="k">'교육의 품격, 미래를 여는</span> <span class="k">사학 리더십'을 주제로</span> <span class="k">하반기 연수를 열었다.</span></li>
-        <li><span class="k">김성근 포항공대 총장이</span> <span class="k">'AI 시대 미래학교의</span> <span class="k">새로운 문법'을 주제로</span> <span class="k">강연하며 AI 대전환과</span> <span class="k">학생 수 감소에 대응하는</span> <span class="k">사학의 방향을 제시했다.</span></li>
-        <li><span class="k">교육과혁신연구소장과</span> <span class="k">경희대 교수의 강연도</span> <span class="k">이어졌고, 마지막 날에는</span> <span class="k">정기총회와 교육공로표창</span> <span class="k">시상식도 열렸다.</span></li>
+        <li><span class="k">쓰리알이노베이션의 '포커스팡 AI'는</span> <span class="k">시선, 자세, 입력 행동 등을 분석해</span> <span class="k">학생의 집중 상태를 교사에게 보여준다.</span></li>
+        <li><span class="k">AI 시험감독 기능은 의심 행동을 기록하지만</span> <span class="k">최종 판단은 교사가 하도록 설계됐다고</span> <span class="k">회사는 설명했다.</span></li>
+        <li><span class="k">교과서나 자료를 올리면 학생 질문에</span> <span class="k">수준별로 답하는 AI 튜터는</span> <span class="k">2026년 하반기 정식 출시될 예정이다.</span></li>
       </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=109780" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025080502665" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">건국대 중간고사서</span> <span class="k">AI 부정행위 적발,</span> <span class="k">600여 명 재시험</span></h3>
-      <div class="meta"><b>KBS</b> · 2026.10.24</div>
-      <p class="lead"><span class="k">건국대 한 교양과목</span> <span class="k">비대면 중간고사에서</span> <span class="k">AI를 활용한 부정행위가</span> <span class="k">드러나 수강생 전체가</span> <span class="k">다시 시험을 보게 됐다.</span></p>
+      <h3><span class="k">이천교육지원청,</span> <span class="k">학부모 대상</span> <span class="k">'AI-ON 부모학교' 운영</span></h3>
+      <div class="meta"><b>아이뉴스24</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">AI 서·논술형 평가 확대에 맞춰</span> <span class="k">가정에서 자녀의 학습을 돕는 방법을</span> <span class="k">다루는 학부모 연수가 열렸다.</span></p>
       <div class="facts">
-        <span class="chip"><b>600여 명</b> 재시험</span>
+        <span class="chip"><b>63명</b> 신청 학부모</span>
       </div>
       <ul class="sum">
-        <li><span class="k">건국대 한 교양과목이</span> <span class="k">10월 19일 온라인으로</span> <span class="k">치른 중간고사에서</span> <span class="k">AI를 활용한 부정행위</span> <span class="k">정황이 나왔다.</span></li>
-        <li><span class="k">대학 온라인 커뮤니티 제보와</span> <span class="k">시험 결과를 함께 살펴보는</span> <span class="k">과정에서 부정행위 의혹이</span> <span class="k">확인됐다.</span></li>
-        <li><span class="k">해당 과목을 듣는</span> <span class="k">600여 명 전원이</span> <span class="k">대면으로 다시 시험을</span> <span class="k">치르게 됐다.</span></li>
+        <li><span class="k">경기 이천교육지원청은 10월 23일</span> <span class="k">유·초·중·고 학부모를 대상으로</span> <span class="k">'2026 이천 AI-ON 부모학교 2기'를 운영했다.</span></li>
+        <li><span class="k">AI 서·논술형 평가 도입 배경과 학습 방식 변화,</span> <span class="k">자기주도 학습을 돕는 방법을</span> <span class="k">다뤘다.</span></li>
+        <li><span class="k">고교 교육과정에서는 2022 개정 교육과정과</span> <span class="k">고교학점제를 중심으로</span> <span class="k">교과 선택과 평가, 학교생활기록을 안내했다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261024064854945" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025132144859" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
+    <div class="card">
+      <h3><span class="k">한국교통대-충주대원고,</span> <span class="k">AI·SW 인재 양성 협약</span></h3>
+      <div class="meta"><b>충청타임즈</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">대학과 고교가 손잡고 'AI·SW 미래학교'를 열어</span> <span class="k">학생들이 드론·AI 로봇 코딩을</span> <span class="k">체험했다.</span></p>
+      <ul class="sum">
+        <li><span class="k">한국교통대와 충북 충주 대원고가 10월 21일</span> <span class="k">첨단기술 인재 양성과 디지털 교육환경 조성</span> <span class="k">업무협약을 맺었다.</span></li>
+        <li><span class="k">협약 후 열린 '찾아가는 AI·SW 미래학교'에서</span> <span class="k">학생들이 드론 조종, 자율주행 로봇 코딩,</span> <span class="k">대화형 AI 학습로봇 체험을 했다.</span></li>
+        <li><span class="k">두 기관은 AI·SW 교육 프로그램 공동 개발과</span> <span class="k">교육 인프라 공유, 진로 탐색 교육을</span> <span class="k">이어갈 계획이다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261025130821561" target="_blank" rel="noopener">원문 보기</a>
+    </div>
   </section>
 
   <section class="new" id="new">
     <h2>최신 AI 소식 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">오픈AI 서울 데브데이,</span> <span class="k">"한국 '닷츠' 이용</span> <span class="k">세계 3위"</span></h3>
-      <div class="meta"><b>조선비즈</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">오픈AI가 서울에서</span> <span class="k">개발자 행사를 열고</span> <span class="k">한국이 AI 비서 '닷츠'</span> <span class="k">이용자 수 세계 3위라고</span> <span class="k">밝혔다.</span></p>
+      <h3><span class="k">오픈AI '닷츠' vs 앤트로픽 '듀엣'…</span> <span class="k">내 일 맡길 AI 비서는</span></h3>
+      <div class="meta"><b>지디넷코리아</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">오픈AI와 앤트로픽이 자리를 비운 사이</span> <span class="k">업무를 처리하는 AI 비서를</span> <span class="k">나란히 시험 공개했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>세계 3위</b> 닷츠 이용</span>
-        <span class="chip"><b>4000개↑</b> 연동 앱</span>
+        <span class="chip"><b>세계 3위</b> 한국 닷츠 주간 활성 이용자</span>
       </div>
       <ul class="sum">
-        <li><span class="k">오픈AI는 10월 22일</span> <span class="k">서울에서 '데브데이</span> <span class="k">익스체인지: 서울' 행사를</span> <span class="k">열고, 한국의 AI 에이전트</span> <span class="k">'닷츠' 주간 이용자 수가</span> <span class="k">세계 3위라고 밝혔다.</span></li>
-        <li><span class="k">닷츠는 항공편 검색부터</span> <span class="k">코드 수정까지 맡은 일을</span> <span class="k">스스로 이어서 처리하는</span> <span class="k">AI 비서로, 챗GPT를 통해</span> <span class="k">4000개 이상의 앱과</span> <span class="k">연동된다.</span></li>
-        <li><span class="k">비용을 5분의 1로 줄인</span> <span class="k">새 모델 'GPT-6.1 솔'과</span> <span class="k">답변 속도를 8배 이상</span> <span class="k">높인 기술도 함께</span> <span class="k">소개됐다.</span></li>
+        <li><span class="k">오픈AI는 9월 29일 '닷츠'를,</span> <span class="k">앤트로픽은 10월 21일(현지시간)</span> <span class="k">'클로드 듀엣'을 시험 공개했다.</span></li>
+        <li><span class="k">두 서비스 모두 이메일·캘린더를 연결해</span> <span class="k">자료 조사와 문서 작성을 하고,</span> <span class="k">별도 클라우드에서 작업을 이어간다.</span></li>
+        <li><span class="k">듀엣은 결제·서명·삭제 같은 중요한 작업은</span> <span class="k">실행 전 사용자 승인을 받도록</span> <span class="k">설계됐다고 앤트로픽은 밝혔다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261023081918609" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025135023471" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">앤트로픽,</span> <span class="k">먼저 움직이는 AI 비서</span> <span class="k">'클로드 듀엣' 공개</span></h3>
-      <div class="meta"><b>한겨레</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">앤트로픽이 지시 없이도</span> <span class="k">할 일을 먼저 챙기는</span> <span class="k">AI 에이전트 '클로드 듀엣'을</span> <span class="k">공개했다.</span></p>
+      <h3><span class="k">인간 해커도 못 찾은 결함,</span> <span class="k">AI가 찾아내자</span> <span class="k">전 세계 서버 비상</span></h3>
+      <div class="meta"><b>한국경제</b> · 2026.10.25</div>
+      <p class="lead"><span class="k">AI 모델이 찾아낸 PHP 보안 결함에</span> <span class="k">각국 정부가</span> <span class="k">비상 대응에 나섰다.</span></p>
       <div class="facts">
-        <span class="chip"><b>6000개↑</b> 연동 앱커넥터</span>
+        <span class="chip"><b>9.2점</b> 심각도(10점 만점)</span>
+        <span class="chip"><b>약 75%</b> PHP 사용 웹사이트 비율</span>
       </div>
       <ul class="sum">
-        <li><span class="k">앤트로픽은 10월 21일</span> <span class="k">(현지시각) AI 모델</span> <span class="k">'클로드 오퍼스 5.5' 기반</span> <span class="k">에이전트 '클로드 듀엣'의</span> <span class="k">연구용 미리보기를</span> <span class="k">공개했다.</span></li>
-        <li><span class="k">매일 아침 연결된 앱의</span> <span class="k">주요 내용을 요약해 보내주고,</span> <span class="k">회의 일정 조율부터</span> <span class="k">웹 앱 개발까지 맡은 일을</span> <span class="k">대신 처리할 수 있다.</span></li>
-        <li><span class="k">결제나 문서 서명 같은</span> <span class="k">민감한 작업은 반드시</span> <span class="k">이용자 승인을 거치도록 했고,</span> <span class="k">미국 유료 요금제 가입자부터</span> <span class="k">순서대로 제공된다.</span></li>
+        <li><span class="k">사이버보안업체가 오픈AI 모델 'GPT-5.6 솔'로</span> <span class="k">수십 년간 있던 PHP 결함(PHP2Shell) 두 건을 찾아</span> <span class="k">10월 21일 긴급 패치가 나왔다.</span></li>
+        <li><span class="k">미국 NSA는 즉시 업데이트가 어렵다면</span> <span class="k">시스템을 인터넷에서 분리하라고 권고했고,</span> <span class="k">한국 정부도 10월 22일 사이버위기 경보를 '주의'로 올렸다.</span></li>
+        <li><span class="k">전문가들은 AI가 결함을 찾는 속도는 빨라졌지만,</span> <span class="k">고치는 작업은 여전히</span> <span class="k">사람 손에 의존한다고 짚었다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261023144714822" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261025082942927" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">카카오,</span> <span class="k">이미지 읽는 AI '눈'</span> <span class="k">오픈소스로 공개</span></h3>
-      <div class="meta"><b>테크42</b> · 2026.10.23</div>
-      <p class="lead"><span class="k">카카오가 자체 개발한</span> <span class="k">비전 인코더 2종을</span> <span class="k">누구나 쓸 수 있도록</span> <span class="k">오픈소스로 공개했다.</span></p>
+      <h3><span class="k">화면은 삼성, AI홈은 LG…</span> <span class="k">애플의 합종연횡</span></h3>
+      <div class="meta"><b>IT조선</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">애플이 삼성에서는 부품을,</span> <span class="k">LG와는 AI홈 플랫폼 연동을 함께하며</span> <span class="k">복합적인 관계를 맺고 있다.</span></p>
       <div class="facts">
-        <span class="chip"><b>4억2600만</b> 파라미터</span>
-        <span class="chip"><b>60%↑</b> 처리 지연 감소</span>
+        <span class="chip"><b>7종</b> AI홈 연동 신제품</span>
+        <span class="chip"><b>25%→40%</b> 아이폰 듀오 점유율 전망</span>
       </div>
       <ul class="sum">
-        <li><span class="k">카카오는 10월 21일</span> <span class="k">자체 개발한 비전 인코더</span> <span class="k">'카나나-2-비전-인코더' 2종을</span> <span class="k">AI 플랫폼 허깅페이스에</span> <span class="k">공개했다.</span></li>
-        <li><span class="k">비전 인코더는 이미지 속</span> <span class="k">글자와 사물을 읽어</span> <span class="k">언어모델에 전달하는</span> <span class="k">멀티모달 AI의 '눈' 역할을</span> <span class="k">하는 기술이다.</span></li>
-        <li><span class="k">카카오는 자체 평가에서</span> <span class="k">처리 지연을 60% 이상</span> <span class="k">줄였다고 밝혔고,</span> <span class="k">상업적 이용도 허용해</span> <span class="k">외부 기업이 자유롭게</span> <span class="k">활용할 수 있다.</span></li>
+        <li><span class="k">LG전자와 애플은 10월 13일(현지시각) 뉴욕에서</span> <span class="k">실내외 카메라·도어록 등</span> <span class="k">AI홈 연동 IoT 신제품 7종을 공개했다.</span></li>
+        <li><span class="k">삼성디스플레이·삼성전기·삼성전자는</span> <span class="k">폴더블 패널과 부품을 애플에 공급하면서도</span> <span class="k">완제품 시장에서는 경쟁한다.</span></li>
+        <li><span class="k">업계는 특정 고객사에 실적이 쏠리는</span> <span class="k">구조적 위험을 지적하며,</span> <span class="k">자체 플랫폼과 기술 주도권을 지키는 균형이 필요하다고 본다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261023091202345" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261026060002700" target="_blank" rel="noopener">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">AI가 해독제 연구도,</span> <span class="k">클로드가 64시간 만에</span> <span class="k">단백질 31만 개 설계</span></h3>
-      <div class="meta"><b>뉴시스</b> · 2026.10.24</div>
-      <p class="lead"><span class="k">앤트로픽의 AI 모델</span> <span class="k">클로드가 전갈 독에</span> <span class="k">결합하는 단백질 후보를</span> <span class="k">64시간 동안</span> <span class="k">31만 개 넘게 설계했다.</span></p>
+      <h3><span class="k">[노인을 위한 AI]</span> <span class="k">"슬슬 가십시다"…</span> <span class="k">AI 화장실 알리미</span></h3>
+      <div class="meta"><b>한겨레</b> · 2026.10.26</div>
+      <p class="lead"><span class="k">방광 센서와 AI로 화장실 갈 시간을 예측하는 기기가</span> <span class="k">요양시설의 돌봄 부담을</span> <span class="k">줄이고 있다.</span></p>
       <div class="facts">
-        <span class="chip"><b>64시간</b> 설계 시간</span>
-        <span class="chip"><b>31만 8484개</b> 단백질 설계</span>
-        <span class="chip"><b>17개</b> 결합 확인</span>
+        <span class="chip"><b>30~50%↓</b> 화장실 이동 횟수</span>
+        <span class="chip"><b>400여 곳</b> 보급 시설</span>
       </div>
       <ul class="sum">
-        <li><span class="k">앤트로픽은 10월 20일</span> <span class="k">(현지시각) AI 모델</span> <span class="k">클로드로 전갈 신경독에</span> <span class="k">결합하는 단백질을 설계한</span> <span class="k">연구 결과를 공개했다.</span></li>
-        <li><span class="k">클로드는 초기 지시를</span> <span class="k">받은 뒤 64시간 동안</span> <span class="k">단백질 후보 31만 8484개를</span> <span class="k">만들어냈고, 외부 연구기관</span> <span class="k">실험에서 17개가 실제로</span> <span class="k">독소와 결합하는 것으로</span> <span class="k">확인됐다.</span></li>
-        <li><span class="k">독성을 없애는 효과까지</span> <span class="k">검증된 것은 아니지만,</span> <span class="k">AI가 신약 개발 초기 연구를</span> <span class="k">자율적으로 수행할 가능성을</span> <span class="k">보여준 사례로 주목받고 있다.</span></li>
+        <li><span class="k">일본 디프리의 배뇨 알림기기는</span> <span class="k">방광 위에 붙인 초음파 센서로 소변량을 기록하고,</span> <span class="k">2024년부터 AI로 화장실 갈 시간을 예측한다.</span></li>
+        <li><span class="k">야마구치현의 한 요양원은 도입 후</span> <span class="k">직원이 노인을 화장실에 데려가는 횟수가 줄고,</span> <span class="k">야간에 잠든 사람을 깨울 필요도 줄었다.</span></li>
+        <li><span class="k">개발사 대표는 기술의 목표가 돌봄을 대신하는 게 아니라</span> <span class="k">사용자의 자립을 돕는 것이라고</span> <span class="k">말했다.</span></li>
       </ul>
-      <a class="btn" href="http://v.daum.net/v/20261024060149379" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261026070646075" target="_blank" rel="noopener">원문 보기</a>
     </div>
-
   </section>
 
   <section class="hist" id="hist">
-    <h2>역사 속 오늘 <small>10월 24일</small></h2>
+    <h2>역사 속 오늘 <small>10월 26일</small></h2>
     <div class="card hcard">
-      <div class="year">1945<span>년</span></div>
+      <div class="year">1909<span>년</span></div>
       <div class="hbody">
-        <div class="meta"><span class="tag">세계사</span> · 10월 24일에 있었던 일</div>
-        <h3><span class="k">국제연합(UN),</span> <span class="k">정식으로 출범하다</span></h3>
-        <p class="hdesc"><span class="k">제2차 세계대전이 끝난 뒤,</span> <span class="k">여러 나라가 전쟁을 막고</span> <span class="k">함께 문제를 풀 수 있는</span> <span class="k">국제기구가 필요하다는</span> <span class="k">생각이 모였다.</span> <span class="k">1945년 10월 24일,</span> <span class="k">주요국이 모두 뜻을 모은</span> <span class="k">'유엔 헌장'이 효력을 갖게</span> <span class="k">되면서 국제연합(UN)이</span> <span class="k">공식적으로 세워졌다.</span></p>
-        <a class="hlink" href="https://www.un.org/en/observances/un-day" target="_blank">자세히 보기 →</a>
+        <div class="meta"><span class="tag">한국사</span> · 10월 26일에 있었던 일</div>
+        <h3><span class="k">안중근 의사,</span> <span class="k">하얼빈에서 이토 히로부미를 저격하다</span></h3>
+        <p class="hdesc"><span class="k">1909년 10월 26일 아침,</span> <span class="k">안중근 의사가 하얼빈역에서</span> <span class="k">일본의 조선 침략을 이끈 이토 히로부미를 저격했어요.</span> <span class="k">안중근 의사는 현장에서 바로 체포된 뒤</span> <span class="k">이듬해 사형을 선고받고 순국했어요.</span></p>
+        <a class="hlink" href="https://ko.wikipedia.org/wiki/안중근" target="_blank" rel="noopener">자세히 보기 →</a>
       </div>
     </div>
   </section>
