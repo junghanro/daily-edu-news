@@ -32,6 +32,7 @@
   }
   .k { display: inline; }
 
+  /* ── 상단 ── */
   .masthead { background: var(--navy); color: #fff; padding: 26px 0 34px; }
   .wrap { max-width: 640px; margin: 0 auto; padding: 0 18px; }
   .brand { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
@@ -50,6 +51,7 @@
   h1 { margin: 0; font-size: 30px; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px; }
   h1 em { font-style: normal; }
 
+  /* ── 핵심 3가지 ── */
   .top3 {
     margin: -18px 0 0; background: var(--paper);
     border-radius: 16px; padding: 18px 18px 8px;
@@ -70,6 +72,7 @@
     font-size: 14px; font-weight: 800; text-align: center; line-height: 26px;
   }
 
+  /* ── 한눈에 보기(바로가기) ── */
   .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
   .jump a {
     display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
@@ -79,6 +82,7 @@
   .jump a i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
   .jump a span { color: var(--sub); font-weight: 600; }
 
+  /* ── 주제 섹션 ── */
   section { margin-top: 34px; --c: var(--navy); scroll-margin-top: 12px; }
   section.exam { --c: var(--c-exam); }
   section.eng  { --c: var(--c-eng); }
@@ -138,6 +142,7 @@
   .btn::after { content: " →"; color: var(--hl); }
   .btn:active { background: #0d1830; }
 
+  /* ── 역사 속 오늘 (한 건짜리 작은 카드) ── */
   section.hist { --c: var(--c-hist); }
   .hcard { display: flex; gap: 14px; align-items: flex-start; background: #f2f8fa; }
   .hcard .year {
@@ -169,8 +174,8 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 11월 2일 월요일</p>
-      <span class="dday">수능 D-17</span>
+      <p class="date">2026년 11월 3일 화요일</p>
+      <span class="dday">수능 D-16</span>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -181,123 +186,133 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">서울 수능 응시생</span> <span class="k">11만3454명,</span> <span class="k">졸업생 비중</span> <span class="k">또&nbsp;늘어</span></span></li>
-      <li><span><span class="k">서울시,</span> <span class="k">청년 AI 성장권</span> <span class="k">266억원</span> <span class="k">다시&nbsp;추진</span></span></li>
-      <li><span><span class="k">고1 수학 내신,</span> <span class="k">3년째</span> <span class="k">주요 교과 중</span> <span class="k">가장&nbsp;낮아</span></span></li>
+      <li><span><span class="k">수시 대학별 고사</span> <span class="k">시작,</span> <span class="k">면접은</span> <span class="k">두괄식으로</span></span></li>
+      <li><span><span class="k">충남 고교</span> <span class="k">선택과목 539건,</span> <span class="k">신청자 부족으로</span> <span class="k">못 열려</span></span></li>
+      <li><span><span class="k">대학생 AI</span> <span class="k">구독료,</span> <span class="k">나라가 199억&nbsp;원</span> <span class="k">지원한다</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
     <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
-    <li><a class="eng" href="#eng"><i></i>영어교육 <span>2</span></a></li>
+    <li><a class="eng" href="#eng"><i></i>영어교육 <span>3</span></a></li>
     <li><a class="subj" href="#subj"><i></i>교과 소식 <span>4</span></a></li>
     <li><a class="ai" href="#ai"><i></i>AI 교육 <span>3</span></a></li>
-    <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>3</span></a></li>
+    <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>4</span></a></li>
   </ul>
 
   <section class="exam" id="exam">
     <h2>입시·수능 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">서울 수능 응시생</span> <span class="k">11만3454명,</span> <span class="k">졸업생 비중</span> <span class="k">또&nbsp;늘어</span></h3>
-      <div class="meta"><b>한국일보</b> · 2026.11.01</div>
-      <p class="lead"><span class="k">서울 지역 수능 지원자</span> <span class="k">11만3454명 중</span> <span class="k">졸업생이&nbsp;43.6%로</span> <span class="k">늘며,</span> <span class="k">스마트안경 부정행위를</span> <span class="k">막을 전담요원이</span> <span class="k">시험장마다</span> <span class="k">배치된다.</span></p>
+      <h3><span class="k">수시 대학별 고사</span> <span class="k">시작,</span> <span class="k">면접은</span> <span class="k">두괄식으로</span></h3>
+      <div class="meta"><b>매일신문</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">2027학년도&nbsp;대입</span> <span class="k">수시모집 면접이</span> <span class="k">수능 전후로</span> <span class="k">이어지는 가운데,</span> <span class="k">대학은 면접 성적을</span> <span class="k">최대&nbsp;60%까지</span> <span class="k">반영한다.</span></p>
       <div class="facts">
-        <span class="chip"><b>11만3454명</b> 지원</span>
-        <span class="chip"><b>43.6%</b> 졸업생 비율</span>
-        <span class="chip"><b>1만9993명</b> 관계요원</span>
+        <span class="chip"><b>최대&nbsp;60%</b> 면접 반영</span>
+        <span class="chip"><b>10분&nbsp;내외</b> 면접 시간</span>
       </div>
       <ul class="sum">
-        <li><span class="k">서울시교육청에 따르면</span> <span class="k">11월19일 치러지는</span> <span class="k">2027학년도 수능에</span> <span class="k">서울 지역에서</span> <span class="k">11만3454명이</span> <span class="k">지원했다.</span></li>
-        <li><span class="k">이 중 졸업생은</span> <span class="k">4만9438명(43.6%)으로</span> <span class="k">전년보다</span> <span class="k">2.7%포인트</span> <span class="k">늘었다.</span></li>
-        <li><span class="k">서울 11개 시험지구</span> <span class="k">228개 시험장에는</span> <span class="k">스마트안경 부정행위를</span> <span class="k">가려내는</span> <span class="k">전담 요원이</span> <span class="k">배치된다.</span></li>
+        <li><span class="k">대학에 따라</span> <span class="k">면접 성적을</span> <span class="k">30~60%까지&nbsp;반영하는</span> <span class="k">만큼 면접</span> <span class="k">준비도 중요하다.</span></li>
+        <li><span class="k">짧은 면접 시간</span> <span class="k">(10분&nbsp;내외) 안에</span> <span class="k">핵심을 먼저</span> <span class="k">말하는 '두괄식 답변'이</span> <span class="k">도움이 된다고</span> <span class="k">전문가들은 말한다.</span></li>
+        <li><span class="k">대구시교육청은</span> <span class="k">10월&nbsp;17일</span> <span class="k">경북대사대부고에서</span> <span class="k">고3 학생을 대상으로</span> <span class="k">모의 면접 연습을</span> <span class="k">진행했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101142639808" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103063025588" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">수능 앞두고</span> <span class="k">전국에</span> <span class="k">'AI 스마트안경'</span> <span class="k">부정행위&nbsp;비상</span></h3>
-      <div class="meta"><b>조선일보 등 종합</b> · 2026.11.01~02</div>
-      <p class="lead"><span class="k">AI 안경을 쓰면</span> <span class="k">시험 문제의</span> <span class="k">80%&nbsp;이상을</span> <span class="k">풀어낼 수 있다는</span> <span class="k">연구 결과가 나오면서,</span> <span class="k">교육부가</span> <span class="k">전국 수능 시험장에</span> <span class="k">전담 인력을</span> <span class="k">배치하기로&nbsp;했다.</span></p>
+      <h3><span class="k">수능 스마트안경</span> <span class="k">부정행위,</span> <span class="k">전담요원이 막는다</span></h3>
+      <div class="meta"><b>경기일보</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">교육부가 전국</span> <span class="k">1,312개&nbsp;수능 시험장에</span> <span class="k">스마트안경 판별</span> <span class="k">전담 요원을</span> <span class="k">1명씩&nbsp;배치한다.</span></p>
       <div class="facts">
-        <span class="chip"><b>82.78%</b> 제미나이 정답률</span>
-        <span class="chip"><b>1명</b> 시험장별 전담인력</span>
-        <span class="chip"><b>1→3년</b> 응시제한 검토</span>
+        <span class="chip"><b>1,312개</b> 시험장 전담배치</span>
+        <span class="chip"><b>10월&nbsp;10일</b> 연세대 적발</span>
       </div>
       <ul class="sum">
-        <li><span class="k">독일 대학 연구진이</span> <span class="k">화질을 낮춘</span> <span class="k">미국 대학입학시험(SAT)</span> <span class="k">문제를 AI에</span> <span class="k">입력한 결과,</span> <span class="k">구글 제미나이가</span> <span class="k">82.78%를&nbsp;맞혔다.</span></li>
-        <li><span class="k">10월 말 치러진</span> <span class="k">연세대·서울시립대</span> <span class="k">논술시험에서도</span> <span class="k">AI 안경을 쓴</span> <span class="k">응시자가</span> <span class="k">적발됐다.</span></li>
-        <li><span class="k">교육부는</span> <span class="k">11월19일 수능</span> <span class="k">시험장마다</span> <span class="k">AI 안경 판별</span> <span class="k">전담 인력을 배치하고,</span> <span class="k">적발 시 응시 제한 기간을</span> <span class="k">1년에서 3년으로</span> <span class="k">늘리는 방안도</span> <span class="k">검토한다.</span></li>
+        <li><span class="k">10월&nbsp;10일 연세대</span> <span class="k">수학 논술전형에서</span> <span class="k">스마트안경을 쓴 채</span> <span class="k">시험을 보다</span> <span class="k">적발된 응시생이</span> <span class="k">나왔다.</span></li>
+        <li><span class="k">교육부는 전국</span> <span class="k">1,312개&nbsp;수능 시험장에</span> <span class="k">스마트안경 판별</span> <span class="k">전담 요원을</span> <span class="k">1명씩&nbsp;배치하고,</span> <span class="k">사전 교육·연수를</span> <span class="k">실시하기로 했다.</span></li>
+        <li><span class="k">전문가들은</span> <span class="k">외관만으로는</span> <span class="k">일반 안경과</span> <span class="k">구분하기 어려워</span> <span class="k">감독 인력 확충과</span> <span class="k">탐지 장비 개발이</span> <span class="k">필요하다고 말한다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102003545458" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103060120958" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">경북 수능</span> <span class="k">74개 시험장에</span> <span class="k">2만675명&nbsp;응시</span></h3>
-      <div class="meta"><b>경북일보</b> · 2026.11.01</div>
-      <p class="lead"><span class="k">경북교육청이</span> <span class="k">8개 시험지구</span> <span class="k">74개 시험장</span> <span class="k">운영을 점검하며</span> <span class="k">수능 시행 준비에</span> <span class="k">들어갔다.</span></p>
-      <div class="facts">
-        <span class="chip"><b>74개</b> 시험장</span>
-        <span class="chip"><b>2만675명</b> 응시</span>
-        <span class="chip"><b>196명</b> 관계자 교육</span>
-      </div>
+      <h3><span class="k">대입 일정 한눈에,</span> <span class="k">충북교육청</span> <span class="k">진학 캘린더</span></h3>
+      <div class="meta"><b>노컷뉴스</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">충북교육청이</span> <span class="k">2028학년도&nbsp;대입</span> <span class="k">일정과 진학 정보를</span> <span class="k">담은 디지털</span> <span class="k">캘린더를 만들었다.</span></p>
       <ul class="sum">
-        <li><span class="k">경북교육청이</span> <span class="k">10월30일</span> <span class="k">2027학년도 수능</span> <span class="k">시행 업무처리지침</span> <span class="k">설명회를 열고</span> <span class="k">시험 관계자 196명에게</span> <span class="k">운영 지침을</span> <span class="k">안내했다.</span></li>
-        <li><span class="k">경북 8개 시험지구</span> <span class="k">74개 시험장에서</span> <span class="k">수험생 2만675명이</span> <span class="k">시험을 치른다.</span></li>
-        <li><span class="k">컴퓨터용 사인펜</span> <span class="k">개별 지참 허용,</span> <span class="k">수험표 뒷면</span> <span class="k">가채점표 인쇄 등</span> <span class="k">달라진 점도</span> <span class="k">함께 안내했다.</span></li>
+        <li><span class="k">캘린더에는</span> <span class="k">2028학년도&nbsp;대입</span> <span class="k">수시·정시 모집</span> <span class="k">원서접수 및</span> <span class="k">전형 일정이</span> <span class="k">담겼다.</span></li>
+        <li><span class="k">대학수학능력시험</span> <span class="k">모의평가와</span> <span class="k">전국연합학력평가 일정,</span> <span class="k">월별 진학</span> <span class="k">매뉴얼도 함께</span> <span class="k">제공된다.</span></li>
+        <li><span class="k">방문·온라인</span> <span class="k">상담 신청 링크와</span> <span class="k">입시 상담 전화번호도</span> <span class="k">캘린더에서</span> <span class="k">바로 연결된다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101175454969" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102211201562" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">서울 송파구,</span> <span class="k">11월16일</span> <span class="k">고1·2 학부모 대상</span> <span class="k">입시설명회</span></h3>
-      <div class="meta"><b>데일리안</b> · 2026.11.02</div>
-      <p class="lead"><span class="k">2028학년도</span> <span class="k">대입 제도가</span> <span class="k">바뀌는 만큼</span> <span class="k">학부모가 미리</span> <span class="k">준비할 수 있도록</span> <span class="k">송파구가</span> <span class="k">입시설명회를&nbsp;연다.</span></p>
+      <h3><span class="k">통합형 수능·5등급제,</span> <span class="k">송파구</span> <span class="k">입시설명회 연다</span></h3>
+      <div class="meta"><b>서울신문</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">서울 송파구가</span> <span class="k">2028학년도&nbsp;대입제도</span> <span class="k">개편에 맞춰</span> <span class="k">고1·2 학부모</span> <span class="k">대상 입시설명회를</span> <span class="k">11월&nbsp;16일&nbsp;연다.</span></p>
       <div class="facts">
-        <span class="chip"><b>11월16일</b> 개최</span>
-        <span class="chip"><b>400명</b> 대상</span>
+        <span class="chip"><b>11월&nbsp;16일</b> 개최</span>
+        <span class="chip"><b>400명</b> 학부모 대상</span>
       </div>
       <ul class="sum">
-        <li><span class="k">서울 송파구가</span> <span class="k">11월16일 오전 10시</span> <span class="k">구청 4층 대강당에서</span> <span class="k">고등학교 1·2학년</span> <span class="k">학부모 대상</span> <span class="k">입시설명회를 연다.</span></li>
-        <li><span class="k">마포고 진로진학 교사가</span> <span class="k">2028학년도 대입에</span> <span class="k">맞춘 학생부 관리 전략과</span> <span class="k">송파 지역 고교</span> <span class="k">내신 분석을</span> <span class="k">안내한다.</span></li>
-        <li><span class="k">참석하지 못한 학부모를 위해</span> <span class="k">강의 영상은</span> <span class="k">송파런 유튜브 채널에도</span> <span class="k">올릴 계획이다.</span></li>
+        <li><span class="k">2028학년도&nbsp;대입부터</span> <span class="k">국어·수학·탐구</span> <span class="k">영역의 선택과목이</span> <span class="k">없어지는</span> <span class="k">통합형 수능이</span> <span class="k">도입된다.</span></li>
+        <li><span class="k">고교 내신도</span> <span class="k">9등급제에서</span> <span class="k">5등급제로&nbsp;바뀐다.</span></li>
+        <li><span class="k">송파구는</span> <span class="k">2026학년도&nbsp;입시</span> <span class="k">일정에 맞춰</span> <span class="k">총&nbsp;5차례</span> <span class="k">입시설명회를 운영하며,</span> <span class="k">이번이</span> <span class="k">네 번째다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102072956805" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102142627580" target="_blank">원문 보기</a>
     </div>
   </section>
 
   <section class="eng" id="eng">
-    <h2>영어교육 <small>2건</small></h2>
+    <h2>영어교육 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">경남 원어민</span> <span class="k">영어보조교사 30명,</span> <span class="k">경주서</span> <span class="k">한국문화&nbsp;체험</span></h3>
-      <div class="meta"><b>쿠키뉴스</b> · 2026.10.30</div>
-      <p class="lead"><span class="k">경남교육청이</span> <span class="k">원어민 영어보조교사</span> <span class="k">30명에게</span> <span class="k">한국 역사와 문화를</span> <span class="k">직접 체험하게 하는</span> <span class="k">연수를&nbsp;열었다.</span></p>
+      <h3><span class="k">대전충청</span> <span class="k">영어말하기대회,</span> <span class="k">70명 실력 겨뤄</span></h3>
+      <div class="meta"><b>대전일보</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">국제청소년연합이</span> <span class="k">연 '제26회&nbsp;IYF영어말하기대회'</span> <span class="k">대전충청지역 본선에</span> <span class="k">중·고·대학생</span> <span class="k">70명이 참가했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>30명</b> 참가</span>
+        <span class="chip"><b>70명</b> 참가</span>
+        <span class="chip"><b>누적&nbsp;3만&nbsp;7362명</b> 역대 참가</span>
       </div>
       <ul class="sum">
-        <li><span class="k">경남도교육청이</span> <span class="k">10월30일</span> <span class="k">도내 원어민</span> <span class="k">영어보조교사 30명을</span> <span class="k">대상으로</span> <span class="k">경주에서</span> <span class="k">한국문화 체험 연수를</span> <span class="k">진행했다.</span></li>
-        <li><span class="k">참가자들은</span> <span class="k">불국사와</span> <span class="k">국립경주박물관을</span> <span class="k">돌아보고</span> <span class="k">교촌한옥마을에서</span> <span class="k">한복을 입어보는</span> <span class="k">체험을 했다.</span></li>
-        <li><span class="k">경남교육청은</span> <span class="k">이번 연수가</span> <span class="k">교사들이 학생과</span> <span class="k">더 잘 소통하는 데</span> <span class="k">도움이 될 것으로</span> <span class="k">기대했다.</span></li>
+        <li><span class="k">중·고등부&nbsp;52명,</span> <span class="k">대학부&nbsp;18명이</span> <span class="k">참가해 영어</span> <span class="k">발표 실력을</span> <span class="k">겨뤘다.</span></li>
+        <li><span class="k">대학부 충남대,</span> <span class="k">고등부 새소리음악고,</span> <span class="k">중등부 청주링컨</span> <span class="k">학생이</span> <span class="k">대전시의회 의장상을</span> <span class="k">받았다.</span></li>
+        <li><span class="k">수상자들은</span> <span class="k">11월&nbsp;7일</span> <span class="k">서울인재개발원에서</span> <span class="k">열리는 전국 결선에</span> <span class="k">출전한다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101023922871" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102181956498" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">강남구 중학생들,</span> <span class="k">영어로 국제 이슈</span> <span class="k">발표하는</span> <span class="k">컨퍼런스&nbsp;연다</span></h3>
-      <div class="meta"><b>데일리안</b> · 2026.11.02</div>
-      <p class="lead"><span class="k">중학생 14개 팀이</span> <span class="k">생성형 AI로</span> <span class="k">세계 문제의 해결책을</span> <span class="k">찾아 영어로</span> <span class="k">발표하는 대회가</span> <span class="k">11월6일&nbsp;열린다.</span></p>
+      <h3><span class="k">제주 초6</span> <span class="k">240명,</span> <span class="k">영어로 과학·예술·체육</span> <span class="k">체험</span></h3>
+      <div class="meta"><b>헤드라인제주</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">제주국제자유도시개발센터가</span> <span class="k">도내 초등학교</span> <span class="k">6학년&nbsp;240명을</span> <span class="k">대상으로</span> <span class="k">영어캠프를 열었다.</span></p>
       <div class="facts">
-        <span class="chip"><b>14개교 14팀</b> 본선</span>
-        <span class="chip"><b>28명</b> 참가</span>
+        <span class="chip"><b>240명</b> 참가</span>
+        <span class="chip"><b>11월&nbsp;2일~6일</b> 5일간</span>
       </div>
       <ul class="sum">
-        <li><span class="k">서울 강남구가</span> <span class="k">11월6일</span> <span class="k">세텍 컨벤션센터에서</span> <span class="k">'2026년 강남구</span> <span class="k">청소년 국제 컨퍼런스'를</span> <span class="k">연다.</span></li>
-        <li><span class="k">9월 예선을 거쳐</span> <span class="k">14개 중학교 14개 팀,</span> <span class="k">28명이</span> <span class="k">본선에&nbsp;올랐다.</span></li>
-        <li><span class="k">참가 학생들은</span> <span class="k">생성형 AI가 알려준</span> <span class="k">정보를 직접 검증하며</span> <span class="k">해결책을 영어로 발표하고,</span> <span class="k">영어 발표력도</span> <span class="k">심사 기준에</span> <span class="k">포함된다.</span></li>
+        <li><span class="k">11월&nbsp;2일부터&nbsp;6일까지</span> <span class="k">영어교육도시</span> <span class="k">SJA Jeju 캠퍼스에서</span> <span class="k">캠프가 열린다.</span></li>
+        <li><span class="k">과학융합교육,</span> <span class="k">창의·탐험활동,</span> <span class="k">시각·공연예술,</span> <span class="k">체육활동 등</span> <span class="k">4개&nbsp;분야로</span> <span class="k">교육과정이 짜였다.</span></li>
+        <li><span class="k">제주도교육청은</span> <span class="k">참가 학생 선발과</span> <span class="k">교육행정을</span> <span class="k">지원했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102061956700" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102161554869" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">미군부대가</span> <span class="k">영어교실로,</span> <span class="k">앞산캠프</span> <span class="k">134기 수료</span></h3>
+      <div class="meta"><b>경북일보</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">대구 남구가</span> <span class="k">미군부대를 활용한</span> <span class="k">체험형 영어교육</span> <span class="k">'글로벌 앞산캠프'</span> <span class="k">134기&nbsp;수료식을</span> <span class="k">열었다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>누적&nbsp;3253명</b> 수료</span>
+        <span class="chip"><b>98점</b> 만족도</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">남도초&nbsp;5·6학년</span> <span class="k">학생들이</span> <span class="k">10월 한&nbsp;달 동안</span> <span class="k">매주 수요일</span> <span class="k">방과후 캠프워커를 찾아</span> <span class="k">생활영어를 배웠다.</span></li>
+        <li><span class="k">2007년부터&nbsp;이어진</span> <span class="k">이 캠프는</span> <span class="k">지금까지&nbsp;3253명이</span> <span class="k">수료했고,</span> <span class="k">참가비는 전액</span> <span class="k">무료다.</span></li>
+        <li><span class="k">남구청은</span> <span class="k">2027년&nbsp;2월부터</span> <span class="k">캠프를 다시</span> <span class="k">시작할 계획이다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261102153758560" target="_blank">원문 보기</a>
     </div>
   </section>
 
@@ -305,63 +320,66 @@
     <h2>교과 소식 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">고1 수학 내신,</span> <span class="k">3년째</span> <span class="k">주요 교과 중</span> <span class="k">가장&nbsp;낮아</span></h3>
-      <div class="meta"><b>뉴스1</b> · 2026.11.01 · <span class="tag">고1 · 수학</span></div>
-      <p class="lead"><span class="k">전국 일반고</span> <span class="k">1학년의 수학 내신</span> <span class="k">평균이</span> <span class="k">3년&nbsp;연속</span> <span class="k">국어·영어·사회·과학보다</span> <span class="k">낮게&nbsp;나왔다.</span></p>
+      <h3><span class="k">고1 수학 내신</span> <span class="k">평균&nbsp;66.3점,</span> <span class="k">5개 교과 중</span> <span class="k">최저</span></h3>
+      <div class="meta"><b>EBS뉴스</b> · 2026.11.02 · <span class="tag">고등 · 수학</span></div>
+      <p class="lead"><span class="k">전국 고1 학생의</span> <span class="k">2026학년도&nbsp;1학기</span> <span class="k">수학 내신 평균이</span> <span class="k">주요&nbsp;5개 교과</span> <span class="k">가운데</span> <span class="k">가장 낮았다.</span></p>
       <div class="facts">
         <span class="chip"><b>66.3점</b> 수학 평균</span>
-        <span class="chip"><b>20.2%</b> A등급 비율(최저)</span>
+        <span class="chip"><b>20%대</b> A등급 비율</span>
       </div>
       <ul class="sum">
-        <li><span class="k">종로학원이</span> <span class="k">학교알리미 공시자료를</span> <span class="k">분석한 결과,</span> <span class="k">전국 일반고</span> <span class="k">1679곳의</span> <span class="k">고1 수학 평균 점수는</span> <span class="k">66.3점으로</span> <span class="k">5개 주요 교과 중</span> <span class="k">가장 낮았다.</span></li>
-        <li><span class="k">수학은</span> <span class="k">2024년부터</span> <span class="k">3년&nbsp;연속</span> <span class="k">평균 점수와</span> <span class="k">90점&nbsp;이상(A등급)</span> <span class="k">비율 모두</span> <span class="k">꼴찌를 차지했다.</span></li>
-        <li><span class="k">2028학년도부터</span> <span class="k">수학 선택과목이</span> <span class="k">없어지는</span> <span class="k">통합형 수능이</span> <span class="k">적용돼,</span> <span class="k">수학 경쟁력이</span> <span class="k">중요한 변수가</span> <span class="k">될 전망이다.</span></li>
+        <li><span class="k">전국&nbsp;1,600여&nbsp;개</span> <span class="k">고교 1학년의</span> <span class="k">1학기 내신을</span> <span class="k">분석한 결과</span> <span class="k">수학 평균은</span> <span class="k">66.3점으로</span> <span class="k">국어(71.3점)보다</span> <span class="k">5점&nbsp;낮았다.</span></li>
+        <li><span class="k">90점&nbsp;이상</span> <span class="k">A등급 비율은</span> <span class="k">2024년&nbsp;17%대에서</span> <span class="k">2026년&nbsp;20%대로</span> <span class="k">높아졌다.</span></li>
+        <li><span class="k">교사들은</span> <span class="k">내신 5등급제와</span> <span class="k">2028학년도&nbsp;대입에서</span> <span class="k">성취도 활용이</span> <span class="k">늘면서 일부 학교가</span> <span class="k">시험 난도를</span> <span class="k">조정한 영향으로</span> <span class="k">본다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101113706968" target="_blank">원문 보기</a>
+      <a class="btn" href="https://news.ebs.co.kr/ebsnews/menu1/newsAllView/60785891/H?eduNewsYn=N&amp;newsFldDetlCd=" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">외부 전문가도</span> <span class="k">교사로?…</span> <span class="k">'교직 개방' 검토에</span> <span class="k">교원단체&nbsp;반발</span></h3>
-      <div class="meta"><b>뉴스1</b> · 2026.11.01 · <span class="tag">고교 · 고교학점제</span></div>
-      <p class="lead"><span class="k">국가교육위원회가</span> <span class="k">예술·직업교육 분야</span> <span class="k">외부 전문가에게</span> <span class="k">교원자격을 주는 방안을</span> <span class="k">검토하자</span> <span class="k">교원단체가&nbsp;반발했다.</span></p>
-      <ul class="sum">
-        <li><span class="k">국가교육위원회가</span> <span class="k">고교학점제</span> <span class="k">선택과목 확대에 맞춰</span> <span class="k">예술·직업교육 분야</span> <span class="k">외부 전문가에게</span> <span class="k">교원자격을 주는 방안을</span> <span class="k">논의하고 있다.</span></li>
-        <li><span class="k">10월14일 워크숍에서는</span> <span class="k">외부 전문가가</span> <span class="k">교사 없이</span> <span class="k">단독으로 수업하고</span> <span class="k">평가하는 방안까지</span> <span class="k">다뤄진 것으로</span> <span class="k">알려졌다.</span></li>
-        <li><span class="k">교사노동조합연맹은</span> <span class="k">"교원자격은</span> <span class="k">쉽게 인력을 구하는</span> <span class="k">수단이 아니다"라며</span> <span class="k">교원 양성·검증 체계를</span> <span class="k">지켜야 한다고</span> <span class="k">주장했다.</span></li>
-      </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101134756637" target="_blank">원문 보기</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="k">강남구,</span> <span class="k">AI 시대 맞춰</span> <span class="k">'책 읽는 학교'</span> <span class="k">11개교로&nbsp;확대</span></h3>
-      <div class="meta"><b>헤럴드경제</b> · 2026.11.01 · <span class="tag">초중고 · 독서</span></div>
-      <p class="lead"><span class="k">강남구가</span> <span class="k">문해력과</span> <span class="k">비판적 사고력을 키우는</span> <span class="k">독서교육 지원 학교를</span> <span class="k">5개교에서</span> <span class="k">11개교로&nbsp;늘렸다.</span></p>
+      <h3><span class="k">서울 특수교사들,</span> <span class="k">수업 경험</span> <span class="k">나누는 자리 연다</span></h3>
+      <div class="meta"><b>뉴스1</b> · 2026.11.03 · <span class="tag">초중고 · 특수교육</span></div>
+      <p class="lead"><span class="k">서울교육청이</span> <span class="k">11월&nbsp;3일부터&nbsp;13일까지</span> <span class="k">특수교육</span> <span class="k">수업나눔축제와</span> <span class="k">병원학교</span> <span class="k">성과공유회를 연다.</span></p>
       <div class="facts">
-        <span class="chip"><b>11개교</b> 선정</span>
-        <span class="chip"><b>최대&nbsp;1000만원</b> 지원</span>
-        <span class="chip"><b>29개</b> 프로그램</span>
+        <span class="chip"><b>36명</b> 저경력 교사</span>
+        <span class="chip"><b>32곳</b> 특수학교 참여</span>
       </div>
       <ul class="sum">
-        <li><span class="k">강남구가</span> <span class="k">초·중·고</span> <span class="k">11개교를</span> <span class="k">강남형</span> <span class="k">'책 읽는 학교'로</span> <span class="k">선정해</span> <span class="k">12월까지</span> <span class="k">독서교육을</span> <span class="k">지원한다.</span></li>
-        <li><span class="k">당초 5개교를</span> <span class="k">뽑을 계획이었지만</span> <span class="k">16개교가 신청해</span> <span class="k">지원 대상을</span> <span class="k">11개교로&nbsp;늘렸다.</span></li>
-        <li><span class="k">학교마다</span> <span class="k">최대&nbsp;1000만원을</span> <span class="k">지원해</span> <span class="k">독서·토론,</span> <span class="k">작가와의 만남 등</span> <span class="k">29개 프로그램을</span> <span class="k">운영한다.</span></li>
+        <li><span class="k">유·초·중</span> <span class="k">저경력 교사&nbsp;36명과</span> <span class="k">멘토 교사가</span> <span class="k">함께한 연구 결과를</span> <span class="k">발표하고,</span> <span class="k">학교 간</span> <span class="k">교원학습공동체&nbsp;8팀도</span> <span class="k">성과를 나눈다.</span></li>
+        <li><span class="k">서울 지역</span> <span class="k">특수학교&nbsp;32곳의</span> <span class="k">부장교사가 참여하는</span> <span class="k">수업성장 네트워크</span> <span class="k">실천 사례도</span> <span class="k">공유된다.</span></li>
+        <li><span class="k">11월&nbsp;13일에는</span> <span class="k">만성질환으로</span> <span class="k">장기 치료 중인</span> <span class="k">학생을 위한</span> <span class="k">병원학교 성과공유회가</span> <span class="k">별도로 열린다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101075641861" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103060156042" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">충남,</span> <span class="k">'평가관리센터' 세워</span> <span class="k">학생평가</span> <span class="k">혁신&nbsp;나서</span></h3>
-      <div class="meta"><b>충청타임즈</b> · 2026.11.01 · <span class="tag">중고 · 평가</span></div>
-      <p class="lead"><span class="k">충남교육청이</span> <span class="k">서·논술형 평가를</span> <span class="k">돕는 전담 기구를</span> <span class="k">세우고,</span> <span class="k">2027학년도부터는</span> <span class="k">AI 채점 지원도</span> <span class="k">시범&nbsp;운영한다.</span></p>
+      <h3><span class="k">초중생이 함께</span> <span class="k">영어 그림책 읽는</span> <span class="k">'벽깨기' 수업</span></h3>
+      <div class="meta"><b>서울신문</b> · 2026.11.02 · <span class="tag">초중 · 영어·예술·체육 융합수업</span></div>
+      <p class="lead"><span class="k">성남 대원중·하원초·</span><span class="k">양영중이 함께 운영한</span> <span class="k">「원어민과 함께하는</span> <span class="k">Read, Feel, Move!」</span> <span class="k">프로그램이</span> <span class="k">눈길을 끈다.</span></p>
       <div class="facts">
-        <span class="chip"><b>2027학년도</b> AI채점 시범운영</span>
+        <span class="chip"><b>10차시</b> 프로그램</span>
       </div>
       <ul class="sum">
-        <li><span class="k">충남교육청이</span> <span class="k">'충청남도평가관리센터'를</span> <span class="k">세워</span> <span class="k">중·고교 내신 평가와</span> <span class="k">성취평가제 운영을</span> <span class="k">지원한다.</span></li>
-        <li><span class="k">센터는</span> <span class="k">서·논술형 평가의</span> <span class="k">표준 문항과</span> <span class="k">채점 기준표를 만들어</span> <span class="k">학교에 보급할</span> <span class="k">계획이다.</span></li>
-        <li><span class="k">2027학년도에는</span> <span class="k">인공지능이</span> <span class="k">교사의 서·논술형</span> <span class="k">채점을 돕는 체계를</span> <span class="k">시범 운영하기로</span> <span class="k">했다.</span></li>
+        <li><span class="k">초등&nbsp;5·6학년과</span> <span class="k">중학&nbsp;1~3학년이</span> <span class="k">혼합 모둠을 꾸려,</span> <span class="k">중학생이 초등학생의</span> <span class="k">영어 읽기를 돕는</span> <span class="k">버디 활동을 했다.</span></li>
+        <li><span class="k">영어 그림책 읽기와</span> <span class="k">감정 표현,</span> <span class="k">자화상 만들기,</span> <span class="k">킨볼 등</span> <span class="k">읽기·예술·체육을</span> <span class="k">결합한 활동으로</span> <span class="k">10차시가 진행됐다.</span></li>
+        <li><span class="k">경기도의회</span> <span class="k">교육기획위원장은</span> <span class="k">10월&nbsp;31일 현장을 찾아</span> <span class="k">학교 간 협력 모델의</span> <span class="k">의미를 강조했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101200816973" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102172343232" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">충남 고교</span> <span class="k">선택과목&nbsp;539건,</span> <span class="k">신청자 부족으로</span> <span class="k">못 열려</span></h3>
+      <div class="meta"><b>충청투데이</b> · 2026.11.02 · <span class="tag">고등 · 고교학점제</span></div>
+      <p class="lead"><span class="k">충남 고교&nbsp;118곳에서</span> <span class="k">2026학년도</span> <span class="k">고교학점제</span> <span class="k">선택과목&nbsp;539건이</span> <span class="k">개설되지 못한 것으로</span> <span class="k">나타났다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>539건(11.6%)</b> 미개설</span>
+        <span class="chip"><b>19.2%</b> 소규모학교 미개설률</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">편성된 과목</span> <span class="k">4,666건 가운데</span> <span class="k">539건(11.6%)이</span> <span class="k">개설되지 못했고,</span> <span class="k">사유는 최소</span> <span class="k">신청인원 미달이</span> <span class="k">466건으로</span> <span class="k">가장 많았다.</span></li>
+        <li><span class="k">학급 수가 적은</span> <span class="k">소규모학교&nbsp;17곳에서는</span> <span class="k">미개설률이&nbsp;19.2%로</span> <span class="k">전체보다&nbsp;높았다.</span></li>
+        <li><span class="k">충남교육청은</span> <span class="k">2026년&nbsp;겨울방학에</span> <span class="k">태안·예산에서</span> <span class="k">인근 학교가</span> <span class="k">함께 듣는 수업을</span> <span class="k">시범 운영하기로</span> <span class="k">했다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261102183002796" target="_blank">원문 보기</a>
     </div>
   </section>
 
@@ -369,115 +387,128 @@
     <h2>AI 교육 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">LG유플러스·교육부,</span> <span class="k">청소년 AI 보안</span> <span class="k">인재&nbsp;키운다</span></h3>
-      <div class="meta"><b>아이뉴스24</b> · 2026.11.02</div>
-      <p class="lead"><span class="k">LG유플러스와 교육부,</span> <span class="k">티오리한국이</span> <span class="k">손잡고</span> <span class="k">AI 시대 정보보안을</span> <span class="k">가르치는 영재교육원을</span> <span class="k">지원하기로&nbsp;했다.</span></p>
+      <h3><span class="k">대구교대,</span> <span class="k">베트남과 AI·디지털교육</span> <span class="k">협력 확대</span></h3>
+      <div class="meta"><b>매일신문</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">대구교육대학교가</span> <span class="k">베트남 하노이사범대,</span> <span class="k">호치민정치아카데미와</span> <span class="k">AI·디지털교육</span> <span class="k">분야 협력을</span> <span class="k">넓힌다.</span></p>
       <div class="facts">
-        <span class="chip"><b>48명</b> 경진대회 참가</span>
-        <span class="chip"><b>4개 권역</b> 영재교육원</span>
+        <span class="chip"><b>11명</b> 베트남 학생 초청</span>
+        <span class="chip"><b>1주일간</b> 실습</span>
       </div>
       <ul class="sum">
-        <li><span class="k">LG유플러스가</span> <span class="k">교육부,</span> <span class="k">보안기업</span> <span class="k">티오리한국과</span> <span class="k">10월31일</span> <span class="k">'AI·정보보호</span> <span class="k">영재교육원' 운영</span> <span class="k">지원 협약을</span> <span class="k">맺었다.</span></li>
-        <li><span class="k">전국 4개 권역</span> <span class="k">영재교육원에서</span> <span class="k">뽑힌 학생 48명이</span> <span class="k">참가한</span> <span class="k">제12회</span> <span class="k">정보보안 경진대회도</span> <span class="k">함께 열렸다.</span></li>
-        <li><span class="k">세 기관은</span> <span class="k">앞으로</span> <span class="k">교육과정 개발부터</span> <span class="k">진로체험까지</span> <span class="k">실전형 정보보안 교육을</span> <span class="k">함께 만들어갈</span> <span class="k">계획이다.</span></li>
+        <li><span class="k">10월&nbsp;18일부터&nbsp;25일까지</span> <span class="k">베트남 하노이사범대</span> <span class="k">학생&nbsp;11명이</span> <span class="k">대구부설초등학교에서</span> <span class="k">1주일간</span> <span class="k">수업 참관과</span> <span class="k">진로체험을 했다.</span></li>
+        <li><span class="k">대구교대가 만든</span> <span class="k">실시간 통역</span> <span class="k">프로그램으로</span> <span class="k">수업을</span> <span class="k">베트남어·영어</span> <span class="k">자막으로</span> <span class="k">제공했다.</span></li>
+        <li><span class="k">호치민정치아카데미와는</span> <span class="k">디지털·AI 분야</span> <span class="k">공동연구 협약을</span> <span class="k">맺었고,</span> <span class="k">양국 전문가가</span> <span class="k">참여하는</span> <span class="k">'한국-베트남</span> <span class="k">미래교육 혁신 포럼'도</span> <span class="k">열렸다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102065643204" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103063044598" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">경남교육청,</span> <span class="k">AI·디지털 교육</span> <span class="k">정책 방향</span> <span class="k">논의</span></h3>
-      <div class="meta"><b>쿠키뉴스</b> · 2026.10.30</div>
-      <p class="lead"><span class="k">경남교육청이</span> <span class="k">학교 현장의 목소리를 들어</span> <span class="k">AI·디지털 교육의</span> <span class="k">중장기 정책을</span> <span class="k">만들기로&nbsp;했다.</span></p>
+      <h3><span class="k">중학생들,</span> <span class="k">생성형 AI로</span> <span class="k">세계 문제 풀어</span> <span class="k">영어 발표</span></h3>
+      <div class="meta"><b>헤럴드경제</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">강남구 중학생들이</span> <span class="k">생성형 AI</span> <span class="k">'제미나이'를 활용해</span> <span class="k">해법을 찾고</span> <span class="k">영어로 발표하는</span> <span class="k">대회를</span> <span class="k">11월&nbsp;6일&nbsp;연다.</span></p>
       <div class="facts">
-        <span class="chip"><b>40여명</b> 전문가·교원 참석</span>
+        <span class="chip"><b>14개교 40팀</b> 예선</span>
+        <span class="chip"><b>14팀</b> 본선 진출</span>
       </div>
       <ul class="sum">
-        <li><span class="k">경남교육청이</span> <span class="k">10월30일</span> <span class="k">'경남 인공지능·디지털</span> <span class="k">교육 심포지엄'을 열어</span> <span class="k">교육 전문가와</span> <span class="k">교원 40여명의</span> <span class="k">의견을 들었다.</span></li>
-        <li><span class="k">학생의 사고력을 키우는</span> <span class="k">AI 활용 수업,</span> <span class="k">교원 연수,</span> <span class="k">디지털 격차 해소 등이</span> <span class="k">논의됐다.</span></li>
-        <li><span class="k">경남교육청은</span> <span class="k">11월 중</span> <span class="k">도내 모든 학교를 대상으로</span> <span class="k">설문조사를 벌여</span> <span class="k">12월 정책에</span> <span class="k">반영할 계획이다.</span></li>
+        <li><span class="k">9월 온라인 예선에는</span> <span class="k">14개&nbsp;중학교</span> <span class="k">40팀이 참가했고,</span> <span class="k">학교별&nbsp;1팀씩</span> <span class="k">14팀(28명)이</span> <span class="k">본선에 올랐다.</span></li>
+        <li><span class="k">참가팀은 AI,</span> <span class="k">세계시민,</span> <span class="k">지속가능성 중</span> <span class="k">하나를 주제로</span> <span class="k">생성형 AI가</span> <span class="k">준 정보의</span> <span class="k">정확성을 검증하며</span> <span class="k">정책 대안을 찾는다.</span></li>
+        <li><span class="k">심사는</span> <span class="k">AI 활용·비판적</span> <span class="k">사고를 포함한</span> <span class="k">5개 항목으로</span> <span class="k">이뤄지며,</span> <span class="k">우수&nbsp;8팀에</span> <span class="k">구청장상 등이</span> <span class="k">주어진다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101023922871" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102173319658" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">경북,</span> <span class="k">영재교육대상자</span> <span class="k">3000명 선발…</span> <span class="k">AI 분야도</span> <span class="k">새로&nbsp;넣어</span></h3>
-      <div class="meta"><b>경북도민일보</b> · 2026.11.01</div>
-      <p class="lead"><span class="k">경북교육청이</span> <span class="k">수학·과학에</span> <span class="k">인공지능과</span> <span class="k">융합·예술까지 더해</span> <span class="k">영재교육 대상 학생을</span> <span class="k">3000명 가까이</span> <span class="k">선발한다.</span></p>
+      <h3><span class="k">대학생 AI 구독료,</span> <span class="k">나라가</span> <span class="k">199억&nbsp;원 지원한다</span></h3>
+      <div class="meta"><b>중앙일보</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">교육부가</span> <span class="k">2027년&nbsp;대학생에게</span> <span class="k">생성형 AI 구독을</span> <span class="k">공동구매 방식으로</span> <span class="k">지원하는 사업에</span> <span class="k">199억&nbsp;6천만&nbsp;원을</span> <span class="k">편성했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>115개</b> 기관</span>
-        <span class="chip"><b>약&nbsp;3000명</b> 선발</span>
+        <span class="chip"><b>199억&nbsp;6천만&nbsp;원</b> 예산</span>
+        <span class="chip"><b>188만&nbsp;원→8만&nbsp;원대</b> 개인·공동구독 비교</span>
       </div>
       <ul class="sum">
-        <li><span class="k">경북교육청이</span> <span class="k">2027학년도</span> <span class="k">영재교육대상자</span> <span class="k">선발을 시작해</span> <span class="k">도내 115개 기관에서</span> <span class="k">약&nbsp;3000명을</span> <span class="k">뽑는다.</span></li>
-        <li><span class="k">모집 분야는</span> <span class="k">수학·과학뿐 아니라</span> <span class="k">정보,</span> <span class="k">인문사회,</span> <span class="k">인공지능(AI),</span> <span class="k">융합,</span> <span class="k">예술까지</span> <span class="k">넓어졌다.</span></li>
-        <li><span class="k">사회적 배려 대상 학생과</span> <span class="k">학교 밖 청소년도</span> <span class="k">지원할 수 있도록</span> <span class="k">선발 전형을 나눠</span> <span class="k">운영한다.</span></li>
+        <li><span class="k">전국 대학생</span> <span class="k">약&nbsp;240만&nbsp;명 중</span> <span class="k">30%를</span> <span class="k">AI 집중 이용자로</span> <span class="k">보고 사업 규모를</span> <span class="k">정했다.</span></li>
+        <li><span class="k">개인이 최상위</span> <span class="k">AI 서비스를</span> <span class="k">구독하면</span> <span class="k">연&nbsp;188만&nbsp;원이 들지만,</span> <span class="k">공동구독 시</span> <span class="k">1인당&nbsp;연&nbsp;8만~9만&nbsp;원까지</span> <span class="k">줄어든다.</span></li>
+        <li><span class="k">국회예산정책처는</span> <span class="k">해외 AI 의존도가</span> <span class="k">커질 수 있다며</span> <span class="k">국산 AI 정책과의</span> <span class="k">연계를 보완할</span> <span class="k">필요가 있다고</span> <span class="k">지적했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101144259468" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261102165142641" target="_blank">원문 보기</a>
     </div>
   </section>
 
   <section class="new" id="new">
-    <h2>최신 AI 소식 <small>3건</small></h2>
+    <h2>최신 AI 소식 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">서울시,</span> <span class="k">'청년 AI 성장권'</span> <span class="k">266억원</span> <span class="k">다시&nbsp;추진</span></h3>
-      <div class="meta"><b>아이뉴스24</b> · 2026.11.02</div>
-      <p class="lead"><span class="k">서울시가</span> <span class="k">시의회에서</span> <span class="k">전액 삭감됐던</span> <span class="k">청년 대상</span> <span class="k">AI 지원 사업을</span> <span class="k">266억원 규모로</span> <span class="k">다시 예산안에</span> <span class="k">담았다.</span></p>
+      <h3><span class="k">국내 AI 비서 앱</span> <span class="k">'피클',</span> <span class="k">챗GPT 제치고</span> <span class="k">3위</span></h3>
+      <div class="meta"><b>디지털데일리</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">국내 스타트업이</span> <span class="k">만든 AI 비서 앱</span> <span class="k">'피클'이</span> <span class="k">애플 앱스토어</span> <span class="k">생산성 분야에서</span> <span class="k">챗GPT보다 높은</span> <span class="k">3위에 올랐다.</span></p>
       <div class="facts">
-        <span class="chip"><b>266억원</b> 편성</span>
-        <span class="chip"><b>50만명</b> 지원 대상</span>
+        <span class="chip"><b>3위</b> 앱스토어 생산성 차트</span>
       </div>
       <ul class="sum">
-        <li><span class="k">서울시가</span> <span class="k">10월30일</span> <span class="k">55조7445억원 규모의</span> <span class="k">2027년도 예산안을</span> <span class="k">시의회에 냈다.</span></li>
-        <li><span class="k">이 중</span> <span class="k">'청년 AI 성장권'에</span> <span class="k">266억원을 편성해</span> <span class="k">서울 거주 청년</span> <span class="k">50만명에게</span> <span class="k">생성형 AI 이용권과</span> <span class="k">맞춤 교육을</span> <span class="k">제공할 계획이다.</span></li>
-        <li><span class="k">이 사업은</span> <span class="k">9월 추경에서</span> <span class="k">세부 계획 부족을 이유로</span> <span class="k">전액 삭감됐다가,</span> <span class="k">수요조사 등을 보완해</span> <span class="k">다시 추진된다.</span></li>
+        <li><span class="k">피클은 전화,</span> <span class="k">주문·결제,</span> <span class="k">예약·예매 등을</span> <span class="k">대신 처리하는</span> <span class="k">'AI 에이전트'를</span> <span class="k">표방한다.</span></li>
+        <li><span class="k">등본 발급처럼</span> <span class="k">정부24 민원도</span> <span class="k">"발급해줘"</span> <span class="k">한마디로 진행하고,</span> <span class="k">중간에</span> <span class="k">본인 인증만</span> <span class="k">요청한다.</span></li>
+        <li><span class="k">친구끼리</span> <span class="k">서로의 피클이</span> <span class="k">대화해</span> <span class="k">약속을 조율하는</span> <span class="k">기능도 있다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102070200316" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103061442408" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">AI 해킹,</span> <span class="k">학원·병원 같은</span> <span class="k">작은 사업장까지</span> <span class="k">번져</span></h3>
-      <div class="meta"><b>뉴스1</b> · 2026.11.01</div>
-      <p class="lead"><span class="k">생성형 AI로</span> <span class="k">해킹 문턱이</span> <span class="k">낮아지면서,</span> <span class="k">보안 인력이 부족한</span> <span class="k">학원·병원·골프장이</span> <span class="k">잇따라</span> <span class="k">피해를&nbsp;입었다.</span></p>
+      <h3><span class="k">구글 AI 전설</span> <span class="k">제프 딘,</span> <span class="k">27년 만에</span> <span class="k">독립 창업</span></h3>
+      <div class="meta"><b>서울경제</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">제미나이와</span> <span class="k">AI 전용칩을</span> <span class="k">개발해온 구글의</span> <span class="k">제프 딘이</span> <span class="k">회사를 떠나</span> <span class="k">'Discovery Loop'를</span> <span class="k">창업했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>60곳</b> 해킹(44일)</span>
-        <span class="chip"><b>90여곳</b> 피해</span>
-        <span class="chip"><b>3억6000만원</b> 요구</span>
+        <span class="chip"><b>27년</b> 구글 재직</span>
+        <span class="chip"><b>4명</b> 공동창업자</span>
       </div>
       <ul class="sum">
-        <li><span class="k">경찰에 따르면</span> <span class="k">해킹을 독학한 총책이</span> <span class="k">생성형 AI를</span> <span class="k">본격적으로 쓴 뒤</span> <span class="k">44일&nbsp;만에</span> <span class="k">업체 60곳을</span> <span class="k">해킹했다.</span></li>
-        <li><span class="k">피해 업체는</span> <span class="k">골프장 21곳,</span> <span class="k">학원 12곳,</span> <span class="k">병원 5곳 등</span> <span class="k">90여곳으로,</span> <span class="k">38곳에는</span> <span class="k">3억6000만원을</span> <span class="k">요구했다.</span></li>
-        <li><span class="k">전문가들은</span> <span class="k">작은 사업장이</span> <span class="k">보안 인력과 예산을</span> <span class="k">갖추기 어려운 만큼</span> <span class="k">정부가</span> <span class="k">보안서비스를</span> <span class="k">공동으로 지원해야</span> <span class="k">한다고 말했다.</span></li>
+        <li><span class="k">1999년&nbsp;구글에</span> <span class="k">30번째로&nbsp;입사한</span> <span class="k">제프 딘은</span> <span class="k">2026년&nbsp;8월</span> <span class="k">수석과학자를 끝으로</span> <span class="k">퇴사했다.</span></li>
+        <li><span class="k">새 회사는</span> <span class="k">AI가 스스로</span> <span class="k">가설을 세우고</span> <span class="k">수천 개 실험을</span> <span class="k">동시에 실행해</span> <span class="k">과학적 발견을</span> <span class="k">앞당기는 기술을</span> <span class="k">개발한다.</span></li>
+        <li><span class="k">중국의&nbsp;17세</span> <span class="k">천재 과학자</span> <span class="k">천광위도</span> <span class="k">이 회사에</span> <span class="k">합류한 것으로</span> <span class="k">확인됐다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261101070135094" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103051956540" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">리뷰도</span> <span class="k">AI가 쓴다…</span> <span class="k">가짜 후기</span> <span class="k">가려내기&nbsp;숙제</span></h3>
-      <div class="meta"><b>한국경제</b> · 2026.11.02</div>
-      <p class="lead"><span class="k">생성형 AI가</span> <span class="k">몇 가지 조건만으로</span> <span class="k">그럴듯한 구매 후기를</span> <span class="k">만들어내면서,</span> <span class="k">진짜와 가짜를</span> <span class="k">가리는 일이</span> <span class="k">어려워지고&nbsp;있다.</span></p>
+      <h3><span class="k">"AI 구독료 냈는데</span> <span class="k">사용량 부족",</span> <span class="k">오픈AI·앤트로픽</span> <span class="k">한도 완화</span></h3>
+      <div class="meta"><b>뉴스1</b> · 2026.11.03</div>
+      <p class="lead"><span class="k">오픈AI와 앤트로픽이</span> <span class="k">이용자 반발에</span> <span class="k">고가 구독 요금제의</span> <span class="k">사용 제한을</span> <span class="k">완화했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>9985건</b> 허위리뷰 적발 사례</span>
-        <span class="chip"><b>11월11일</b> 의견수렴 마감</span>
+        <span class="chip"><b>월&nbsp;200달러</b> 최고가 요금제</span>
       </div>
       <ul class="sum">
-        <li><span class="k">생성형 AI는</span> <span class="k">상품 특징</span> <span class="k">몇 가지만 입력해도</span> <span class="k">실제 사용 후기처럼</span> <span class="k">보이는 글을</span> <span class="k">순식간에</span> <span class="k">여러 개 만들어낼</span> <span class="k">수 있다.</span></li>
-        <li><span class="k">2023년에는</span> <span class="k">한 업체가</span> <span class="k">건당&nbsp;5000원을 받고</span> <span class="k">허위 리뷰</span> <span class="k">9985건을 써준</span> <span class="k">사실이 드러나</span> <span class="k">처벌된 적이 있다.</span></li>
-        <li><span class="k">공정거래위원회는</span> <span class="k">AI로 만든</span> <span class="k">가짜 후기를 규제하는</span> <span class="k">표시·광고 가이드라인</span> <span class="k">초안을 마련해</span> <span class="k">11월11일까지</span> <span class="k">의견을 듣고 있다.</span></li>
+        <li><span class="k">오픈AI는</span> <span class="k">월&nbsp;200달러</span> <span class="k">요금제 가입자의</span> <span class="k">사용량을 줄이려던</span> <span class="k">계획을 철회했다.</span></li>
+        <li><span class="k">앤트로픽은</span> <span class="k">클로드 최고가</span> <span class="k">요금제에 적용하던</span> <span class="k">5시간 단위</span> <span class="k">사용 제한을</span> <span class="k">없앴다.</span></li>
+        <li><span class="k">다만 두 회사</span> <span class="k">모두 한 주 동안</span> <span class="k">쓸 수 있는</span> <span class="k">전체 사용량 한도는</span> <span class="k">그대로 유지했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261102080241535" target="_blank">원문 보기</a>
+      <a class="btn" href="https://v.daum.net/v/20261103053159634" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">중소기업 AI 도입,</span> <span class="k">정부가</span> <span class="k">3년마다 계획 세워</span> <span class="k">돕는다</span></h3>
+      <div class="meta"><b>이데일리</b> · 2026.11.02</div>
+      <p class="lead"><span class="k">중소기업의</span> <span class="k">AI 도입을</span> <span class="k">체계적으로 지원하는</span> <span class="k">법적 근거를</span> <span class="k">마련하는 법 개정안이</span> <span class="k">발의됐다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>12명</b> 여야 의원 공동발의</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">중소벤처기업부</span> <span class="k">장관이</span> <span class="k">3년마다&nbsp;중소기업</span> <span class="k">AI 활용</span> <span class="k">기본계획을 세우고,</span> <span class="k">전담기관을 지정해</span> <span class="k">지원하도록 했다.</span></li>
+        <li><span class="k">AI 도입 진단부터</span> <span class="k">자금·판로,</span> <span class="k">데이터 확보까지</span> <span class="k">지원 내용을</span> <span class="k">구체화했다.</span></li>
+        <li><span class="k">중소기업협동조합이나</span> <span class="k">업종별 단체가</span> <span class="k">공동으로 AI를</span> <span class="k">개발·실증하면</span> <span class="k">정부가 지원하는</span> <span class="k">내용도 담겼다.</span></li>
+      </ul>
+      <a class="btn" href="http://v.daum.net/v/20261102075518319" target="_blank">원문 보기</a>
     </div>
   </section>
 
   <section class="hist" id="hist">
-    <h2>역사 속 오늘 <small>11월 2일</small></h2>
+    <h2>역사 속 오늘 <small>11월 3일</small></h2>
     <div class="card hcard">
-      <div class="year">1936<span>년</span></div>
+      <div class="year">1929<span>년</span></div>
       <div class="hbody">
-        <div class="meta"><span class="tag">세계사</span> · 11월 2일에 있었던 일</div>
-        <h3><span class="k">BBC,</span> <span class="k">세계 최초</span> <span class="k">정규 텔레비전 방송</span> <span class="k">시작하다</span></h3>
-        <p class="hdesc"><span class="k">영국 BBC가</span> <span class="k">런던 알렉산드라궁에서</span> <span class="k">세계 최초로</span> <span class="k">정해진 시간표에 따라</span> <span class="k">화질이 선명한</span> <span class="k">텔레비전 방송을</span> <span class="k">시작했다.</span> <span class="k">오후 3시에 시작해</span> <span class="k">뉴스와 공연 등을</span> <span class="k">내보냈다.</span></p>
-        <a class="hlink" href="https://ko.wikipedia.org/wiki/11%EC%9B%94_2%EC%9D%BC" target="_blank">자세히 보기 →</a>
+        <div class="meta"><span class="tag">한국사</span> · 광주 학생들, 거리로 나서다</div>
+        <h3><span class="k">광주 학생들,</span> <span class="k">항일 시위에</span> <span class="k">나서다</span></h3>
+        <p class="hdesc"><span class="k">전남 나주역에서</span> <span class="k">일본인 학생들이</span> <span class="k">한국인 여학생을</span> <span class="k">괴롭힌 일로</span> <span class="k">다툼이 벌어졌다.</span> <span class="k">이 소식을 들은</span> <span class="k">광주의 학생들은</span> <span class="k">11월&nbsp;3일,</span> <span class="k">거리로 나와</span> <span class="k">항일 시위를 벌였다.</span> <span class="k">이 운동은 전국으로</span> <span class="k">번져나갔고,</span> <span class="k">그 뜻을 기리기 위해</span> <span class="k">11월&nbsp;3일을</span> <span class="k">학생독립운동</span> <span class="k">기념일로 정했다.</span></p>
+        <a class="hlink" href="https://m.etnews.com/20151103000183" target="_blank">자세히 보기 →</a>
       </div>
     </div>
   </section>
