@@ -15,7 +15,11 @@
     --navy: #14213d;
     --hl: #ffd23f;
     --c-exam: #d64545;
-    --c-col: #14213d;
+    --c-eng: #12905f;
+    --c-subj: #e07b00;
+    --c-hist: #0e7490;
+    --c-ai: #2f6fed;
+    --c-new: #7c4dff;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
@@ -77,13 +81,16 @@
   }
   .jump a i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
   .jump a span { color: var(--sub); font-weight: 600; }
-  .jump a.col { --c: var(--c-col); }
-  .jump a.exam { --c: var(--c-exam); }
 
-  /* ── 섹션 ── */
+  /* ── 주제 섹션 ── */
   section { margin-top: 34px; --c: var(--navy); scroll-margin-top: 12px; }
-  section.col  { --c: var(--c-col); }
   section.exam { --c: var(--c-exam); }
+  section.subj { --c: var(--c-subj); }
+  section.ai   { --c: var(--c-ai); }
+  section.new  { --c: var(--c-new); }
+  .jump a.exam { --c: var(--c-exam); }
+  .jump a.subj { --c: var(--c-subj); }
+  .jump a.ai { --c: var(--c-ai); }     .jump a.new { --c: var(--c-new); }
   section > h2 {
     display: flex; align-items: center; gap: 10px;
     margin: 0 0 14px; font-size: 21px;
@@ -93,52 +100,60 @@
   }
   section > h2 small { font-size: 13px; font-weight: 700; color: var(--sub); margin-left: auto; }
 
-  /* ── 칼럼 ── */
-  .column {
+  .card {
     background: var(--paper); border: 1px solid var(--line);
-    border-top: 5px solid var(--navy);
-    border-radius: 14px; padding: 22px 20px 20px;
+    border-left: 5px solid var(--c);
+    border-radius: 12px; padding: 16px 16px 14px; margin-bottom: 14px;
   }
-  .kicker {
-    display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .5px;
-    color: var(--navy); background: var(--hl); padding: 1px 9px; border-radius: 6px;
-    margin-bottom: 10px;
+  .card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.45; font-weight: 800; }
+  .meta { font-size: 12.5px; color: var(--sub); margin-bottom: 10px; }
+  .meta b { color: var(--c); }
+  .tag {
+    display: inline-block; margin-left: 2px; padding: 0 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--c) 12%, white); color: var(--c); font-weight: 700;
   }
-  .column h3 {
-    margin: 0 0 12px; font-size: 25px; line-height: 1.4; font-weight: 800; letter-spacing: -0.4px;
+  .lead {
+    margin: 0 0 10px; padding: 8px 12px; border-radius: 8px;
+    background: color-mix(in srgb, var(--c) 9%, white);
+    font-size: 15px; font-weight: 700; line-height: 1.55;
   }
-  .byline {
-    margin: 0 0 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line);
-    font-size: 13px; line-height: 1.6; color: var(--sub);
+  .facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+  .chip {
+    display: inline-flex; align-items: baseline; gap: 5px;
+    border: 1px solid var(--line); border-radius: 8px; padding: 3px 9px;
+    font-size: 12.5px; color: var(--sub); background: #faf9f6;
   }
-  .byline b { color: var(--ink); font-size: 14px; }
-  .column p.body {
-    margin: 0 0 16px; font-size: 16.5px; line-height: 1.9; color: #24304a;
+  .chip b { font-size: 15px; font-weight: 800; color: var(--c); }
+  .sum { margin: 0 0 14px; padding: 0; list-style: none; }
+  .sum li {
+    position: relative; padding-left: 16px; margin: 5px 0;
+    font-size: 15.5px; color: #2a3550;
   }
-  .pull {
-    margin: 22px 0; padding: 14px 16px; border-radius: 10px;
-    background: #fff8dc; border-left: 5px solid var(--hl);
-    font-size: 18px; font-weight: 800; line-height: 1.55; color: var(--navy);
+  .sum li::before {
+    content: ""; position: absolute; left: 0; top: .72em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--c);
   }
-  .column p.q { font-size: 18px; color: var(--navy); margin-top: -6px; }
-  .ainote { margin: 12px 0 0; text-align: right; font-size: 12.5px; color: var(--sub); }
-  .closing {
-    margin: 22px 0 0; padding: 16px; border-radius: 10px;
-    background: var(--navy); color: #fff; text-align: center;
-    font-size: 16.5px; font-weight: 700; line-height: 1.7;
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--navy); color: #fff;
+    font-weight: 700; font-size: 15px; padding: 12px; border-radius: 10px;
   }
-  .closing strong { display: block; margin-top: 4px; color: var(--hl); font-size: 17px; letter-spacing: .2px; }
+  .btn::after { content: " →"; color: var(--hl); }
+  .btn:active { background: #0d1830; }
 
-  /* ── 함께 읽기 ── */
-  .links { list-style: none; margin: 0; padding: 0; }
-  .links li {
-    background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--c);
-    border-radius: 12px; margin-bottom: 10px;
+  /* ── 역사 속 오늘 (한 건짜리 작은 카드) ── */
+  section.hist { --c: var(--c-hist); }
+  .hcard { display: flex; gap: 14px; align-items: flex-start; background: #f2f8fa; }
+  .hcard .year {
+    flex: none; min-width: 74px; text-align: center; padding-top: 2px;
+    font-size: 30px; font-weight: 800; line-height: 1.1; color: var(--c); letter-spacing: -1px;
   }
-  .links a { display: block; padding: 13px 16px; text-decoration: none; color: var(--ink); }
-  .links a b { display: block; font-size: 16px; line-height: 1.5; font-weight: 800; }
-  .links a span { font-size: 12.5px; color: var(--sub); }
-  .links a span::after { content: " · 원문 보기 →"; color: var(--c); font-weight: 700; }
+  .hcard .year span { font-size: 13px; font-weight: 700; margin-left: 1px; }
+  .hcard .hbody { min-width: 0; }
+  .hcard .meta { margin-bottom: 4px; }
+  .hcard h3 { font-size: 17px; margin-bottom: 4px; }
+  .hdesc { margin: 0 0 8px; font-size: 15px; color: #2a3550; }
+  .hlink { font-size: 14px; font-weight: 700; color: var(--c); text-decoration: none; border-bottom: 1px solid var(--c); }
 
   footer {
     margin-top: 40px; padding: 22px 0 34px; text-align: center;
@@ -158,8 +173,7 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 11월 19일 목요일</p>
-      <span class="dday">수능 D-DAY</span>
+      <p class="date">2026년 11월 20일 금요일</p>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -170,71 +184,266 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">AI 부정행위 의혹</span> <span class="k">리트 만점자 사망,</span> <span class="k">고발 사건은</span> <span class="k">"공소권 없음"</span> <span class="k">종결 수순</span></span></li>
-      <li><span><span class="k">수능 1교시 전</span> <span class="k">위급재난문자로</span> <span class="k">스마트폰 22대&nbsp;적발</span></span></li>
-      <li><span><span class="k">경기 용인</span> <span class="k">수능 시험장에서</span> <span class="k">초소형 카메라·이어폰</span> <span class="k">발견</span></span></li>
+      <li><span><span class="k">수능 부정행위</span> <span class="k">98명 적발,</span> <span class="k">범정부 대응</span> <span class="k">TF 가동</span></span></li>
+      <li><span><span class="k">수능 국어·영어</span> <span class="k">쉬워지고,</span> <span class="k">수학이 변수로</span></span></li>
+      <li><span><span class="k">EBS, 전국민</span> <span class="k">AI 학습 플랫폼</span> <span class="k">'AI이솦'</span> <span class="k">11월&nbsp;26일 오픈</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
-    <li><a class="col" href="#col"><i></i>Rohan 칼럼 <span>1</span></a></li>
-    <li><a class="exam" href="#exam"><i></i>함께 읽기 <span>3</span></a></li>
+    <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
+    <li><a class="subj" href="#subj"><i></i>교과 소식 <span>3</span></a></li>
+    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>4</span></a></li>
+    <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>3</span></a></li>
   </ul>
 
-  <section class="col" id="col">
-    <h2>Rohan 칼럼</h2>
+  <section class="exam" id="exam">
+    <h2>입시·수능 <small>4건</small></h2>
 
-    <article class="column">
-      <span class="kicker">수능 특집</span>
-      <h3>정답은 빌릴 수 있어도, 지혜는 빌릴 수 없다</h3>
-      <p class="byline"><b>노정한</b><br>EdTech, AX &amp; Agentic AI Educator · Operations Director @HEXAPULS · 입시 영어 Director &amp; Consultant</p>
+    <div class="card">
+      <h3><span class="k">'AI 커닝과의 전쟁',</span> <span class="k">수능서 98명</span> <span class="k">부정행위 적발</span></h3>
+      <div class="meta"><b>노컷뉴스</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">11월&nbsp;19일 치러진</span> <span class="k">2027학년도 수능에서</span> <span class="k">스마트안경·초소형</span> <span class="k">카메라 등을 이용한</span> <span class="k">부정행위로&nbsp;98명이</span> <span class="k">적발됐다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>98명</b> 적발</span>
+        <span class="chip"><b>5건</b> 시험중 사용</span>
+        <span class="chip"><b>1,312개</b> 시험장</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">교육부는 전국&nbsp;1,312개</span> <span class="k">시험장에서 치러진</span> <span class="k">수능에서 전자기기</span> <span class="k">관련 부정행위로&nbsp;98명을</span> <span class="k">적발했다고 밝혔다.</span> <span class="k">이 중&nbsp;49명은 세 차례</span> <span class="k">위급재난문자가 울린 뒤</span> <span class="k">발견됐고,&nbsp;44명은</span> <span class="k">문자와 상관없이</span> <span class="k">전자기기를 갖고 있다가</span> <span class="k">적발됐다.</span></li>
+        <li><span class="k">실제로 시험 도중</span> <span class="k">스마트기기를 쓴</span> <span class="k">사례는&nbsp;5건으로,</span> <span class="k">스마트안경과 소형</span> <span class="k">카메라, 무선이어폰을</span> <span class="k">쓰거나 휴대전화로</span> <span class="k">문제지를 몰래</span> <span class="k">찍은 경우가</span> <span class="k">포함됐다.</span></li>
+        <li><span class="k">정부는&nbsp;11월&nbsp;20일부터</span> <span class="k">범정부 수능 부정행위</span> <span class="k">대응팀(TF)을 꾸려</span> <span class="k">적발되지 않은</span> <span class="k">의심 사례까지 추적하고,</span> <span class="k">지난해 수능까지</span> <span class="k">포함해 전수조사</span> <span class="k">하기로 했다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261120071800731" target="_blank">원문 보기</a>
+    </div>
 
-            <p class="body">오늘 오후, 한 통의 속보가 수능 날의 긴장을 더욱 무겁게 만들었다. AI 부정행위 의혹을 받아 온 법학적성시험(LEET) 만점자 이진우 씨가 숨졌다는 소식이다. 그는 의혹을 부인하며 수능 당일인 오늘 국어 문제 풀이를 공개해 실력을 증명하겠다고 예고했지만, 약속한 자리에 나타나지 않았다. 고발 사건은 '공소권 없음'으로 종결될 전망이다.</p>
+    <div class="card">
+      <h3><span class="k">수능 국어·영어</span> <span class="k">쉬워지고,</span> <span class="k">수학이 변수로</span></h3>
+      <div class="meta"><b>노컷뉴스</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">입시업계는&nbsp;11월&nbsp;19일</span> <span class="k">치러진 수능에서</span> <span class="k">국어와 영어의 변별력이</span> <span class="k">크게 낮아져,</span> <span class="k">수학이 상위권 당락을</span> <span class="k">가를 것으로 내다봤다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>영어 1등급</b> 8%대 예상</span>
+        <span class="chip"><b>85.8%</b> 사탐 선택</span>
+        <span class="chip"><b>12월&nbsp;11일</b> 성적표 배부</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">국어는 지난해보다</span> <span class="k">쉽게 출제돼</span> <span class="k">표준점수 최고점이</span> <span class="k">지난해(147점)보다</span> <span class="k">낮아질 것으로 예상되고,</span> <span class="k">영어는&nbsp;1등급 비율이</span> <span class="k">지난해&nbsp;3.11%에서</span> <span class="k">7~10%대로 높아질</span> <span class="k">전망이어서 상위권에서는</span> <span class="k">변별력을 거의 잃었다는</span> <span class="k">평가가 나온다.</span></li>
+        <li><span class="k">수학은 지난해와</span> <span class="k">비슷하거나 약간</span> <span class="k">어렵게 출제된 것으로</span> <span class="k">분석됐고, 사회탐구를</span> <span class="k">한 과목 이상 선택한</span> <span class="k">수험생이&nbsp;85.8%로</span> <span class="k">지난해보다 늘어 탐구</span> <span class="k">영역 과목 간 유불리도</span> <span class="k">변수로 꼽혔다.</span></li>
+        <li><span class="k">한국교육과정평가원은</span> <span class="k">11월&nbsp;23일까지</span> <span class="k">문제와 정답에 대한</span> <span class="k">이의신청을 받아</span> <span class="k">12월&nbsp;1일 정답을</span> <span class="k">확정하고, 성적통지표는</span> <span class="k">12월&nbsp;11일 수험생에게</span> <span class="k">배부된다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.nocutnews.co.kr/news/6609888" target="_blank">원문 보기</a>
+    </div>
 
-      <p class="body">같은 날 아침, 수능 1교시 시작 10분&nbsp;전 전국에 위급재난문자가 울렸다. 제출하지 않은 휴대전화를 찾아내기 위해서였다. 9개&nbsp;시·도에서 스마트폰 22대가 적발됐고, 오후에는 용인의 한 시험장에서 초소형 카메라와 이어폰이 발견됐다는 속보가 이어졌다. 며칠 전에는 세무사 시험 수석 합격자가 초소형 카메라와 AI로 답을 얻었다고 자백했다. 시험장은 이제 재난 현장처럼 관리되고 있다.</p>
+    <div class="card">
+      <h3><span class="k">교총, 수능 공정성</span> <span class="k">검증·국가시험</span> <span class="k">보안센터 신설</span> <span class="k">촉구</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.11.19</div>
+      <p class="lead"><span class="k">한국교총은&nbsp;11월&nbsp;19일</span> <span class="k">첨단기기를 이용한</span> <span class="k">수능 부정행위 의혹과</span> <span class="k">관련해 지난해와</span> <span class="k">올해 수능의 공정성을</span> <span class="k">전면 검증하고,</span> <span class="k">국무총리 직속</span> <span class="k">국가시험보안센터를</span> <span class="k">새로 만들 것을</span> <span class="k">촉구했다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>2개 학년도</b> 답안지 전수조사 요구</span>
+        <span class="chip"><b>22대</b> 스마트폰 적발</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">교총은 교육부가</span> <span class="k">단추 스티커 부착,</span> <span class="k">안경 전수조사 등</span> <span class="k">감독교원에게 부담을</span> <span class="k">지우는 대책을</span> <span class="k">수능을 하루 앞두고도</span> <span class="k">여러 차례 바꾸는 등</span> <span class="k">부실하게 대응했다고</span> <span class="k">비판하며, 2026학년도와</span> <span class="k">2027학년도 수능</span> <span class="k">답안지를 보전해</span> <span class="k">전수조사할 것을</span> <span class="k">요구했다.</span></li>
+        <li><span class="k">국무총리 직속</span> <span class="k">'국가시험보안센터</span> <span class="k">(가칭)'를 만들어</span> <span class="k">전문인력과 탐지장비,</span> <span class="k">전파차단장치를 갖추고</span> <span class="k">수능과 각종 국가고사를</span> <span class="k">'AI 부정행위 제로존'으로</span> <span class="k">만들자는 방안도</span> <span class="k">내놓았다.</span></li>
+        <li><span class="k">강주호 교총 회장은</span> <span class="k">이번 사태의 책임을 물어</span> <span class="k">교육부 장관을</span> <span class="k">경질해야 한다고</span> <span class="k">주장했고, 교육부의</span> <span class="k">대응 과정을 국회</span> <span class="k">차원에서 조사할 것도</span> <span class="k">함께 촉구했다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110152" target="_blank">원문 보기</a>
+    </div>
 
-      <p class="body">이 일련의 사태는 오래된 질문을 다시 던진다.</p>
-
-      <p class="body q"><strong>지식과 지혜는 무엇이 다른가.</strong></p>
-
-      <p class="body">지식은 '무엇이 정답인가'를 아는 힘이다. 지혜는 '그 정답을 어떻게 얻고, 어디까지 써도 되는가'를 아는 힘이다. 그 세무사 수석 합격자는 1등이라는 점수를 얻었지만, 그 점수는 그의 실력이 아니었다. 정답을 얻는 능력과 정당하게 얻는 태도는 전혀 다른 문제였다.</p>
-
-      <p class="body">AI는 정답을 제시할 수 있고, 때로는 그 행동이 옳은지에 대해서도 조언할 수 있다. 그러나 그 조언을 받아들이고 행동으로 옮기는 결정, 그리고 그 결과에 대한 책임까지 AI가 대신할 수는 없다.</p>
-
-      <p class="pull"><span class="k">AI가 정답을 대신 찾아줄 수는 있어도,</span><br><span class="k">그 정답을 선택한 책임까지</span> <span class="k">대신 져주지는 않는다.</span></p>
-
-      <p class="body">그런데 지혜가 필요한 것은 시험을 치르는 사람만이 아니다. 리트 만점자를 둘러싼 의혹은 당사자의 죽음으로 사실관계를 확인하는 일이 더욱 어려워졌다. 한 사람의 죽음 앞에서 우리는 더욱 신중해야 한다. 확인되지 않은 의혹을 사실처럼 단정해서도 안 되지만, 시험의 공정성에 관한 질문까지 외면할 수는 없다. 필요한 것은 섣부른 판단이 아니라 확인 가능한 사실에 근거한 검증이다. 그것이 고인에 대한 예의를 지키면서도 정직하게 시험을 치른 수험생들의 노력을 보호하는 길이다. 지혜란 아는 것을 바르게 쓰는 힘이자, 판단하기 전에 충분히 확인할 줄 아는 힘이기도 하다.</p>
-
-      <p class="body">AI 시대에 지식은 점점 '빌릴 수 있는 것'이 되어 간다. 누구나 몇 초면 답을 얻는다. 그래서 사람에게 더욱 중요해지는 능력은 판단하고, 멈추고, 책임지는 힘, 곧 지혜다. 물론 지식이 쓸모없어진 것은 아니다. 기초 지식이 없으면 AI의 답이 맞는지조차 가릴 수 없다. 지혜는 지식 위에서 세워진다.</p>
-
-      <p class="body">재난문자와 금속탐지기로 시험장을 지키는 일도 필요하다. 그러나 기술과 단속은 늘 쫓고 쫓기는 관계다. 마지막 방어선은 시험장 문 앞이 아니라 사람의 마음속에 있다. 정답만으로 사람을 평가하는 교육은 때로 정답에 이르는 과정의 가치를 잊게 만든다. 이제 교육은 '맞히는 능력'을 넘어 '옳게 판단하는 능력'까지 기르도록 나아가야 한다.</p>
-
-      <p class="body">20년 동안 입시 현장에 있으면서 잊지 못하는 일이 있다. 몇 해 전, 한 고3 학생이 수능을 아주 잘 봤다며 찾아왔다. 우리 선생님들은 그 학생과 함께 눈물을 흘리며 축하하고 고마워했다. 성적표가 나온 날에는 학생이 직접 보여 준 성적표를 함께 들여다보며 어느 대학에 원서를 낼지 머리를 맞대었다.</p>
-
-      <p class="body">그런데 합격 소식은 끝내 들리지 않았다.</p>
-
-      <p class="body">나중에야 알았다. 그 성적표는 학생이 치밀하게 위조한 것이었다.</p>
-
-      <p class="body">그날의 충격은 지금도 생생하다. 그러나 더 오래 마음에 남은 것은 분노가 아니라 질문이었다. 그 학생은 '좋은 점수'라는 정답을 얼마나 보여 주고 싶었기에 그런 선택을 했을까. 잘못된 선택을 이해하려는 것과 그 선택을 정당화하는 것은 다르다. 그날 나는 뼈아프게 배웠다.</p>
-
-      <p class="pull"><span class="k">성적표는 위조할 수 있어도,</span><br><span class="k">그 점수에 이르는 시간과 노력은</span> <span class="k">결코 위조할 수 없다는 것을.</span></p>
-
-      <p class="body">오늘 수능을 치른 수험생들에게 전하고 싶다. 몇몇 부정행위 소식에 가려졌지만, 시험장에 앉은 대다수 학생은 이날을 위해 정직하게, 묵묵히 공부해 왔다. 그 땀이 의심받거나 헛되지 않도록 지키는 것, 그것이 이번 사태 앞에서 어른들과 제도가 해야 할 일이다.</p>
-
-      <p class="body">점수는 하루의 결과지만, 그 점수를 어떻게 얻었는지는 평생의 이름이 된다. 그래서 정직하게 얻은 여러분의 점수는 더욱 값지다.</p>
-
-      <p class="closing">기술이 똑똑해질수록,<br>사람은 더 지혜로워져야 한다.<strong>Smarter Edu-Tech,<br>Wiser Humans.</strong></p>
-      <p class="ainote">AI와 함께 작성 · 필자 직접 검토 및 판단</p>
-    </article>
+    <div class="card">
+      <h3><span class="k">리트 만점자</span> <span class="k">이진우 씨,</span> <span class="k">수능 당일</span> <span class="k">숨진 채 발견</span></h3>
+      <div class="meta"><b>노컷뉴스</b> · 2026.11.19</div>
+      <p class="lead"><span class="k">법학적성시험(LEET) 만점과</span> <span class="k">수능 성적에</span> <span class="k">부정행위 의혹이</span> <span class="k">제기됐던 이진우 씨(32)가</span> <span class="k">11월&nbsp;19일 서울 강동구</span> <span class="k">숙박업소에서</span> <span class="k">숨진 채 발견됐다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>32세</b></span>
+        <span class="chip"><b>5줄</b> 메모 발견</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">이씨는 수능 국어영역</span> <span class="k">문제를 실시간으로</span> <span class="k">풀어 의혹을</span> <span class="k">해소하겠다고</span> <span class="k">예고했지만 예정된</span> <span class="k">장소에 나타나지 않고</span> <span class="k">잠적했고, 지인 신고로</span> <span class="k">수색에 나선 경찰이</span> <span class="k">폐쇄회로(CC)TV로</span> <span class="k">경로를 추적해</span> <span class="k">그를 찾아냈다.</span></li>
+        <li><span class="k">발견 당시 이씨는</span> <span class="k">의식이 없었고,</span> <span class="k">현장에서는&nbsp;5줄</span> <span class="k">분량의 메모가</span> <span class="k">나왔지만 부정행위나</span> <span class="k">수사와 관련된 내용은</span> <span class="k">없는 것으로 전해졌다.</span></li>
+        <li><span class="k">이씨는 낮았던</span> <span class="k">수능 성적을 끌어올려</span> <span class="k">서울대 치의학과에</span> <span class="k">진학하고 LEET 만점을</span> <span class="k">받은 사실이 알려지며</span> <span class="k">주목받았으나, 세무사</span> <span class="k">시험 수석 합격자가</span> <span class="k">AI를 이용한 부정행위를</span> <span class="k">자백하면서 그에게도</span> <span class="k">의혹이 제기됐었다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261120071800731" target="_blank">원문 보기</a>
+    </div>
   </section>
 
-  <section class="exam" id="exam">
-    <h2>함께 읽기 <small>3건</small></h2>
-    <ul class="links">
-      <li><a href="https://www.wikitree.co.kr/articles/1175985" target="_blank"><b>AI 부정행위 의혹 리트 만점자, 11월&nbsp;19일 사망</b><span>위키트리 · 2026.11.19</span></a></li>
-      <li><a href="https://www.fnnews.com/news/202611171613403317" target="_blank"><b>정부, 위급재난문자·단추 스티커 등 수능 부정행위 대응책 발표</b><span>파이낸셜뉴스 · 2026.11.17</span></a></li>
-      <li><a href="https://www.fnnews.com/news/202611151628545524" target="_blank"><b>세무사 수석 합격자 AI 부정행위 자백, 시험 보안 재검토 목소리</b><span>뉴시스(파이낸셜뉴스) · 2026.11.15</span></a></li>
-    </ul>
+  <section class="subj" id="subj">
+    <h2>교과 소식 <small>3건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">손곡초, 학생자치회가</span> <span class="k">이끄는 '폰 프리</span> <span class="k">스쿨'</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.11.19 · <span class="tag">초등</span></div>
+      <p class="lead"><span class="k">경기 손곡초는&nbsp;10월부터</span> <span class="k">학생자치회가 중심이 되어</span> <span class="k">스마트폰 대신</span> <span class="k">친구들과의 놀이와</span> <span class="k">대화로 채우는</span> <span class="k">'폰 프리 스쿨' 활동을</span> <span class="k">이어가고 있다.</span></p>
+      <ul class="sum">
+        <li><span class="k">경기교육청이 추진하는</span> <span class="k">학생 주도형 활동인</span> <span class="k">'폰 프리 스쿨'에 맞춰,</span> <span class="k">학생들은 긴 줄넘기와</span> <span class="k">민속놀이, 보드게임 등으로</span> <span class="k">쉬는 시간을 채우며</span> <span class="k">협동과 소통을</span> <span class="k">경험했다.</span></li>
+        <li><span class="k">학생자치회는 폰 프리</span> <span class="k">및 환경 실천 캠페인과</span> <span class="k">학급회의를 열어</span> <span class="k">건강한 디지털 기기</span> <span class="k">사용법을 스스로 고민하고</span> <span class="k">실천하는 시간을</span> <span class="k">가졌다.</span></li>
+        <li><span class="k">손곡초는 겨울방학까지</span> <span class="k">이 활동을 이어가며,</span> <span class="k">친구와 가족, 선생님에게</span> <span class="k">손편지로 마음을 전하는</span> <span class="k">'편지 쓰기' 행사도</span> <span class="k">추가로 열 계획이다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110133" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">경북교육청, 초등</span> <span class="k">33개 선도학교</span> <span class="k">창의교육과정</span></h3>
+      <div class="meta"><b>국제i저널</b> · 2026.11.19 · <span class="tag">초등</span></div>
+      <p class="lead"><span class="k">경북교육청은 도내</span> <span class="k">초등학교&nbsp;33곳을</span> <span class="k">'교육과정 선도학교'로</span> <span class="k">지정해 학교별 특색을</span> <span class="k">살린 창의적</span> <span class="k">교육과정을 운영하고</span> <span class="k">있다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>33개교</b></span>
+        <span class="chip"><b>2억&nbsp;3,500만원</b> 예산 지원</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">경북교육청은 올해</span> <span class="k">33개 선도학교에</span> <span class="k">총&nbsp;2억&nbsp;3,500만원의</span> <span class="k">예산을 지원해</span> <span class="k">진로연계교육과</span> <span class="k">학교자율시간 등</span> <span class="k">학교 특성에 맞는</span> <span class="k">다양한 교수·학습</span> <span class="k">방법을 도입하도록</span> <span class="k">했다.</span></li>
+        <li><span class="k">학교 여건에 따라</span> <span class="k">자율적이고 창의적으로</span> <span class="k">교육과정을 짜도록 해,</span> <span class="k">봉화초처럼</span> <span class="k">'놀이와 활동으로</span> <span class="k">만드는 배움터'를</span> <span class="k">주제로 한 특색 있는</span> <span class="k">수업이 운영되고</span> <span class="k">있다.</span></li>
+        <li><span class="k">경북교육청은</span> <span class="k">학교 자율성과 특색을</span> <span class="k">살린 교육과정 운영으로</span> <span class="k">학생들의 미래 역량을</span> <span class="k">키우는 것이 목적이라고</span> <span class="k">밝혔다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.iij.co.kr/news/articleView.html?idxno=396373" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">'AI 시대'</span> <span class="k">문학 교육의 미래는</span></h3>
+      <div class="meta"><b>한국일보</b> · 2026.11.19 · <span class="tag">국어</span></div>
+      <p class="lead"><span class="k">국립한국문학관은</span> <span class="k">11월&nbsp;19일 심포지엄을 열고,</span> <span class="k">AI 시대에도 문학 읽기가</span> <span class="k">삶을 이해하는 힘을</span> <span class="k">길러준다며 경험 중심의</span> <span class="k">문학교육이 필요하다고</span> <span class="k">밝혔다.</span></p>
+      <ul class="sum">
+        <li><span class="k">조병영 한양대 교수는</span> <span class="k">문해력을 '읽고 쓰는</span> <span class="k">경험으로 삶의 방식을</span> <span class="k">발견하고 재구성하는 힘'</span> <span class="k">으로 정의하며,</span> <span class="k">인지 주체성과</span> <span class="k">비판적 판단, 공감 역량</span> <span class="k">등 여섯 가지를</span> <span class="k">AI 시대 문해력의</span> <span class="k">가치로 제시했다.</span></li>
+        <li><span class="k">그는 이론과 주제 파악</span> <span class="k">중심의 수업보다,</span> <span class="k">작품 속 인물의 삶을</span> <span class="k">이해하고 간접 경험하는</span> <span class="k">경험 중심 교육이</span> <span class="k">중요하다고 강조했다.</span></li>
+        <li><span class="k">윤대석 서울대 교수는</span> <span class="k">"읽기의 위임"이 일어나는</span> <span class="k">AI 시대에, 문학교육이</span> <span class="k">스스로 생각하는 사람을</span> <span class="k">길러내는 역할을</span> <span class="k">맡아야 한다고 말했다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261119172142454" target="_blank">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="ai" id="ai">
+    <h2>AI 교육 <small>4건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">AI 공세에 공정성·</span> <span class="k">실효성 시험대 오른</span> <span class="k">수능 평가 방식</span></h3>
+      <div class="meta"><b>뉴시스</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">챗GPT와 제미나이가</span> <span class="k">2027학년도 수능</span> <span class="k">국어·수학·영어를</span> <span class="k">3분도 안 돼 만점으로</span> <span class="k">풀어내면서, 정답을</span> <span class="k">빨리 찾는 능력만 보는</span> <span class="k">시험 방식에 대한</span> <span class="k">의문이 커지고 있다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>2분44초</b> 국영수 만점</span>
+        <span class="chip"><b>70.4%</b> 서논술형 전환 반대</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">뉴시스가 챗GPT와</span> <span class="k">제미나이에&nbsp;2027학년도</span> <span class="k">수능 국어·수학·영어</span> <span class="k">문제를 풀게 하자</span> <span class="k">두 AI 모두 만점을 받았고,</span> <span class="k">챗GPT는 국어&nbsp;44초·</span> <span class="k">수학&nbsp;1분25초·영어&nbsp;35초</span> <span class="k">등 총&nbsp;2분44초 만에</span> <span class="k">풀이를 마쳤다.</span></li>
+        <li><span class="k">전국교직원노동조합이</span> <span class="k">교원&nbsp;1,346명을 조사한</span> <span class="k">결과 수능에 서·논술형</span> <span class="k">평가를 도입하는 데</span> <span class="k">반대한 교원이&nbsp;70.4%였고,</span> <span class="k">반대한 교원 중&nbsp;94.3%는</span> <span class="k">사교육 확대를,&nbsp;93.0%는</span> <span class="k">채점 공정성 논란을</span> <span class="k">우려했다.</span></li>
+        <li><span class="k">전교조와 교총 모두</span> <span class="k">AI 시대에 맞춰 정답을</span> <span class="k">빨리 찾는 능력보다</span> <span class="k">사고력과 문제해결</span> <span class="k">과정을 평가하는 방식으로</span> <span class="k">교육과정과 대입제도를</span> <span class="k">재검토해야 한다는</span> <span class="k">입장을 냈다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261120060130503" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">EBS, 전국민</span> <span class="k">AI 학습 플랫폼</span> <span class="k">'AI이솦'</span> <span class="k">11월&nbsp;26일 오픈</span></h3>
+      <div class="meta"><b>오마이뉴스</b> · 2026.11.19</div>
+      <p class="lead"><span class="k">EBS는 국민 누구나</span> <span class="k">AI를 쉽게 배울 수 있는</span> <span class="k">온라인 학습 플랫폼</span> <span class="k">'AI이솦'을&nbsp;11월&nbsp;26일</span> <span class="k">정식으로 연다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>400차시</b> 콘텐츠</span>
+        <span class="chip"><b>6개</b> 대상군</span>
+        <span class="chip"><b>AI도구 5종</b> 실습 제공</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">'AI이솦'은&nbsp;2018년부터</span> <span class="k">운영해 온 소프트웨어</span> <span class="k">교육 플랫폼 '이솦'을</span> <span class="k">AI 교육 중심으로</span> <span class="k">고도화한 서비스로,</span> <span class="k">2026년 말까지&nbsp;400차시의</span> <span class="k">학습 콘텐츠를</span> <span class="k">순차적으로 올릴</span> <span class="k">계획이다.</span></li>
+        <li><span class="k">학습자를 초등 저학년부터</span> <span class="k">중·고등학생, 학부모,</span> <span class="k">교사, 시니어까지</span> <span class="k">6개 대상으로 나눠</span> <span class="k">맞춤형 커리큘럼을 짰고,</span> <span class="k">강의와 함께 챗GPT·</span> <span class="k">제미나이·클로드·엑사온·</span> <span class="k">솔라 등 AI 도구&nbsp;5종을</span> <span class="k">실습에 활용할 수 있게</span> <span class="k">했다.</span></li>
+        <li><span class="k">EBS 안성식 부장은</span> <span class="k">AI에 대한 기본 정보보다</span> <span class="k">인간 중심의 사고와</span> <span class="k">비판적 사고, AI 윤리를</span> <span class="k">익히는 것이 교육의</span> <span class="k">핵심이라고 설명했다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261119160221920" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">"로그인·유지비 無",</span> <span class="k">교사가 만든</span> <span class="k">교실 맞춤 AI 플랫폼</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.11.18</div>
+      <p class="lead"><span class="k">인천 송도중</span> <span class="k">김석전 교사가&nbsp;1년여에</span> <span class="k">걸쳐 직접 개발한</span> <span class="k">무료 AI 블록코딩</span> <span class="k">플랫폼 '브릭셀AI'가</span> <span class="k">현장에서 입소문을</span> <span class="k">타고 있다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>확장 카드 100개</b></span>
+        <span class="chip"><b>블록 2,700여개</b></span>
+        <span class="chip"><b>80여개</b> 언어 지원</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">김 교사는 학교 예산</span> <span class="k">문제와 학생 회원가입·</span> <span class="k">개인정보 절차 같은</span> <span class="k">현장의 어려움을</span> <span class="k">해결하려고, 서버 없이</span> <span class="k">기기 안에서 데이터가</span> <span class="k">처리되는 정적 웹 방식으로</span> <span class="k">브릭셀AI를 만들어</span> <span class="k">전면 무료로 열었다.</span></li>
+        <li><span class="k">미국 MIT의 교육용</span> <span class="k">'스크래치' 구조 위에</span> <span class="k">100개의 확장 카드와</span> <span class="k">2,700여 개 블록을 더해,</span> <span class="k">초등학교부터</span> <span class="k">고등학교까지 AI 학습과</span> <span class="k">피지컬 컴퓨팅 수업에</span> <span class="k">쓸 수 있다.</span></li>
+        <li><span class="k">교사와 학생이 코드를</span> <span class="k">실시간으로 나누는</span> <span class="k">기능과 최대&nbsp;100명이</span> <span class="k">함께 들어오는</span> <span class="k">관전 모드도 있어,</span> <span class="k">김 교사는 학생들이</span> <span class="k">AI로 자기 분야의</span> <span class="k">문제를 해결할 자신감을</span> <span class="k">갖게 되길 바란다고</span> <span class="k">말했다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110131" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">부산대 교육발전연구소</span> <span class="k">'SW·AI 전문가</span> <span class="k">멘토링데이' 성료</span></h3>
+      <div class="meta"><b>한국교육신문</b> · 2026.11.18</div>
+      <p class="lead"><span class="k">부산대 교육발전연구소는</span> <span class="k">10월&nbsp;31일과&nbsp;11월&nbsp;14일</span> <span class="k">두 차례에 걸쳐 영남권</span> <span class="k">초·중·고 영재학생과</span> <span class="k">학부모, 교사&nbsp;160명에게</span> <span class="k">AI·SW 진로 멘토링을</span> <span class="k">진행했다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>160명</b> 참여</span>
+        <span class="chip"><b>1,000건 이상</b> 작품 접수</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">학생들은 수준에 맞춰</span> <span class="k">AI 교육과 윤리,</span> <span class="k">3D 공간 설계,</span> <span class="k">바이브코딩 등</span> <span class="k">다양한 특강과 체험</span> <span class="k">프로그램에 참여했고,</span> <span class="k">'AI 활용 발명 창작</span> <span class="k">아이디어 경진대회'에는</span> <span class="k">전국에서&nbsp;1,000건이 넘는</span> <span class="k">작품이 접수됐다.</span></li>
+        <li><span class="k">이 대회는 단순 암기식</span> <span class="k">평가 대신 학생이 문제를</span> <span class="k">스스로 찾고 AI로</span> <span class="k">해결하는 과정과</span> <span class="k">창의성을 평가하도록</span> <span class="k">기획됐으며, 생활 속</span> <span class="k">불편함을 발명 아이디어로</span> <span class="k">시각화하는 활동으로</span> <span class="k">진행됐다.</span></li>
+        <li><span class="k">대구·경북 학생 등을</span> <span class="k">위한 온라인</span> <span class="k">멘토링데이에서는</span> <span class="k">질문을 만들고 서로의</span> <span class="k">꿈을 응원하는</span> <span class="k">놀이 수업도 열려,</span> <span class="k">창의성과 인성교육을</span> <span class="k">함께 길렀다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110126" target="_blank">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="new" id="new">
+    <h2>최신 AI 소식 <small>3건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">구글, AI 에이전트</span> <span class="k">특화 '제미나이4 네온'</span> <span class="k">출시</span></h3>
+      <div class="meta"><b>디지털데일리</b> · 2026.11.19</div>
+      <p class="lead"><span class="k">구글이 복잡한 코딩과</span> <span class="k">기업 업무를 더 빠르고</span> <span class="k">싸게 처리하는</span> <span class="k">새 AI 모델</span> <span class="k">'제미나이4 네온'을</span> <span class="k">출시했다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>작업비용 32%</b> 절감</span>
+        <span class="chip"><b>코딩평가 세계 1위</b></span>
+        <span class="chip"><b>100만 토큰</b> 처리</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">네온은 소프트웨어</span> <span class="k">개발과 데이터 분석,</span> <span class="k">과학 연구처럼</span> <span class="k">여러 단계로 이뤄진</span> <span class="k">업무에 최적화됐고,</span> <span class="k">종합 AI 지능 평가에서</span> <span class="k">세계&nbsp;3위, 코딩 에이전트</span> <span class="k">평가에서는 세계&nbsp;1위를</span> <span class="k">기록했다.</span></li>
+        <li><span class="k">기존 '제미나이4 카본'</span> <span class="k">보다 작업당 비용이</span> <span class="k">32% 낮아졌고,</span> <span class="k">최대&nbsp;100만 토큰의</span> <span class="k">문맥을 한 번에</span> <span class="k">처리할 수 있어</span> <span class="k">긴 작업도 끊김 없이</span> <span class="k">수행한다.</span></li>
+        <li><span class="k">보안 특화 모델인</span> <span class="k">'사이버용 제미나이4</span> <span class="k">네온'도 함께 선보여,</span> <span class="k">코드 취약점을 찾고</span> <span class="k">고치는 능력을 시험하는</span> <span class="k">평가에서 각각&nbsp;90.5%,</span> <span class="k">70.7%의 점수를</span> <span class="k">받았다.</span></li>
+      </ul>
+      <a class="btn" href="https://v.daum.net/v/20261119172025389" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">메타, AI 기기</span> <span class="k">'뮤즈 참'</span> <span class="k">300달러로 책정</span></h3>
+      <div class="meta"><b>디지털투데이</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">메타는 연말 출시할</span> <span class="k">키링형 AI 기기</span> <span class="k">'뮤즈 참'의 가격을</span> <span class="k">300달러로 정하고,</span> <span class="k">구매자에게 5G 데이터</span> <span class="k">요금제를 최대&nbsp;12개월</span> <span class="k">무료로 주기로 했다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>300달러</b></span>
+        <span class="chip"><b>5G 요금제</b> 최대&nbsp;12개월 무료</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">'뮤즈 참'은 마크</span> <span class="k">저커버그가&nbsp;9월</span> <span class="k">개발자 콘퍼런스</span> <span class="k">'커넥트'에서 처음</span> <span class="k">공개한 기기로, 메타의</span> <span class="k">AI 비서 '뮤즈'를</span> <span class="k">밖에서도 바로</span> <span class="k">부를 수 있게 해준다.</span></li>
+        <li><span class="k">메타는 이 기기로</span> <span class="k">하드웨어 사업에</span> <span class="k">힘을 싣고 개인 비서</span> <span class="k">서비스 사용자를</span> <span class="k">늘리려는 전략을 세우고,</span> <span class="k">올해 목표였던</span> <span class="k">스마트워치 출시를</span> <span class="k">2027년으로 미루면서까지</span> <span class="k">'뮤즈 참'을 최우선으로</span> <span class="k">밀고 있다.</span></li>
+        <li><span class="k">오픈AI와 애플 등</span> <span class="k">다른 회사들도 화면 없는</span> <span class="k">스피커나 디스플레이 같은</span> <span class="k">AI 하드웨어를 잇따라</span> <span class="k">내놓으며 경쟁하고</span> <span class="k">있다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=716874" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">오픈AI 보안제품 2종,</span> <span class="k">앤트로픽은</span> <span class="k">공개 기한 단축</span></h3>
+      <div class="meta"><b>디지털투데이</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">AI가 보안 취약점을</span> <span class="k">찾아내는 속도가</span> <span class="k">빨라지면서, 오픈AI와</span> <span class="k">앤트로픽이 나란히</span> <span class="k">보안 대응 체계를</span> <span class="k">새로 손봤다.</span></p>
+      <div class="facts">
+        <span class="chip"><b>공개 기한</b> 90일→30일</span>
+      </div>
+      <ul class="sum">
+        <li><span class="k">오픈AI는 AI 에이전트가</span> <span class="k">소프트웨어 취약점을</span> <span class="k">찾아내고 수정안까지</span> <span class="k">만들어주는 보안 제품</span> <span class="k">2종을 새로 내놨다.</span></li>
+        <li><span class="k">앤트로픽은 AI의</span> <span class="k">취약점 탐지 능력이</span> <span class="k">빠르게 발전하자,</span> <span class="k">발견한 취약점을</span> <span class="k">공개하기까지 기다리는</span> <span class="k">유예 기간을 최대&nbsp;90일에서</span> <span class="k">30일로 줄이기로 했다.</span></li>
+        <li><span class="k">구글은 사람 개입 없이</span> <span class="k">AI가 취약점을 찾아</span> <span class="k">공격하는 사례를</span> <span class="k">처음 확인했다며,</span> <span class="k">6개월 안에 정교한</span> <span class="k">완전 자율 공격도</span> <span class="k">등장할 수 있다고</span> <span class="k">내다봤다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=716873" target="_blank">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="hist" id="hist">
+    <h2>역사 속 오늘 <small>11월&nbsp;20일</small></h2>
+    <div class="card hcard">
+      <div class="year">1975<span>년</span></div>
+      <div class="hbody">
+        <div class="meta"><span class="tag">한국사</span> · 대구 서문시장 화재</div>
+        <h3>대구 서문시장에 큰불, 상점&nbsp;1,900여곳이 탔다</h3>
+        <p class="hdesc"><span class="k">1975년&nbsp;11월&nbsp;20일,</span> <span class="k">대구 서문시장 4지구에서</span> <span class="k">담뱃불로 시작된 불이</span> <span class="k">크게 번져 점포&nbsp;1,900여곳이</span> <span class="k">불에 탔다. 지금도</span> <span class="k">대구를 대표하는</span> <span class="k">전통시장인 서문시장은</span> <span class="k">큰불을 여러 번 겪었지만</span> <span class="k">그때마다 다시 일어나</span> <span class="k">지금까지 이어지고 있다.</span></p>
+        <a class="hlink" href="https://www.imaeil.com/page/view/2025110417474769694" target="_blank">자세히 보기 →</a>
+      </div>
+    </div>
   </section>
 
   <footer>
