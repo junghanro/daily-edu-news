@@ -85,10 +85,11 @@
   /* ── 주제 섹션 ── */
   section { margin-top: 34px; --c: var(--navy); scroll-margin-top: 12px; }
   section.exam { --c: var(--c-exam); }
+  section.eng  { --c: var(--c-eng); }
   section.subj { --c: var(--c-subj); }
   section.ai   { --c: var(--c-ai); }
   section.new  { --c: var(--c-new); }
-  .jump a.exam { --c: var(--c-exam); }
+  .jump a.exam { --c: var(--c-exam); } .jump a.eng { --c: var(--c-eng); }
   .jump a.subj { --c: var(--c-subj); }
   .jump a.ai { --c: var(--c-ai); }     .jump a.new { --c: var(--c-new); }
   section > h2 {
@@ -173,7 +174,7 @@
       <span class="slogan">Smarter Edu-Tech, Wiser Humans</span>
     </div>
     <div class="dateline">
-      <p class="date">2026년 11월 20일 금요일</p>
+      <p class="date">2026년 11월 21일 토요일</p>
     </div>
     <h1>오늘의 <em>교육 뉴스</em></h1>
   </div>
@@ -184,16 +185,17 @@
   <div class="top3">
     <h2>오늘의 핵심 3가지</h2>
     <ol>
-      <li><span><span class="k">수능 부정행위</span> <span class="k">98명 적발,</span> <span class="k">범정부 대응</span> <span class="k">TF 가동</span></span></li>
-      <li><span><span class="k">수능 국어·영어</span> <span class="k">쉬워지고,</span> <span class="k">수학이 변수로</span></span></li>
-      <li><span><span class="k">EBS, 전국민</span> <span class="k">AI 학습 플랫폼</span> <span class="k">'AI이솦'</span> <span class="k">11월&nbsp;26일 오픈</span></span></li>
+      <li><span><span class="k">수능 부정행위</span> <span class="k">최종 111명,</span> <span class="k">대통령 "국가시험</span> <span class="k">전면 개편" 지시</span></span></li>
+      <li><span><span class="k">최교진 교육부</span> <span class="k">장관, 나흘 만에</span> <span class="k">등장해 "사퇴하라면</span> <span class="k">해야죠"</span></span></li>
+      <li><span><span class="k">11월&nbsp;21일부터</span> <span class="k">논술·면접 시작,</span> <span class="k">대학들 "뾰족한</span> <span class="k">대책 없다"</span></span></li>
     </ol>
   </div>
 
   <ul class="jump">
     <li><a class="exam" href="#exam"><i></i>입시·수능 <span>4</span></a></li>
+    <li><a class="eng" href="#eng"><i></i>영어교육 <span>1</span></a></li>
     <li><a class="subj" href="#subj"><i></i>교과 소식 <span>3</span></a></li>
-    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>4</span></a></li>
+    <li><a class="ai" href="#ai"><i></i>AI 교육 <span>3</span></a></li>
     <li><a class="new" href="#new"><i></i>최신 AI 소식 <span>3</span></a></li>
   </ul>
 
@@ -201,69 +203,78 @@
     <h2>입시·수능 <small>4건</small></h2>
 
     <div class="card">
-      <h3><span class="k">'AI 커닝과의 전쟁',</span> <span class="k">수능서 98명</span> <span class="k">부정행위 적발</span></h3>
-      <div class="meta"><b>노컷뉴스</b> · 2026.11.20</div>
-      <p class="lead"><span class="k">11월&nbsp;19일 치러진</span> <span class="k">2027학년도 수능에서</span> <span class="k">스마트안경·초소형</span> <span class="k">카메라 등을 이용한</span> <span class="k">부정행위로&nbsp;98명이</span> <span class="k">적발됐다.</span></p>
+      <h3><span class="k">수능 부정행위</span> <span class="k">최종 111명… 李</span> <span class="k">"국가시험 전면</span> <span class="k">개편" 지시</span></h3>
+      <div class="meta"><b>동아일보</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">교육부가 11월&nbsp;20일</span> <span class="k">수능 부정행위</span> <span class="k">적발자를 111명으로</span> <span class="k">최종 집계했고,</span> <span class="k">이재명 대통령은</span> <span class="k">국가시험 제도를</span> <span class="k">전면 개편하라고</span> <span class="k">지시했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>98명</b> 적발</span>
-        <span class="chip"><b>5건</b> 시험중 사용</span>
-        <span class="chip"><b>1,312개</b> 시험장</span>
+        <span class="chip"><b>111명</b> 최종 적발</span>
+        <span class="chip"><b>54명</b> 재난문자로 적발</span>
+        <span class="chip"><b>최대 징역&nbsp;5년</b> 처벌 방침</span>
       </div>
       <ul class="sum">
-        <li><span class="k">교육부는 전국&nbsp;1,312개</span> <span class="k">시험장에서 치러진</span> <span class="k">수능에서 전자기기</span> <span class="k">관련 부정행위로&nbsp;98명을</span> <span class="k">적발했다고 밝혔다.</span> <span class="k">이 중&nbsp;49명은 세 차례</span> <span class="k">위급재난문자가 울린 뒤</span> <span class="k">발견됐고,&nbsp;44명은</span> <span class="k">문자와 상관없이</span> <span class="k">전자기기를 갖고 있다가</span> <span class="k">적발됐다.</span></li>
-        <li><span class="k">실제로 시험 도중</span> <span class="k">스마트기기를 쓴</span> <span class="k">사례는&nbsp;5건으로,</span> <span class="k">스마트안경과 소형</span> <span class="k">카메라, 무선이어폰을</span> <span class="k">쓰거나 휴대전화로</span> <span class="k">문제지를 몰래</span> <span class="k">찍은 경우가</span> <span class="k">포함됐다.</span></li>
-        <li><span class="k">정부는&nbsp;11월&nbsp;20일부터</span> <span class="k">범정부 수능 부정행위</span> <span class="k">대응팀(TF)을 꾸려</span> <span class="k">적발되지 않은</span> <span class="k">의심 사례까지 추적하고,</span> <span class="k">지난해 수능까지</span> <span class="k">포함해 전수조사</span> <span class="k">하기로 했다.</span></li>
+        <li><span class="k">교육부는 11월&nbsp;19일</span> <span class="k">수능에서 스마트기기</span> <span class="k">소지·사용으로 적발된</span> <span class="k">수험생이 98명에서</span> <span class="k">13명 늘어 모두&nbsp;111명으로</span> <span class="k">최종 집계됐다고</span> <span class="k">11월&nbsp;20일 밝혔다.</span> <span class="k">이 중&nbsp;54명은</span> <span class="k">위급재난문자가</span> <span class="k">울렸을 때 걸렸다.</span></li>
+        <li><span class="k">이재명 대통령은</span> <span class="k">11월&nbsp;20일 수석보좌관</span> <span class="k">회의에서 "기존 방법으로는</span> <span class="k">AI와 첨단 장비를</span> <span class="k">악용한 부정행위를</span> <span class="k">막기 어렵다"며</span> <span class="k">국가시험 제도를</span> <span class="k">전면 개편하라고</span> <span class="k">지시했고, 임광현</span> <span class="k">대통령비서실장을</span> <span class="k">단장으로 한 TF가</span> <span class="k">꾸려졌다.</span></li>
+        <li><span class="k">정부는 시험장</span> <span class="k">와이파이·블루투스</span> <span class="k">신호를 분석해</span> <span class="k">추가 의심자를 추적하고,</span> <span class="k">해외 AI 기업에</span> <span class="k">수능 시간대 문제풀이</span> <span class="k">요청 데이터를 제공해</span> <span class="k">달라고 요청하기로 했다.</span> <span class="k">실제 기기를 사용한</span> <span class="k">적발자는 최대</span> <span class="k">징역&nbsp;5년에 처해질</span> <span class="k">수 있다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261120071800731" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261121014212809" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">수능 국어·영어</span> <span class="k">쉬워지고,</span> <span class="k">수학이 변수로</span></h3>
-      <div class="meta"><b>노컷뉴스</b> · 2026.11.20</div>
-      <p class="lead"><span class="k">입시업계는&nbsp;11월&nbsp;19일</span> <span class="k">치러진 수능에서</span> <span class="k">국어와 영어의 변별력이</span> <span class="k">크게 낮아져,</span> <span class="k">수학이 상위권 당락을</span> <span class="k">가를 것으로 내다봤다.</span></p>
+      <h3><span class="k">최교진 교육부 장관,</span> <span class="k">나흘 만에 등장해</span> <span class="k">"사퇴하라면 해야죠"</span></h3>
+      <div class="meta"><b>SBS</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">부실 대응 논란으로</span> <span class="k">나흘간 모습을 감췄던</span> <span class="k">최교진 장관이</span> <span class="k">11월&nbsp;20일 TF 회의에</span> <span class="k">나와 사퇴 질문에</span> <span class="k">"임명권자가 사퇴하라면</span> <span class="k">하겠다"고 답했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>영어 1등급</b> 8%대 예상</span>
-        <span class="chip"><b>85.8%</b> 사탐 선택</span>
-        <span class="chip"><b>12월&nbsp;11일</b> 성적표 배부</span>
+        <span class="chip"><b>나흘 만</b> 공개 석상 등장</span>
       </div>
       <ul class="sum">
-        <li><span class="k">국어는 지난해보다</span> <span class="k">쉽게 출제돼</span> <span class="k">표준점수 최고점이</span> <span class="k">지난해(147점)보다</span> <span class="k">낮아질 것으로 예상되고,</span> <span class="k">영어는&nbsp;1등급 비율이</span> <span class="k">지난해&nbsp;3.11%에서</span> <span class="k">7~10%대로 높아질</span> <span class="k">전망이어서 상위권에서는</span> <span class="k">변별력을 거의 잃었다는</span> <span class="k">평가가 나온다.</span></li>
-        <li><span class="k">수학은 지난해와</span> <span class="k">비슷하거나 약간</span> <span class="k">어렵게 출제된 것으로</span> <span class="k">분석됐고, 사회탐구를</span> <span class="k">한 과목 이상 선택한</span> <span class="k">수험생이&nbsp;85.8%로</span> <span class="k">지난해보다 늘어 탐구</span> <span class="k">영역 과목 간 유불리도</span> <span class="k">변수로 꼽혔다.</span></li>
-        <li><span class="k">한국교육과정평가원은</span> <span class="k">11월&nbsp;23일까지</span> <span class="k">문제와 정답에 대한</span> <span class="k">이의신청을 받아</span> <span class="k">12월&nbsp;1일 정답을</span> <span class="k">확정하고, 성적통지표는</span> <span class="k">12월&nbsp;11일 수험생에게</span> <span class="k">배부된다.</span></li>
+        <li><span class="k">최교진 장관은</span> <span class="k">11월&nbsp;16일 국회</span> <span class="k">교육위원회 출석 뒤</span> <span class="k">수능일인 11월&nbsp;19일까지</span> <span class="k">공개 석상에 나타나지</span> <span class="k">않다가, 11월&nbsp;20일</span> <span class="k">범정부 수능 부정행위</span> <span class="k">대응 TF 회의에</span> <span class="k">참석해 모습을</span> <span class="k">드러냈다.</span></li>
+        <li><span class="k">사퇴할 생각이</span> <span class="k">있냐는 질문에 최 장관은</span> <span class="k">"임명해주신 분이</span> <span class="k">사퇴하라고 하면</span> <span class="k">언제든 하겠다"면서도</span> <span class="k">"임기 있는 동안은</span> <span class="k">최선을 다 하겠다"고</span> <span class="k">말했다.</span></li>
+        <li><span class="k">앞서 최 장관이 국회에서</span> <span class="k">"AI 부정행위를&nbsp;100%</span> <span class="k">막아낼 수 없을</span> <span class="k">것 같다"고 말해</span> <span class="k">비판을 받았고,</span> <span class="k">한국교원단체총연합회는</span> <span class="k">"대통령이 직접</span> <span class="k">경질해야 한다"고</span> <span class="k">주장했다.</span></li>
       </ul>
-      <a class="btn" href="https://www.nocutnews.co.kr/news/6609888" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261121064209237" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">교총, 수능 공정성</span> <span class="k">검증·국가시험</span> <span class="k">보안센터 신설</span> <span class="k">촉구</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.11.19</div>
-      <p class="lead"><span class="k">한국교총은&nbsp;11월&nbsp;19일</span> <span class="k">첨단기기를 이용한</span> <span class="k">수능 부정행위 의혹과</span> <span class="k">관련해 지난해와</span> <span class="k">올해 수능의 공정성을</span> <span class="k">전면 검증하고,</span> <span class="k">국무총리 직속</span> <span class="k">국가시험보안센터를</span> <span class="k">새로 만들 것을</span> <span class="k">촉구했다.</span></p>
+      <h3><span class="k">11월&nbsp;21일부터</span> <span class="k">논술·면접… 대학들</span> <span class="k">"뾰족한 대책 없다"</span></h3>
+      <div class="meta"><b>SBS</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">11월&nbsp;21일부터</span> <span class="k">대학별 논술·면접이</span> <span class="k">시작되는 가운데,</span> <span class="k">구체적 대응은</span> <span class="k">대학 재량에 맡겨져</span> <span class="k">있어 대책이</span> <span class="k">부족하다는 우려가</span> <span class="k">나온다.</span></p>
       <div class="facts">
-        <span class="chip"><b>2개 학년도</b> 답안지 전수조사 요구</span>
-        <span class="chip"><b>22대</b> 스마트폰 적발</span>
+        <span class="chip"><b>경쟁률&nbsp;50대&nbsp;1</b> 수도권 대학 사례</span>
       </div>
       <ul class="sum">
-        <li><span class="k">교총은 교육부가</span> <span class="k">단추 스티커 부착,</span> <span class="k">안경 전수조사 등</span> <span class="k">감독교원에게 부담을</span> <span class="k">지우는 대책을</span> <span class="k">수능을 하루 앞두고도</span> <span class="k">여러 차례 바꾸는 등</span> <span class="k">부실하게 대응했다고</span> <span class="k">비판하며, 2026학년도와</span> <span class="k">2027학년도 수능</span> <span class="k">답안지를 보전해</span> <span class="k">전수조사할 것을</span> <span class="k">요구했다.</span></li>
-        <li><span class="k">국무총리 직속</span> <span class="k">'국가시험보안센터</span> <span class="k">(가칭)'를 만들어</span> <span class="k">전문인력과 탐지장비,</span> <span class="k">전파차단장치를 갖추고</span> <span class="k">수능과 각종 국가고사를</span> <span class="k">'AI 부정행위 제로존'으로</span> <span class="k">만들자는 방안도</span> <span class="k">내놓았다.</span></li>
-        <li><span class="k">강주호 교총 회장은</span> <span class="k">이번 사태의 책임을 물어</span> <span class="k">교육부 장관을</span> <span class="k">경질해야 한다고</span> <span class="k">주장했고, 교육부의</span> <span class="k">대응 과정을 국회</span> <span class="k">차원에서 조사할 것도</span> <span class="k">함께 촉구했다.</span></li>
+        <li><span class="k">수능에서 부정행위가</span> <span class="k">100건 넘게 적발된</span> <span class="k">가운데, 11월&nbsp;21일부터</span> <span class="k">대학별 논술·면접이</span> <span class="k">시작돼 수험생과</span> <span class="k">학부모들의 불안이</span> <span class="k">커지고 있다.</span></li>
+        <li><span class="k">교육부는 대학 입학</span> <span class="k">담당자들과 긴급</span> <span class="k">화상회의를 열어</span> <span class="k">적발 사례를 공유하고</span> <span class="k">감독 강화를 당부했지만,</span> <span class="k">구체적 대응 방안은</span> <span class="k">대학 자율에 맡겼다.</span></li>
+        <li><span class="k">한 수도권 대학</span> <span class="k">입학 담당자는</span> <span class="k">"경쟁률이&nbsp;50대&nbsp;1을</span> <span class="k">넘어 수만 명이</span> <span class="k">들어오는데 감독관이</span> <span class="k">집중하는 것 외에는</span> <span class="k">뾰족한 대책이 없다"고</span> <span class="k">말했다.</span></li>
       </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110152" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261121063906217" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">리트 만점자</span> <span class="k">이진우 씨,</span> <span class="k">수능 당일</span> <span class="k">숨진 채 발견</span></h3>
-      <div class="meta"><b>노컷뉴스</b> · 2026.11.19</div>
-      <p class="lead"><span class="k">법학적성시험(LEET) 만점과</span> <span class="k">수능 성적에</span> <span class="k">부정행위 의혹이</span> <span class="k">제기됐던 이진우 씨(32)가</span> <span class="k">11월&nbsp;19일 서울 강동구</span> <span class="k">숙박업소에서</span> <span class="k">숨진 채 발견됐다.</span></p>
-      <div class="facts">
-        <span class="chip"><b>32세</b></span>
-        <span class="chip"><b>5줄</b> 메모 발견</span>
-      </div>
+      <h3><span class="k">숨진 '리트 만점자',</span> <span class="k">수사는 계속…</span> <span class="k">"압수수색은 어려워"</span></h3>
+      <div class="meta"><b>SBS</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">법학적성시험 만점자</span> <span class="k">이진우 씨가 부정행위</span> <span class="k">의혹 속에 사망한</span> <span class="k">뒤에도 경찰은 수사를</span> <span class="k">이어가겠다고 밝혔지만,</span> <span class="k">진상 규명은 쉽지</span> <span class="k">않을 전망이다.</span></p>
       <ul class="sum">
-        <li><span class="k">이씨는 수능 국어영역</span> <span class="k">문제를 실시간으로</span> <span class="k">풀어 의혹을</span> <span class="k">해소하겠다고</span> <span class="k">예고했지만 예정된</span> <span class="k">장소에 나타나지 않고</span> <span class="k">잠적했고, 지인 신고로</span> <span class="k">수색에 나선 경찰이</span> <span class="k">폐쇄회로(CC)TV로</span> <span class="k">경로를 추적해</span> <span class="k">그를 찾아냈다.</span></li>
-        <li><span class="k">발견 당시 이씨는</span> <span class="k">의식이 없었고,</span> <span class="k">현장에서는&nbsp;5줄</span> <span class="k">분량의 메모가</span> <span class="k">나왔지만 부정행위나</span> <span class="k">수사와 관련된 내용은</span> <span class="k">없는 것으로 전해졌다.</span></li>
-        <li><span class="k">이씨는 낮았던</span> <span class="k">수능 성적을 끌어올려</span> <span class="k">서울대 치의학과에</span> <span class="k">진학하고 LEET 만점을</span> <span class="k">받은 사실이 알려지며</span> <span class="k">주목받았으나, 세무사</span> <span class="k">시험 수석 합격자가</span> <span class="k">AI를 이용한 부정행위를</span> <span class="k">자백하면서 그에게도</span> <span class="k">의혹이 제기됐었다.</span></li>
+        <li><span class="k">경찰은 이진우 씨</span> <span class="k">사망 이후에도 수능·</span> <span class="k">텝스·법학적성시험에서</span> <span class="k">제기된 부정행위</span> <span class="k">의혹을 밝히기 위해</span> <span class="k">수사를 계속하겠다고</span> <span class="k">밝혔다.</span></li>
+        <li><span class="k">다만 피의자가 사망하면</span> <span class="k">압수수색 영장을</span> <span class="k">받기 어려워, 유족의</span> <span class="k">임의제출에 의존해야</span> <span class="k">하는 등 진상 규명에</span> <span class="k">현실적 어려움이 있다는</span> <span class="k">전망이 나온다.</span></li>
+        <li><span class="k">경찰은 국립과학수사</span> <span class="k">연구원 부검 결과를</span> <span class="k">토대로 타살 정황은</span> <span class="k">없다고 결론 내렸고,</span> <span class="k">교육청에 보관 중인</span> <span class="k">2026학년도 수능</span> <span class="k">시험지·답안지를</span> <span class="k">보전하도록 요청했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261120071800731" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261121064206235" target="_blank">원문 보기</a>
+    </div>
+  </section>
+
+  <section class="eng" id="eng">
+    <h2>영어교육 <small>1건</small></h2>
+
+    <div class="card">
+      <h3><span class="k">울산시의회,</span> <span class="k">영어회화 전문강사</span> <span class="k">보호 조례 개정안</span> <span class="k">발의</span></h3>
+      <div class="meta"><b>웹이코노미</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">울산시의회 안대룡</span> <span class="k">의원이 학교 내</span> <span class="k">영어회화 전문강사</span> <span class="k">등의 보호 범위를</span> <span class="k">명확히 하는 조례</span> <span class="k">개정안을 11월&nbsp;20일</span> <span class="k">대표발의했다.</span></p>
+      <ul class="sum">
+        <li><span class="k">5월 울산의 한</span> <span class="k">초등학교에서 영어회화</span> <span class="k">전문강사가 학생에게</span> <span class="k">폭언과 폭행을 당하는</span> <span class="k">사건이 발생해, 강사</span> <span class="k">보호 기준을 정비해야</span> <span class="k">한다는 목소리가</span> <span class="k">나왔다.</span></li>
+        <li><span class="k">안대룡 의원은&nbsp;8월&nbsp;25일</span> <span class="k">교육청 관계자들과</span> <span class="k">간담회를 열어 보호와</span> <span class="k">근무 여건 개선 방안을</span> <span class="k">논의한 뒤, 유치원</span> <span class="k">강사·기간제 교사·</span> <span class="k">명예교사 등 보호</span> <span class="k">대상을 명확히 하고</span> <span class="k">교육감이 보호 시책을</span> <span class="k">마련하도록 하는 조례</span> <span class="k">개정안을 발의했다.</span></li>
+        <li><span class="k">안 의원은 "교육활동을</span> <span class="k">담당하는 사람의</span> <span class="k">안전이 고용 형태나</span> <span class="k">신분에 따라 달라져서는</span> <span class="k">안 된다"며 강사 등도</span> <span class="k">정당한 보호를 받아야</span> <span class="k">한다고 말했다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.webeconomy.co.kr/news/articleView.html?idxno=2385638" target="_blank">원문 보기</a>
     </div>
   </section>
 
@@ -271,113 +282,92 @@
     <h2>교과 소식 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">손곡초, 학생자치회가</span> <span class="k">이끄는 '폰 프리</span> <span class="k">스쿨'</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.11.19 · <span class="tag">초등</span></div>
-      <p class="lead"><span class="k">경기 손곡초는&nbsp;10월부터</span> <span class="k">학생자치회가 중심이 되어</span> <span class="k">스마트폰 대신</span> <span class="k">친구들과의 놀이와</span> <span class="k">대화로 채우는</span> <span class="k">'폰 프리 스쿨' 활동을</span> <span class="k">이어가고 있다.</span></p>
-      <ul class="sum">
-        <li><span class="k">경기교육청이 추진하는</span> <span class="k">학생 주도형 활동인</span> <span class="k">'폰 프리 스쿨'에 맞춰,</span> <span class="k">학생들은 긴 줄넘기와</span> <span class="k">민속놀이, 보드게임 등으로</span> <span class="k">쉬는 시간을 채우며</span> <span class="k">협동과 소통을</span> <span class="k">경험했다.</span></li>
-        <li><span class="k">학생자치회는 폰 프리</span> <span class="k">및 환경 실천 캠페인과</span> <span class="k">학급회의를 열어</span> <span class="k">건강한 디지털 기기</span> <span class="k">사용법을 스스로 고민하고</span> <span class="k">실천하는 시간을</span> <span class="k">가졌다.</span></li>
-        <li><span class="k">손곡초는 겨울방학까지</span> <span class="k">이 활동을 이어가며,</span> <span class="k">친구와 가족, 선생님에게</span> <span class="k">손편지로 마음을 전하는</span> <span class="k">'편지 쓰기' 행사도</span> <span class="k">추가로 열 계획이다.</span></li>
-      </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110133" target="_blank">원문 보기</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="k">경북교육청, 초등</span> <span class="k">33개 선도학교</span> <span class="k">창의교육과정</span></h3>
-      <div class="meta"><b>국제i저널</b> · 2026.11.19 · <span class="tag">초등</span></div>
-      <p class="lead"><span class="k">경북교육청은 도내</span> <span class="k">초등학교&nbsp;33곳을</span> <span class="k">'교육과정 선도학교'로</span> <span class="k">지정해 학교별 특색을</span> <span class="k">살린 창의적</span> <span class="k">교육과정을 운영하고</span> <span class="k">있다.</span></p>
+      <h3><span class="k">부산시교육청,</span> <span class="k">질문·탐구 중심</span> <span class="k">수업 나눔 워크숍</span></h3>
+      <div class="meta"><b>대한뉴스</b> · 2026.11.20 · <span class="tag">초등</span></div>
+      <p class="lead"><span class="k">부산시교육청이&nbsp;11월&nbsp;21일</span> <span class="k">초등·특수 교원</span> <span class="k">250여 명과 함께</span> <span class="k">국어·수학·독서 등</span> <span class="k">수업 사례를 나누는</span> <span class="k">워크숍을 연다.</span></p>
       <div class="facts">
-        <span class="chip"><b>33개교</b></span>
-        <span class="chip"><b>2억&nbsp;3,500만원</b> 예산 지원</span>
+        <span class="chip"><b>250여 명</b> 참여</span>
       </div>
       <ul class="sum">
-        <li><span class="k">경북교육청은 올해</span> <span class="k">33개 선도학교에</span> <span class="k">총&nbsp;2억&nbsp;3,500만원의</span> <span class="k">예산을 지원해</span> <span class="k">진로연계교육과</span> <span class="k">학교자율시간 등</span> <span class="k">학교 특성에 맞는</span> <span class="k">다양한 교수·학습</span> <span class="k">방법을 도입하도록</span> <span class="k">했다.</span></li>
-        <li><span class="k">학교 여건에 따라</span> <span class="k">자율적이고 창의적으로</span> <span class="k">교육과정을 짜도록 해,</span> <span class="k">봉화초처럼</span> <span class="k">'놀이와 활동으로</span> <span class="k">만드는 배움터'를</span> <span class="k">주제로 한 특색 있는</span> <span class="k">수업이 운영되고</span> <span class="k">있다.</span></li>
-        <li><span class="k">경북교육청은</span> <span class="k">학교 자율성과 특색을</span> <span class="k">살린 교육과정 운영으로</span> <span class="k">학생들의 미래 역량을</span> <span class="k">키우는 것이 목적이라고</span> <span class="k">밝혔다.</span></li>
+        <li><span class="k">부산시교육청은&nbsp;11월&nbsp;21일</span> <span class="k">부산교육대학교에서</span> <span class="k">초등·특수 교원과</span> <span class="k">교육전문직원 등&nbsp;250여 명이</span> <span class="k">참여하는 '2026 함께</span> <span class="k">성장하는 수업 나눔</span> <span class="k">워크숍'을 연다.</span></li>
+        <li><span class="k">기조강연에 이어,</span> <span class="k">국어·수학·학교자율</span> <span class="k">시간·독서 등 영역별로</span> <span class="k">질문·탐구 중심</span> <span class="k">수업 실천 사례를</span> <span class="k">나누는 분과 강의가</span> <span class="k">진행된다.</span></li>
+        <li><span class="k">마지막 순서에서는</span> <span class="k">학생 질문 중심 수업,</span> <span class="k">서·논술형 평가,</span> <span class="k">문해력 향상을 주제로</span> <span class="k">교원들이 수업 노하우를</span> <span class="k">직접 공유한다.</span></li>
       </ul>
-      <a class="btn" href="https://www.iij.co.kr/news/articleView.html?idxno=396373" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.daehannews.kr/news/article.html?no=522243" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">'AI 시대'</span> <span class="k">문학 교육의 미래는</span></h3>
-      <div class="meta"><b>한국일보</b> · 2026.11.19 · <span class="tag">국어</span></div>
-      <p class="lead"><span class="k">국립한국문학관은</span> <span class="k">11월&nbsp;19일 심포지엄을 열고,</span> <span class="k">AI 시대에도 문학 읽기가</span> <span class="k">삶을 이해하는 힘을</span> <span class="k">길러준다며 경험 중심의</span> <span class="k">문학교육이 필요하다고</span> <span class="k">밝혔다.</span></p>
+      <h3><span class="k">장흥남초 5학년,</span> <span class="k">국어 시간 아이디어로</span> <span class="k">교내 카페 운영</span></h3>
+      <div class="meta"><b>더코리아</b> · 2026.11.20 · <span class="tag">초등 · 국어</span></div>
+      <p class="lead"><span class="k">전남 장흥남초</span> <span class="k">5학년 학생들이</span> <span class="k">국어 시간 토의에서</span> <span class="k">나온 아이디어로</span> <span class="k">'석대들 카페'를</span> <span class="k">11월&nbsp;19일 열었다.</span></p>
       <ul class="sum">
-        <li><span class="k">조병영 한양대 교수는</span> <span class="k">문해력을 '읽고 쓰는</span> <span class="k">경험으로 삶의 방식을</span> <span class="k">발견하고 재구성하는 힘'</span> <span class="k">으로 정의하며,</span> <span class="k">인지 주체성과</span> <span class="k">비판적 판단, 공감 역량</span> <span class="k">등 여섯 가지를</span> <span class="k">AI 시대 문해력의</span> <span class="k">가치로 제시했다.</span></li>
-        <li><span class="k">그는 이론과 주제 파악</span> <span class="k">중심의 수업보다,</span> <span class="k">작품 속 인물의 삶을</span> <span class="k">이해하고 간접 경험하는</span> <span class="k">경험 중심 교육이</span> <span class="k">중요하다고 강조했다.</span></li>
-        <li><span class="k">윤대석 서울대 교수는</span> <span class="k">"읽기의 위임"이 일어나는</span> <span class="k">AI 시대에, 문학교육이</span> <span class="k">스스로 생각하는 사람을</span> <span class="k">길러내는 역할을</span> <span class="k">맡아야 한다고 말했다.</span></li>
+        <li><span class="k">학생들은 국어 시간</span> <span class="k">토의에서 학교 주변에</span> <span class="k">편의시설이 없다는</span> <span class="k">의견이 나오자, 직접</span> <span class="k">교내에 카페를</span> <span class="k">열어보자는 아이디어를</span> <span class="k">실행에 옮겼다.</span></li>
+        <li><span class="k">학생들은 국어 수업과</span> <span class="k">학급회의 시간을</span> <span class="k">활용해 공간 꾸미기와</span> <span class="k">메뉴판 제작, 운영</span> <span class="k">규칙까지 스스로 정하며</span> <span class="k">협력과 책임을</span> <span class="k">배워 나갔다.</span></li>
+        <li><span class="k">카페는&nbsp;12월까지</span> <span class="k">매주 화·목요일</span> <span class="k">쉬는 시간에 운영되며,</span> <span class="k">일회용품 대신 개인</span> <span class="k">컵을 가져온 사람에게만</span> <span class="k">음료를 주는 환경</span> <span class="k">보호 실천도 함께</span> <span class="k">이어가고 있다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261119172142454" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.thekorea.kr/bbs/board.php?bo_table=news&wr_id=573138" target="_blank">원문 보기</a>
+    </div>
+
+    <div class="card">
+      <h3><span class="k">노안남초 5학년,</span> <span class="k">교사가 만든</span> <span class="k">역사 미션으로</span> <span class="k">서울 답사</span></h3>
+      <div class="meta"><b>더코리아</b> · 2026.11.20 · <span class="tag">초등 · 사회</span></div>
+      <p class="lead"><span class="k">전남 노안남초</span> <span class="k">5학년 학생들이</span> <span class="k">담임교사가 만든</span> <span class="k">역사 워크북과</span> <span class="k">방탈출 게임으로</span> <span class="k">11월&nbsp;18일 국립중앙박물관과</span> <span class="k">경복궁을 답사했다.</span></p>
+      <ul class="sum">
+        <li><span class="k">학생들은 국립중앙</span> <span class="k">박물관에서&nbsp;3시간 동안</span> <span class="k">담임교사가 만든</span> <span class="k">역사 워크북 속</span> <span class="k">미션을 풀며 광개토</span> <span class="k">대왕비 탁본, 반가사유상</span> <span class="k">등 주요 유물의</span> <span class="k">역사적 의미를 익혔다.</span></li>
+        <li><span class="k">경복궁에서는 교사가</span> <span class="k">만든 역사 방탈출</span> <span class="k">게임을 통해 근정전·</span> <span class="k">경회루 등을 돌며</span> <span class="k">조선 전기 법궁으로서</span> <span class="k">경복궁의 역할을 살폈고,</span> <span class="k">명성황후가 시해된</span> <span class="k">건청궁 일대도</span> <span class="k">둘러봤다.</span></li>
+        <li><span class="k">학생들은 전날 수업에서</span> <span class="k">미리 배운 을미사변을</span> <span class="k">실제 사건이 벌어진</span> <span class="k">공간에서 다시</span> <span class="k">마주하며, 교과서 속</span> <span class="k">역사를 생생한</span> <span class="k">이야기로 체험했다.</span></li>
+      </ul>
+      <a class="btn" href="https://www.thekorea.kr/bbs/board.php?bo_table=news&wr_id=573134" target="_blank">원문 보기</a>
     </div>
   </section>
 
   <section class="ai" id="ai">
-    <h2>AI 교육 <small>4건</small></h2>
+    <h2>AI 교육 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">AI 공세에 공정성·</span> <span class="k">실효성 시험대 오른</span> <span class="k">수능 평가 방식</span></h3>
-      <div class="meta"><b>뉴시스</b> · 2026.11.20</div>
-      <p class="lead"><span class="k">챗GPT와 제미나이가</span> <span class="k">2027학년도 수능</span> <span class="k">국어·수학·영어를</span> <span class="k">3분도 안 돼 만점으로</span> <span class="k">풀어내면서, 정답을</span> <span class="k">빨리 찾는 능력만 보는</span> <span class="k">시험 방식에 대한</span> <span class="k">의문이 커지고 있다.</span></p>
+      <h3><span class="k">"수능 바꾸자"</span> <span class="k">목소리 커지는데…</span> <span class="k">국교위 논의 '공전'</span></h3>
+      <div class="meta"><b>KBS</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">수능 부정행위 파문으로</span> <span class="k">평가 방식을 바꿔야</span> <span class="k">한다는 목소리가</span> <span class="k">커지고 있지만,</span> <span class="k">국가교육위원회의</span> <span class="k">내부 논의는 이견</span> <span class="k">조율에 어려움을</span> <span class="k">겪고 있다.</span></p>
       <div class="facts">
-        <span class="chip"><b>2분44초</b> 국영수 만점</span>
-        <span class="chip"><b>70.4%</b> 서논술형 전환 반대</span>
+        <span class="chip"><b>2027년&nbsp;3월까지</b> 개편안 확정 목표</span>
       </div>
       <ul class="sum">
-        <li><span class="k">뉴시스가 챗GPT와</span> <span class="k">제미나이에&nbsp;2027학년도</span> <span class="k">수능 국어·수학·영어</span> <span class="k">문제를 풀게 하자</span> <span class="k">두 AI 모두 만점을 받았고,</span> <span class="k">챗GPT는 국어&nbsp;44초·</span> <span class="k">수학&nbsp;1분25초·영어&nbsp;35초</span> <span class="k">등 총&nbsp;2분44초 만에</span> <span class="k">풀이를 마쳤다.</span></li>
-        <li><span class="k">전국교직원노동조합이</span> <span class="k">교원&nbsp;1,346명을 조사한</span> <span class="k">결과 수능에 서·논술형</span> <span class="k">평가를 도입하는 데</span> <span class="k">반대한 교원이&nbsp;70.4%였고,</span> <span class="k">반대한 교원 중&nbsp;94.3%는</span> <span class="k">사교육 확대를,&nbsp;93.0%는</span> <span class="k">채점 공정성 논란을</span> <span class="k">우려했다.</span></li>
-        <li><span class="k">전교조와 교총 모두</span> <span class="k">AI 시대에 맞춰 정답을</span> <span class="k">빨리 찾는 능력보다</span> <span class="k">사고력과 문제해결</span> <span class="k">과정을 평가하는 방식으로</span> <span class="k">교육과정과 대입제도를</span> <span class="k">재검토해야 한다는</span> <span class="k">입장을 냈다.</span></li>
+        <li><span class="k">수능을 둘러싼</span> <span class="k">부정행위 적발이</span> <span class="k">이어지며 수능을</span> <span class="k">절대평가로 바꾸거나</span> <span class="k">서·논술형 문항을</span> <span class="k">넣자는 주장, 심지어</span> <span class="k">수능을 아예 없애자는</span> <span class="k">주장까지 나오고 있다.</span></li>
+        <li><span class="k">대입 개편안을 준비</span> <span class="k">중인 국가교육위원회도</span> <span class="k">다양한 방안을</span> <span class="k">검토하고 있지만 내부</span> <span class="k">이견 조율이 쉽지</span> <span class="k">않아, 10월에 예정됐던</span> <span class="k">중장기 국가교육발전</span> <span class="k">계획 초안 발표가</span> <span class="k">연내로 미뤄졌고 대입</span> <span class="k">개편안은 초안에서조차</span> <span class="k">빠질 전망이다.</span></li>
+        <li><span class="k">차정인 국가교육위원장은</span> <span class="k">이번 수능이 "학교</span> <span class="k">교육과 평가 제도 전반의</span> <span class="k">근본적 변화라는 무거운</span> <span class="k">숙제를 남겼다"고</span> <span class="k">말했고, 국교위는 늦어도</span> <span class="k">2027년&nbsp;3월까지는 대입</span> <span class="k">개편안을 확정·발표</span> <span class="k">하겠다고 밝혔다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261120060130503" target="_blank">원문 보기</a>
+      <a class="btn" href="http://v.daum.net/v/20261121062540071" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">EBS, 전국민</span> <span class="k">AI 학습 플랫폼</span> <span class="k">'AI이솦'</span> <span class="k">11월&nbsp;26일 오픈</span></h3>
-      <div class="meta"><b>오마이뉴스</b> · 2026.11.19</div>
-      <p class="lead"><span class="k">EBS는 국민 누구나</span> <span class="k">AI를 쉽게 배울 수 있는</span> <span class="k">온라인 학습 플랫폼</span> <span class="k">'AI이솦'을&nbsp;11월&nbsp;26일</span> <span class="k">정식으로 연다.</span></p>
+      <h3><span class="k">경덕중, 전교생&nbsp;600여 명</span> <span class="k">참여 AI·디지털</span> <span class="k">교육축제</span></h3>
+      <div class="meta"><b>한국공보뉴스</b> · 2026.11.20 · <span class="tag">중등</span></div>
+      <p class="lead"><span class="k">충북 청주 경덕중학교가</span> <span class="k">11월&nbsp;20일 전교생</span> <span class="k">600여 명이 참여하는</span> <span class="k">AI·디지털 기반 지식</span> <span class="k">골든벨 행사를 열었다.</span></p>
       <div class="facts">
-        <span class="chip"><b>400차시</b> 콘텐츠</span>
-        <span class="chip"><b>6개</b> 대상군</span>
-        <span class="chip"><b>AI도구 5종</b> 실습 제공</span>
+        <span class="chip"><b>600여 명</b> 참여</span>
+        <span class="chip"><b>30문항</b> 동시 풀이</span>
       </div>
       <ul class="sum">
-        <li><span class="k">'AI이솦'은&nbsp;2018년부터</span> <span class="k">운영해 온 소프트웨어</span> <span class="k">교육 플랫폼 '이솦'을</span> <span class="k">AI 교육 중심으로</span> <span class="k">고도화한 서비스로,</span> <span class="k">2026년 말까지&nbsp;400차시의</span> <span class="k">학습 콘텐츠를</span> <span class="k">순차적으로 올릴</span> <span class="k">계획이다.</span></li>
-        <li><span class="k">학습자를 초등 저학년부터</span> <span class="k">중·고등학생, 학부모,</span> <span class="k">교사, 시니어까지</span> <span class="k">6개 대상으로 나눠</span> <span class="k">맞춤형 커리큘럼을 짰고,</span> <span class="k">강의와 함께 챗GPT·</span> <span class="k">제미나이·클로드·엑사온·</span> <span class="k">솔라 등 AI 도구&nbsp;5종을</span> <span class="k">실습에 활용할 수 있게</span> <span class="k">했다.</span></li>
-        <li><span class="k">EBS 안성식 부장은</span> <span class="k">AI에 대한 기본 정보보다</span> <span class="k">인간 중심의 사고와</span> <span class="k">비판적 사고, AI 윤리를</span> <span class="k">익히는 것이 교육의</span> <span class="k">핵심이라고 설명했다.</span></li>
+        <li><span class="k">경덕중은&nbsp;11월&nbsp;16일부터</span> <span class="k">20일까지 'NFC 탐험</span> <span class="k">주간'을 운영해 학생들이</span> <span class="k">학교 곳곳의 NFC 태그와</span> <span class="k">QR코드를 스마트기기로</span> <span class="k">찾아 교과 지식, AI 윤리,</span> <span class="k">디지털 시민성 등을</span> <span class="k">미리 익히게 했다.</span></li>
+        <li><span class="k">11월&nbsp;20일 열린 '디지털</span> <span class="k">지식 골든벨'에서는</span> <span class="k">전교생이 각자</span> <span class="k">스마트기기로 접속해</span> <span class="k">사전 탐험에서 익힌</span> <span class="k">내용을 바탕으로&nbsp;30문항을</span> <span class="k">동시에 풀었다.</span></li>
+        <li><span class="k">점심시간에는 수학동아리가</span> <span class="k">운영하는 '로블록스 방탈출</span> <span class="k">수학 체험' 부스도 열려,</span> <span class="k">학생들이 가상공간에서</span> <span class="k">방정식·함수·도형</span> <span class="k">문제를 풀며 수학적</span> <span class="k">사고력을 키웠다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261119160221920" target="_blank">원문 보기</a>
+      <a class="btn" href="https://cheongju.kpnnews.org/news/2611200000000369" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">"로그인·유지비 無",</span> <span class="k">교사가 만든</span> <span class="k">교실 맞춤 AI 플랫폼</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.11.18</div>
-      <p class="lead"><span class="k">인천 송도중</span> <span class="k">김석전 교사가&nbsp;1년여에</span> <span class="k">걸쳐 직접 개발한</span> <span class="k">무료 AI 블록코딩</span> <span class="k">플랫폼 '브릭셀AI'가</span> <span class="k">현장에서 입소문을</span> <span class="k">타고 있다.</span></p>
+      <h3><span class="k">광명고, AI로</span> <span class="k">'30초의 힘' 숏폼</span> <span class="k">제작·상영</span></h3>
+      <div class="meta"><b>데일리와이</b> · 2026.11.20 · <span class="tag">고교</span></div>
+      <p class="lead"><span class="k">광명고 학생들이</span> <span class="k">생성형 AI로 가짜 정보와</span> <span class="k">AI 할루시네이션 등</span> <span class="k">디지털 사회의 문제를</span> <span class="k">다룬&nbsp;30초 숏폼 영상을</span> <span class="k">만들어 공개했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>확장 카드 100개</b></span>
-        <span class="chip"><b>블록 2,700여개</b></span>
-        <span class="chip"><b>80여개</b> 언어 지원</span>
+        <span class="chip"><b>6개</b> 상영관 구성</span>
       </div>
       <ul class="sum">
-        <li><span class="k">김 교사는 학교 예산</span> <span class="k">문제와 학생 회원가입·</span> <span class="k">개인정보 절차 같은</span> <span class="k">현장의 어려움을</span> <span class="k">해결하려고, 서버 없이</span> <span class="k">기기 안에서 데이터가</span> <span class="k">처리되는 정적 웹 방식으로</span> <span class="k">브릭셀AI를 만들어</span> <span class="k">전면 무료로 열었다.</span></li>
-        <li><span class="k">미국 MIT의 교육용</span> <span class="k">'스크래치' 구조 위에</span> <span class="k">100개의 확장 카드와</span> <span class="k">2,700여 개 블록을 더해,</span> <span class="k">초등학교부터</span> <span class="k">고등학교까지 AI 학습과</span> <span class="k">피지컬 컴퓨팅 수업에</span> <span class="k">쓸 수 있다.</span></li>
-        <li><span class="k">교사와 학생이 코드를</span> <span class="k">실시간으로 나누는</span> <span class="k">기능과 최대&nbsp;100명이</span> <span class="k">함께 들어오는</span> <span class="k">관전 모드도 있어,</span> <span class="k">김 교사는 학생들이</span> <span class="k">AI로 자기 분야의</span> <span class="k">문제를 해결할 자신감을</span> <span class="k">갖게 되길 바란다고</span> <span class="k">말했다.</span></li>
+        <li><span class="k">광명고는&nbsp;2026학년도</span> <span class="k">디지털 시민역량교육</span> <span class="k">실천학교 운영의 하나로</span> <span class="k">'30초의 힘, AI 숏폼</span> <span class="k">제작·상영 프로젝트'를</span> <span class="k">진행해, 학생들이 가짜</span> <span class="k">정보·AI 할루시네이션·</span> <span class="k">SNS 추천 알고리즘·</span> <span class="k">디지털 환경오염 등을</span> <span class="k">주제로 영상을 만들었다.</span></li>
+        <li><span class="k">교사가 만든 온라인</span> <span class="k">상영관은&nbsp;6개 상영관으로</span> <span class="k">구성돼 작품 영상과</span> <span class="k">함께 학생들이 쓴</span> <span class="k">기획 의도를 함께</span> <span class="k">볼 수 있으며, 순위</span> <span class="k">경쟁 대신 관람객이</span> <span class="k">칭찬 단어와 응원</span> <span class="k">메시지를 남기도록 했다.</span></li>
+        <li><span class="k">광명고는&nbsp;11월&nbsp;23일부터</span> <span class="k">27일까지 본관&nbsp;1층에서</span> <span class="k">오프라인 상영도</span> <span class="k">진행하며, 이러한 경험을</span> <span class="k">바탕으로&nbsp;2027학년도</span> <span class="k">AI·디지털 시민교육</span> <span class="k">거점학교로 선정됐다.</span></li>
       </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110131" target="_blank">원문 보기</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="k">부산대 교육발전연구소</span> <span class="k">'SW·AI 전문가</span> <span class="k">멘토링데이' 성료</span></h3>
-      <div class="meta"><b>한국교육신문</b> · 2026.11.18</div>
-      <p class="lead"><span class="k">부산대 교육발전연구소는</span> <span class="k">10월&nbsp;31일과&nbsp;11월&nbsp;14일</span> <span class="k">두 차례에 걸쳐 영남권</span> <span class="k">초·중·고 영재학생과</span> <span class="k">학부모, 교사&nbsp;160명에게</span> <span class="k">AI·SW 진로 멘토링을</span> <span class="k">진행했다.</span></p>
-      <div class="facts">
-        <span class="chip"><b>160명</b> 참여</span>
-        <span class="chip"><b>1,000건 이상</b> 작품 접수</span>
-      </div>
-      <ul class="sum">
-        <li><span class="k">학생들은 수준에 맞춰</span> <span class="k">AI 교육과 윤리,</span> <span class="k">3D 공간 설계,</span> <span class="k">바이브코딩 등</span> <span class="k">다양한 특강과 체험</span> <span class="k">프로그램에 참여했고,</span> <span class="k">'AI 활용 발명 창작</span> <span class="k">아이디어 경진대회'에는</span> <span class="k">전국에서&nbsp;1,000건이 넘는</span> <span class="k">작품이 접수됐다.</span></li>
-        <li><span class="k">이 대회는 단순 암기식</span> <span class="k">평가 대신 학생이 문제를</span> <span class="k">스스로 찾고 AI로</span> <span class="k">해결하는 과정과</span> <span class="k">창의성을 평가하도록</span> <span class="k">기획됐으며, 생활 속</span> <span class="k">불편함을 발명 아이디어로</span> <span class="k">시각화하는 활동으로</span> <span class="k">진행됐다.</span></li>
-        <li><span class="k">대구·경북 학생 등을</span> <span class="k">위한 온라인</span> <span class="k">멘토링데이에서는</span> <span class="k">질문을 만들고 서로의</span> <span class="k">꿈을 응원하는</span> <span class="k">놀이 수업도 열려,</span> <span class="k">창의성과 인성교육을</span> <span class="k">함께 길렀다.</span></li>
-      </ul>
-      <a class="btn" href="https://www.hangyo.com/news/article.html?no=110126" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.why25.com/sub_read.html?uid=699745" target="_blank">원문 보기</a>
     </div>
   </section>
 
@@ -385,63 +375,59 @@
     <h2>최신 AI 소식 <small>3건</small></h2>
 
     <div class="card">
-      <h3><span class="k">구글, AI 에이전트</span> <span class="k">특화 '제미나이4 네온'</span> <span class="k">출시</span></h3>
-      <div class="meta"><b>디지털데일리</b> · 2026.11.19</div>
-      <p class="lead"><span class="k">구글이 복잡한 코딩과</span> <span class="k">기업 업무를 더 빠르고</span> <span class="k">싸게 처리하는</span> <span class="k">새 AI 모델</span> <span class="k">'제미나이4 네온'을</span> <span class="k">출시했다.</span></p>
-      <div class="facts">
-        <span class="chip"><b>작업비용 32%</b> 절감</span>
-        <span class="chip"><b>코딩평가 세계 1위</b></span>
-        <span class="chip"><b>100만 토큰</b> 처리</span>
-      </div>
+      <h3><span class="k">구글 딥마인드,</span> <span class="k">"AGI는 끝이 아니다"…</span> <span class="k">이후 발전 경로 제시</span></h3>
+      <div class="meta"><b>AI타임스</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">구글 딥마인드가</span> <span class="k">인간 수준의 AI(AGI)에</span> <span class="k">도달한 뒤에도 AI가</span> <span class="k">계속 발전할 수 있는</span> <span class="k">네 가지 기술적</span> <span class="k">경로를 제시했다.</span></p>
       <ul class="sum">
-        <li><span class="k">네온은 소프트웨어</span> <span class="k">개발과 데이터 분석,</span> <span class="k">과학 연구처럼</span> <span class="k">여러 단계로 이뤄진</span> <span class="k">업무에 최적화됐고,</span> <span class="k">종합 AI 지능 평가에서</span> <span class="k">세계&nbsp;3위, 코딩 에이전트</span> <span class="k">평가에서는 세계&nbsp;1위를</span> <span class="k">기록했다.</span></li>
-        <li><span class="k">기존 '제미나이4 카본'</span> <span class="k">보다 작업당 비용이</span> <span class="k">32% 낮아졌고,</span> <span class="k">최대&nbsp;100만 토큰의</span> <span class="k">문맥을 한 번에</span> <span class="k">처리할 수 있어</span> <span class="k">긴 작업도 끊김 없이</span> <span class="k">수행한다.</span></li>
-        <li><span class="k">보안 특화 모델인</span> <span class="k">'사이버용 제미나이4</span> <span class="k">네온'도 함께 선보여,</span> <span class="k">코드 취약점을 찾고</span> <span class="k">고치는 능력을 시험하는</span> <span class="k">평가에서 각각&nbsp;90.5%,</span> <span class="k">70.7%의 점수를</span> <span class="k">받았다.</span></li>
+        <li><span class="k">연구원은 모델 규모를</span> <span class="k">계속 키우는 방법,</span> <span class="k">지속 학습·월드 모델</span> <span class="k">등으로 기존 한계를</span> <span class="k">극복하는 방법, 수많은</span> <span class="k">AI 에이전트가 협력해</span> <span class="k">집단지능을 만드는</span> <span class="k">방법, AI가 스스로 더</span> <span class="k">뛰어난 AI를 만드는</span> <span class="k">'재귀적 자기개선' 등</span> <span class="k">네 가지를 제시했다.</span></li>
+        <li><span class="k">연구진은 개별 AI의</span> <span class="k">성능 향상이 둔화해도</span> <span class="k">AI 운영 비용이 계속</span> <span class="k">낮아지면 수많은 AI를</span> <span class="k">복제해 활용하는</span> <span class="k">방식만으로도 전체</span> <span class="k">지적 생산 능력이</span> <span class="k">크게 높아질 수 있다고</span> <span class="k">설명했다.</span></li>
+        <li><span class="k">연구진은 초지능이</span> <span class="k">실현될 시기를 예측하기는</span> <span class="k">어렵지만 "인간 수준의</span> <span class="k">AGI는 지능의 상한선과는</span> <span class="k">거리가 멀다"며 지금부터</span> <span class="k">발전 경로를 연구하고</span> <span class="k">대비해야 한다고</span> <span class="k">강조했다.</span></li>
       </ul>
-      <a class="btn" href="https://v.daum.net/v/20261119172025389" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.aitimes.com/news/articleView.html?idxno=217605" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">메타, AI 기기</span> <span class="k">'뮤즈 참'</span> <span class="k">300달러로 책정</span></h3>
-      <div class="meta"><b>디지털투데이</b> · 2026.11.20</div>
-      <p class="lead"><span class="k">메타는 연말 출시할</span> <span class="k">키링형 AI 기기</span> <span class="k">'뮤즈 참'의 가격을</span> <span class="k">300달러로 정하고,</span> <span class="k">구매자에게 5G 데이터</span> <span class="k">요금제를 최대&nbsp;12개월</span> <span class="k">무료로 주기로 했다.</span></p>
+      <h3><span class="k">구글, 대화로</span> <span class="k">가상세계 만드는</span> <span class="k">AI '지니&nbsp;4' 공개</span></h3>
+      <div class="meta"><b>인공지능신문</b> · 2026.11.20</div>
+      <p class="lead"><span class="k">구글이 자연어 대화로</span> <span class="k">720p 가상세계를</span> <span class="k">실시간으로 만들고</span> <span class="k">탐험할 수 있는 월드</span> <span class="k">모델 '지니&nbsp;4'를</span> <span class="k">공개했다.</span></p>
       <div class="facts">
-        <span class="chip"><b>300달러</b></span>
-        <span class="chip"><b>5G 요금제</b> 최대&nbsp;12개월 무료</span>
+        <span class="chip"><b>월&nbsp;99.99달러</b> 구독료</span>
+        <span class="chip"><b>최대&nbsp;2분</b> 세션 제한</span>
       </div>
       <ul class="sum">
-        <li><span class="k">'뮤즈 참'은 마크</span> <span class="k">저커버그가&nbsp;9월</span> <span class="k">개발자 콘퍼런스</span> <span class="k">'커넥트'에서 처음</span> <span class="k">공개한 기기로, 메타의</span> <span class="k">AI 비서 '뮤즈'를</span> <span class="k">밖에서도 바로</span> <span class="k">부를 수 있게 해준다.</span></li>
-        <li><span class="k">메타는 이 기기로</span> <span class="k">하드웨어 사업에</span> <span class="k">힘을 싣고 개인 비서</span> <span class="k">서비스 사용자를</span> <span class="k">늘리려는 전략을 세우고,</span> <span class="k">올해 목표였던</span> <span class="k">스마트워치 출시를</span> <span class="k">2027년으로 미루면서까지</span> <span class="k">'뮤즈 참'을 최우선으로</span> <span class="k">밀고 있다.</span></li>
-        <li><span class="k">오픈AI와 애플 등</span> <span class="k">다른 회사들도 화면 없는</span> <span class="k">스피커나 디스플레이 같은</span> <span class="k">AI 하드웨어를 잇따라</span> <span class="k">내놓으며 경쟁하고</span> <span class="k">있다.</span></li>
+        <li><span class="k">지니&nbsp;4는 이용자가</span> <span class="k">날씨나 등장인물, 주변</span> <span class="k">환경을 말로 바꾸면</span> <span class="k">실시간으로 반영해</span> <span class="k">가상세계를 만들어주는</span> <span class="k">AI 에이전트로, 게임이나</span> <span class="k">콘텐츠 제작뿐 아니라</span> <span class="k">서비스 시제품 제작이나</span> <span class="k">공간 설계 시각화에도</span> <span class="k">활용할 수 있다.</span></li>
+        <li><span class="k">다만 한 세션에서</span> <span class="k">만들 수 있는 가상세계는</span> <span class="k">최대&nbsp;2분 분량으로</span> <span class="k">제한되며, 복잡한 물리</span> <span class="k">상호작용이나 정확한</span> <span class="k">실시간 음향, 읽을 수</span> <span class="k">있는 글자 표현은</span> <span class="k">아직 개선해야 할</span> <span class="k">과제로 꼽혔다.</span></li>
+        <li><span class="k">구글은 지니&nbsp;4가 만든</span> <span class="k">영상에 AI 생성물임을</span> <span class="k">표시하는 식별 기술</span> <span class="k">'신스아이디'를 적용해,</span> <span class="k">실제 영상과 AI가 만든</span> <span class="k">영상을 구분할 수</span> <span class="k">있게 했다.</span></li>
       </ul>
-      <a class="btn" href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=716874" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.aitimes.kr/news/articleView.html?idxno=42821" target="_blank">원문 보기</a>
     </div>
 
     <div class="card">
-      <h3><span class="k">오픈AI 보안제품 2종,</span> <span class="k">앤트로픽은</span> <span class="k">공개 기한 단축</span></h3>
-      <div class="meta"><b>디지털투데이</b> · 2026.11.20</div>
-      <p class="lead"><span class="k">AI가 보안 취약점을</span> <span class="k">찾아내는 속도가</span> <span class="k">빨라지면서, 오픈AI와</span> <span class="k">앤트로픽이 나란히</span> <span class="k">보안 대응 체계를</span> <span class="k">새로 손봤다.</span></p>
+      <h3><span class="k">오픈AI, AI로</span> <span class="k">반도체 설계 개선…</span> <span class="k">"5개월 만에&nbsp;1년치</span> <span class="k">진전"</span></h3>
+      <div class="meta"><b>AI타임스</b> · 2026.11.21</div>
+      <p class="lead"><span class="k">오픈AI가 AI를 활용해</span> <span class="k">AMD의 그래픽처리장치</span> <span class="k">(GPU) 회로 설계를</span> <span class="k">최적화해, 전력·성능·</span> <span class="k">면적 지표를 최대&nbsp;14%</span> <span class="k">개선했다고 밝혔다.</span></p>
       <div class="facts">
-        <span class="chip"><b>공개 기한</b> 90일→30일</span>
+        <span class="chip"><b>최대&nbsp;14%</b> 지표 개선</span>
+        <span class="chip"><b>5개월</b> 만에 1년치 진전</span>
       </div>
       <ul class="sum">
-        <li><span class="k">오픈AI는 AI 에이전트가</span> <span class="k">소프트웨어 취약점을</span> <span class="k">찾아내고 수정안까지</span> <span class="k">만들어주는 보안 제품</span> <span class="k">2종을 새로 내놨다.</span></li>
-        <li><span class="k">앤트로픽은 AI의</span> <span class="k">취약점 탐지 능력이</span> <span class="k">빠르게 발전하자,</span> <span class="k">발견한 취약점을</span> <span class="k">공개하기까지 기다리는</span> <span class="k">유예 기간을 최대&nbsp;90일에서</span> <span class="k">30일로 줄이기로 했다.</span></li>
-        <li><span class="k">구글은 사람 개입 없이</span> <span class="k">AI가 취약점을 찾아</span> <span class="k">공격하는 사례를</span> <span class="k">처음 확인했다며,</span> <span class="k">6개월 안에 정교한</span> <span class="k">완전 자율 공격도</span> <span class="k">등장할 수 있다고</span> <span class="k">내다봤다.</span></li>
+        <li><span class="k">오픈AI는 AI를 이용해</span> <span class="k">AMD GPU의 회로</span> <span class="k">설계를 다듬어 전력·</span> <span class="k">성능·면적(PPA) 지표를</span> <span class="k">최대&nbsp;14% 끌어올렸다고</span> <span class="k">밝혔다.</span></li>
+        <li><span class="k">회사는 이러한 개선이</span> <span class="k">5개월 만에 이뤄져,</span> <span class="k">기존 방식으로&nbsp;1년</span> <span class="k">걸릴 진전을 훨씬</span> <span class="k">짧은 시간에 이뤄냈다고</span> <span class="k">설명했다.</span></li>
+        <li><span class="k">이번 사례는 AI가</span> <span class="k">소프트웨어 개발 같은</span> <span class="k">디지털 작업을 넘어</span> <span class="k">실제 반도체 설계와</span> <span class="k">성능 개선에도 기여할</span> <span class="k">수 있음을 보여준</span> <span class="k">것으로 평가된다.</span></li>
       </ul>
-      <a class="btn" href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=716873" target="_blank">원문 보기</a>
+      <a class="btn" href="https://www.aitimes.com/news/articleView.html?idxno=217605" target="_blank">원문 보기</a>
     </div>
   </section>
 
   <section class="hist" id="hist">
-    <h2>역사 속 오늘 <small>11월&nbsp;20일</small></h2>
+    <h2>역사 속 오늘 <small>11월&nbsp;21일</small></h2>
     <div class="card hcard">
-      <div class="year">1975<span>년</span></div>
+      <div class="year">1972<span>년</span></div>
       <div class="hbody">
-        <div class="meta"><span class="tag">한국사</span> · 대구 서문시장 화재</div>
-        <h3>대구 서문시장에 큰불, 상점&nbsp;1,900여곳이 탔다</h3>
-        <p class="hdesc"><span class="k">1975년&nbsp;11월&nbsp;20일,</span> <span class="k">대구 서문시장 4지구에서</span> <span class="k">담뱃불로 시작된 불이</span> <span class="k">크게 번져 점포&nbsp;1,900여곳이</span> <span class="k">불에 탔다. 지금도</span> <span class="k">대구를 대표하는</span> <span class="k">전통시장인 서문시장은</span> <span class="k">큰불을 여러 번 겪었지만</span> <span class="k">그때마다 다시 일어나</span> <span class="k">지금까지 이어지고 있다.</span></p>
-        <a class="hlink" href="https://www.imaeil.com/page/view/2025110417474769694" target="_blank">자세히 보기 →</a>
+        <div class="meta"><span class="tag">한국사</span> · 유신헌법 국민투표</div>
+        <h3><span class="k">새 헌법을 국민투표로</span> <span class="k">통과시킨 날</span></h3>
+        <p class="hdesc"><span class="k">1972년&nbsp;11월&nbsp;21일,</span> <span class="k">박정희 대통령이 새로</span> <span class="k">만든 '유신헌법'을</span> <span class="k">국민투표로 통과시켰어요.</span> <span class="k">이 헌법으로 대통령을</span> <span class="k">뽑는 방식이 바뀌고</span> <span class="k">대통령의 권한이 아주</span> <span class="k">커져서, 그 뒤 오랫동안</span> <span class="k">논란이 이어졌어요.</span></p>
+        <a class="hlink" href="https://ko.wikipedia.org/wiki/대한민국_헌법_제8호" target="_blank">자세히 보기 →</a>
       </div>
     </div>
   </section>
